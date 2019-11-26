@@ -1,0 +1,80 @@
+.fl{
+    float: left;
+}
+.fr {
+    float: right;
+}
+.main {
+    margin-left: 20px;
+    width: 820px;
+}
+.mian-list {
+    border: 1px solid #ccccff;
+    margin-bottom: 25px;
+}
+.user-wrap .info-title {
+    height: 54px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-left: 28px;
+    margin-right: 35px;
+}
+.info-title h2 {
+    border: none;
+    font-size: 22px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    color: #666;
+    text-align: center;
+}
+.user-wrap .info-content {
+    padding: 10px 50px 10px 45px;
+}
+/*message-details开始*/
+.message-details {
+    font-size: 14px;
+    color: #666;
+}
+.message-details img {
+    max-width: 100%;
+}
+.message-details .message-time {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #aeaeae;
+}
+.message-details .respect {
+    margin-bottom: 20px;
+}
+.message-details .info-des {
+    line-height: 20px;
+}
+
+.message-details .md-back {
+    width:80px;
+    height: 32px;
+    line-height: 32px;
+    margin: 45px auto 35px;
+}
+.message-details .md-back-btn {
+    width: 100%;
+    height:100%;
+    outline: none;
+    border: none;
+    background-color: #4682ee;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.message-details table {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.message-details table tr {
+    border-bottom: 1px solid #ccc;
+}
+.message-details table td {
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+/*message-details结束*/

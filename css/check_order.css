@@ -1,0 +1,295 @@
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.check-order {
+    width: 1000px;
+    margin: 0 auto;
+    color: #666;
+}
+/*progress开始*/
+.check-order .progress {
+    width: 780px;
+    margin: 48px auto 48px;
+}
+.check-order .progress-substep {
+    font-size: 14px;
+    display: inline-block;
+    line-height: 26px;
+}
+.progress-substep .progress-num {
+    width: 26px;
+    height: 26px;
+    background: url('../images/user/progress_circle.png') no-repeat 0 0;
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.check-order .line {
+    width: 200px;
+    height: 1px;
+    background-color: #ddd;
+    margin: 12.5px 18px 0 12px;
+}
+.check-order .line-blue {
+    background-color: #4682ee;
+}
+.progress-substep.progress-substep-pass {
+    color: #4682ee;
+}
+
+.progress-substep.progress-substep-pass .progress-num {
+    background: url('../images/user/progress_circle_blue.png') no-repeat 0 0;
+}
+/*progress结束*/
+.check-order .order-card {
+    background-color: #f6f6f6;
+}
+.check-order .card-head {
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 28px;
+    background-color: #4682ee;
+}
+.check-order .card-content {
+    font-size: 14px;
+}
+.check-order .card-content-left {
+    padding-left: 42px;
+    width: 623px;
+}
+.check-order .content-left-input {
+    width: 304px;
+    height: 37px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+}
+.check-order .content-left-input.mobile-box {
+    width: 110px;
+}
+.check-order .content-left-input input {
+    line-height: 37px;
+    width: 100%;
+    height: 100%;
+    margin-top: -4px;
+    color: #666;
+}
+.check-order .content-left-input.jin {
+    border: none;
+    background-color: #f6f6f6;
+}
+.check-order .error-help {
+    padding-left: 8px;
+    color: red;
+    display: none;
+}
+.check-order .content-left-item {
+    line-height: 37px;
+}
+.user-info {
+    margin-bottom: 38px;
+}
+.user-info .modify-tip .modify-tip-blue {
+    color: #5698f2;
+}
+.user-info .card-content {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+.user-info .user-title {
+    padding-right: 10px;
+    text-align: right;
+}
+.user-info .star {
+    color: red;
+}
+.check-order .card-content-right {
+    width: 334px;
+    border-left: 1px dotted #c8c8c8;
+    margin-top: 43px;
+    text-align: center;
+    padding:79px 0;
+}
+.user-info .user-info-btn {
+    width: 81px;
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.user-info .save-btn {
+    background-color: #4682ee;
+    color: #fff;
+    margin-right: 12px;
+}
+.user-info .cancel-btn {
+    background-color: #fff;
+    border: 1px solid #dedede;
+}
+.user-info .alter-btn {
+    background-color: #4682ee;
+    color: #fff;
+}
+
+/*api-detailed开始*/
+.api-detailed table {
+    width: 100%;
+}
+.api-detailed .api-tr {
+    /*background-color: #ccc;*/
+}
+.api-detailed .api-title {
+    height: 40px;
+    line-height: 40px;
+}
+.api-detailed .api-tr td {
+    vertical-align: middle;
+}
+.api-detailed .api-title-left {
+    padding-left: 30px;
+}
+.api-detailed .api-title-right {
+    padding-left: 18px;
+}
+.api-detailed .api-items {
+    height: 80px;
+}
+.api-detailed .api-items-name {
+    padding-left: 30px;
+    width: 121px;
+}
+.api-detailed .api-items-des {
+    padding-right:43px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.api-detailed .api-words {
+    height: 180px;
+    box-sizing: border-box;
+}
+.api-detailed .api-words-left {
+    padding-left: 30px;
+}
+.api-detailed .api-words-right {
+    padding-right:43px;
+    padding-left: 18px;
+}
+.api-detailed .api-tr.api-words .api-words-left {
+    vertical-align: top;
+    padding-top: 23px;
+    padding-bottom: 37px;
+}
+.api-detailed .api-words-right textarea {
+    width:100%;
+    height: 120px;
+    outline: none;
+    resize:none;
+    border: none;
+    border: 1px solid #d2d2d2;
+    padding-left: 8px;
+    overflow: auto;
+}
+/*api-detailed结束*/
+.check-order .check-order-bottom {
+    padding: 38px 0 50px;
+}
+.check-order .order-verify-box {
+    width: 135px;
+    height: 36px;
+    border: 1px solid #ccc;
+    padding: 0 8px;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+}
+.check-order .order-verify-input {
+    width: 100%;
+    height: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.check-order .verify-input-icon {
+    display: inline-block;
+    width: 32px;
+    height:32px;
+    background-image: url('../images/user/verify_input_icon.png');
+    background-position: 0 0;
+    background-size: 100%;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+.check-order .order-verify-img {
+    width:80px;
+    height: 38px;
+    float: left;
+    cursor: pointer;
+}
+.check-order .verify-help-block {
+    font-size: 12px;
+    color: #ff0000;
+    /*margin-top: 5px;*/
+    margin: 5px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.check-order-bottom .order-bottom-back {
+    font-size: 14px;
+    color: #4682ee;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.check-order-bottom .submit-wrap {
+    display: inline-block;
+}
+.check-order-bottom .order-bottom-submit {
+    width: 80px;
+    height: 30px;
+    outline: none;
+    background-color: #4682ee;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+}
+/*progress-complete开始*/
+.progress-complete {
+    display: none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.progress-complete .complete-tip {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 28px 0 45px;
+}
+.progress-complete .looking-around {
+    width: 128px;
+    height:40px;
+    display: block;
+    color: #fff;
+    background-color: #4682ee;
+    border-radius: 2px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 0 auto 30px;
+}
+.progress-complete .look-over {
+    color: rgb( 70, 130, 238 );
+    cursor: pointer;
+}
+/*progress-complete结束*/

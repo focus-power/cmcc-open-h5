@@ -1,0 +1,157 @@
+.fl{
+    float: left;
+}
+.fr {
+    float: right;
+}
+.message-center a {
+    color: #629ef2;
+}
+.main {
+    margin-left: 20px;
+    width: 820px;
+}
+.mian-list {
+    border: 1px solid #ccccff;
+    margin-bottom: 25px;
+}
+.user-wrap .info-title {
+    height: 54px;
+    border-bottom: 1px solid #3399ff;
+    margin-left: 30px;
+}
+.info-title h2 {
+    border: none;
+    font-size: 22px;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+/*message-list开始*/
+.message-center {
+    font-size: 14px;
+}
+.empty-info {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    padding: 117px 0 145px;
+}
+.empty-info .message-logo {
+    margin-bottom: 20px;
+}
+.info-content {
+    padding: 0 32px 0 30px;
+    display: none;
+}
+.message-center .message-list-top {
+    border-bottom: 1px solid #e8e8e8;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+.message-center .message-list-top .bar {
+    width: 5px;
+    height: 17px;
+    background-color: #5189ef;
+    margin-right: 6px;
+}
+.message-center .message-list-top .activity-type {
+    color: #666;
+    margin-right: 2px;
+}
+.message-center .message-list-top .unread {
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: url('../images/user/unread.png') no-repeat 0 0;
+    margin-top: -4px;
+    margin-right: 14px;
+}
+.message-center .message-list-top .message-time {
+    color: #aeaeae;
+}
+.message-center .message-list-top .del-message {
+    color: #a1a1a1;
+    font-size: 24px;
+    cursor: pointer;
+}
+.message-center .message-list-middle {
+    color: #666666;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+.message-center .message-list-bottom {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.message-center .looking-more {
+    color: #629ef2;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 28px;
+    cursor: pointer
+}
+/*message-list结束*/
+/*del-modal开始*/
+.del-modal {
+    position: fixed;
+    top: 0;
+    width:100%;
+    height: 100%;
+    z-index: 1000;
+    color: #666;
+    font-size: 14px;
+    display: none;
+}
+.del-modal .laywer {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+.del-modal .del-modal-tip {
+    background-color: #fff;
+    width: 274px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    top: 50%;
+    margin-top: -101px;
+    margin-left: -137px;
+    text-align: center;
+}
+.del-modal .del-modal-top {
+    font-size: 15px;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+}
+.del-modal .close-icon {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 13px;
+    background: url('../images/user/close.png') no-repeat 0 0;
+    background-size: 100%;
+    cursor: pointer;
+}
+.del-modal .del-modal-middle {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.del-modal .del-modal-bottom {
+    margin-bottom: 15px;
+}
+.del-modal .del-modal-btn {
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.del-modal .del-modal-cancel {
+    background-color: #5189ef;
+    color: #fff;
+    margin-right: 10px;
+}
+/*del-modal结束*/

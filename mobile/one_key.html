@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="../bitbug_favicon.ico">
+    <link rel="stylesheet" href="../css/mobile_basic.css">
+    <link rel="stylesheet" href="../css/one_key.css">
+    <script src="../js/calcBaseRem.js"></script>
+    <script src="../js/lib/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <div class="home">
+        <div class="header">
+            <i class="header-close"></i>
+            <h1 class="header-title">本机号码一键登录</h1>
+        </div>
+        <div class="main-logo">
+            <img src="../images/mobile/yidong_logo.png" alt="" class="main-logo-top"><br/>
+            <img src="../images/mobile/yidong_title.png" alt="" class="main-logo-bottom">
+        </div>
+        <div class="content">
+            <div class="mobile-wrap">
+                <input type="text" class="mobile-input" id="mobileInput" value="13489384475" disabled="disabled">
+            </div>
+            <div class="btn-wrap">
+                <button class="login-btn" id="loginBtn">登录</button>
+            </div>
+            <div class="protocol">
+                <div class="protocol-checkbox checked"></div>
+                <p class="protocol-tip">获得您的手机号码、号码状态等信息</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="problem">
+                <h2 class="footer-title">什么是一键登录？</h2>
+                <p class="footer-content">通过调用运营商独有网关取号能力，用户一键授权即可实现本机号码免密登录，登录更便捷，提高用户留存率。</p>
+            </div>
+        </div>
+        <div class="sure-modal">
+            <div class="sure-lawyer"></div>
+            <div class="sure-popup">
+                <div class="sure-content">
+                    <p class="sure-words">您正在进行</p>
+                    <p class="sure-words">本机号码一键登录功能体验</p>
+                </div>
+                <div class="sure-footer">
+                    <button class="sure-btn" id="sureBtn">确定</button>
+                </div>
+            </div>
+        </div>
+        <div class="check-modal">
+            <div class="check-lawyer"></div>
+            <div class="check-popup">
+                <div class="check-popup-lawyer"></div>
+                <div class="check-content">
+                    <p class="sure-words">请先勾选同意</p>
+                    <p class="sure-words">获得我的手机号码、号码状态等信息</p>
+                </div>
+            </div>
+        </div>
+        <div class="unable-obtain-modal">
+            <div class="unable-obtain-lawyer"></div>
+            <div class="unable-obtain-popup">
+                <div class="unable-obtain-header clearfix">
+                    <i class="unable-obtain-close fr"></i>
+                </div>
+                <div class="unable-obtain-content">
+                    <p class="unable-obtain-words">当前无法获取您的手机号码</p>
+                    <p class="unable-obtain-words">请关闭WIFI并使用移动卡重试</p>
+                </div>
+            </div>
+        </div>
+        <div class="loader">
+            <div class="laywer"></div>
+            <div class="ball-loader-backdrop">
+                <div class="spinner">
+                    <div class="spinner-container container1">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                    </div>
+                    <div class="spinner-container container2">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                    </div>
+                    <div class="spinner-container container3">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                    </div>
+                </div>
+                <div class="loader-text">正在获取手机号码...</div>
+            </div>
+        </div>
+    </div>
+<script src="../js/one_key.js"></script>
+</body>
+</html>

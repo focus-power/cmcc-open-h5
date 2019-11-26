@@ -1,0 +1,554 @@
+.fl{
+    float: left;
+}
+.fr {
+    float: right;
+}
+table {
+    padding: 0;
+    margin: 0;
+}
+/*input[type='checkbox']{
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    margin: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 2px;
+    outline: none;
+    color: blue;
+    position: relative;
+}*/
+/*input[type='checkbox']:checked:after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: url('../images/user/cart_mark.png') no-repeat 0 0;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}   */
+.main {
+    margin-left: 20px;
+    width: 820px;
+}
+.cart .mian-list {
+    border: 1px solid #ccccff;
+    margin-bottom: 25px;
+}
+.user-wrap .info-title {
+    height: 54px;
+    border-bottom: 1px solid #3399ff;
+    margin-left: 30px;
+}
+.cart .info-title h2 {
+    border: none;
+    line-height: 70px;
+    font-size: 22px;
+}
+.cart .info-title-right {
+    color: #3399ff;
+    padding-right: 32px;
+    cursor: pointer;
+    line-height: 70px;
+    font-size: 14px;
+}
+.cart .change-batch-icon {
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background: url('../images/user/change.png') no-repeat 0 0;
+    margin-left: 7px;
+}
+.cart .empty-cart {
+    text-align: center;
+}
+.cart .empty-cart img {
+    margin: 62px 0 20px;
+}
+.cart .empty-tip {
+    font-size: 18px;
+    color: rgb( 102, 102, 102 );
+}
+.cart .go-around {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    display: block;
+    background-color: #5698f2;
+    margin: 30px auto 65px;
+}
+/*no-empty-cart开始*/
+.cart .no-empty-cart {
+    padding: 12px 32px 0 30px;
+    display: none;
+}
+.no-empty-cart .cart-table table {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+.no-empty-cart .cart-table .cart-head {
+    height: 40px;
+    line-height: 40px;
+    color: rgb( 102, 102, 102 );
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #f7f7f7;
+}
+.no-empty-cart .cart-table td {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.no-empty-cart .cart-head-col1 {
+    width: 65px;
+    padding-left: 8px;
+}
+.no-empty-cart .cart-head-col2 {
+    width: 130px;
+    padding-left: 14px;
+}
+.no-empty-cart .cart-head-col3 {
+    width: 465px;
+    padding-left: 17px;
+}
+.no-empty-cart .cart-head-col4 {
+    text-align: center;
+}
+.no-empty-cart .cart-table .cart-list {
+    height: 82px;
+}
+.no-empty-cart .cart-list td {
+    border-right: 1px solid #e8e8e8;
+    vertical-align:middle;
+}
+.no-empty-cart .all-sel {
+    padding-left: 18px;
+    line-height: 14px;
+}
+.no-empty-cart .sel-input {
+    display: block;
+    height: 14px;
+    background: url('../images/user/cart_mark.png') no-repeat 0 0;
+    cursor: pointer;
+}
+.no-empty-cart .sel-input.blueBox {
+    background-position: 0 -14px;
+}
+/*.no-empty-cart .cart-list-sel {
+    width: 14px;
+    height: 14px;
+}*/
+.no-empty-cart .cart-list-sel .sel-input {
+     width: 14px;
+     margin: auto;
+}
+.no-empty-cart .cart-list-name {
+    padding-left: 14px;
+    position: relative;
+}
+.no-empty-cart .cart-list-name a {
+    color: rgb( 81, 137, 239 );
+}
+.no-empty-cart .cart-list-des {
+    padding-left: 17px;
+    color: rgb( 102, 102, 102 );
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.no-empty-cart .cart-list-opera {
+    padding: 0 12px;
+    color: rgb( 81, 137, 239 );
+}
+.no-empty-cart .cart-list td.cart-list-opera {
+    border-right: none;
+}
+.no-empty-cart .cart-list-opera a {
+    color: rgb( 81, 137, 239 );
+}
+.no-empty-cart .cart-list-opera .cart-del {
+    cursor: pointer;
+}
+.no-empty-cart .no-empty-cart-bottom {
+    height: 75px;
+    line-height: 75px;
+    font-size: 14px;
+    color: rgb( 102, 102, 102 );
+}
+.no-empty-cart .no-empty-cabox {
+    box-sizing: border-box;
+}
+.no-empty-cart .cart-num {
+    color: rgb( 81, 137, 239 );
+}
+.no-empty-cart .cart-summit-btn {
+    display: inline-block;
+    color: #fff;
+    border-radius: 2px;
+    background-color: rgb( 70, 130, 238 );
+    width: 81px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    margin:  0 13px 0 16px;
+    cursor: pointer;
+}
+
+.no-empty-cart .down-table table {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+.no-empty-cart .down-table .down-head {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb( 102, 102, 102 );
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e8e8e8;
+}
+.no-empty-cart .down-table .down-head-type {
+    width:660px;
+    padding-left: 8px;
+}
+.no-empty-cart .down-table .down-head-opera {
+    text-align: center;
+}
+.no-empty-cart .down-sel-input {
+    display: block;
+    height: 14px;
+    background: url(../images/user/cart_mark.png) no-repeat 0 0;
+    cursor: pointer;
+}
+.no-empty-cart .down-sel-input.blueBox {
+    background-position: 0 -14px;
+}
+.no-empty-cart .down-table .down-list {
+    height: 82px;
+    color: #d7d7d7;
+}
+.no-empty-cart .down-table td {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.no-empty-cart .down-list td {
+    border-right: 1px solid #e8e8e8;
+    vertical-align: middle;
+}
+.no-empty-cart .down-list-sel .down-list-input {
+    width: 14px;
+    margin: auto;
+}
+.no-empty-cart .down-list-sel {
+    width:65px;
+}
+.no-empty-cart .down-list-name {
+    width: 130px;
+    padding-left: 14px;
+    position: relative;
+}
+.no-empty-cart .down-list-des {
+    width: 465px;
+    padding-left: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.no-empty-cart .down-list td.down-list-opera {
+    color: rgb( 81, 137, 239 );
+    border-right: none;
+    text-align: center;
+}
+.no-empty-cart .down-list .down-list-del {
+    cursor: pointer;
+}
+.no-empty-cart .down-bottom {
+    height: 75px;
+    line-height: 75px;
+    font-size: 14px;
+    color: rgb( 102, 102, 102 );
+}
+.no-empty-cart .down-bottom-col1 {
+    width: 65px;
+    padding-left: 8px;
+    padding-top: 30.5px;
+    box-sizing: border-box;
+}
+.no-empty-cart .down-all-sel {
+    padding-left: 18px;
+    line-height: 14px;
+}
+.no-empty-cart .down-del-sel {
+    width: 130px;
+    padding-left: 14px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.no-empty-cart .down-sel-num {
+    color: rgb( 81, 137, 239 );
+}
+.no-empty-cart .down-clear-btn {
+    display: inline-block;
+    color: #fff;
+    border-radius: 2px;
+    background-color: rgb( 70, 130, 238 );
+    width: 81px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    margin: 0 13px 0 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/*no-empty-cart结束*/ 
+/*recomme-for-you开始*/
+.recomme-for-you .recomme-wrap {
+    padding: 0 10.8px 0 32px;
+    margin-bottom: 35px;
+}
+.recomme-for-you .recomme-list {
+    float: left;
+    margin-right: 21.2px;
+    width: 108px;
+}
+.recomme-for-you .recomme-list a {
+    display: block;
+    text-align: center;
+}
+.recomme-for-you .recomme-list .recomme-list-top {
+    width: 108px;
+    height: 108px;
+    margin-bottom: 14px;
+    background: url('../images/user/circle_bj.png');
+    position: relative;
+}
+.recomme-for-you .recomme-list-top img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 50%;
+    max-height: 70%;
+}
+.recomme-for-you .recomme-list-bottom {
+    color: rgb( 102, 102, 102 );
+    font-size: 14px;
+}
+/*recomme-for-you结束*/
+/*batch-addition-modal开始*/
+.batch-addition-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: #666;
+    font-size: 14px;
+    display: none;
+}
+.batch-addition-modal .batch-laywer {
+    width: 100%;
+    height: 100%;
+    background-color: #b2b2b2;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+.batch-addition-modal .batch-addition-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -285px;
+    margin-left: -400px;
+    width: 800px;
+    height: 570px;
+    background-color: #fff;
+}
+.batch-addition-modal .batch-top {
+    height: 60px;
+    line-height: 60px;
+    background-color: #4682ee;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 20px 0 18px;
+}
+.batch-addition-modal .batch-close {
+    font-size: 30px;
+    cursor: pointer;
+}
+.batch-addition-modal .batch-tip {
+    padding: 28px 0 20px 35px;
+}
+.batch-addition-modal .batch-star {
+    color: red;
+}
+.batch-addition-modal .api-linkage {
+    width: 600px;
+    height: 367px;
+    margin: auto;
+    border: 1px solid #e5e5e5;
+}
+.batch-addition-modal .nav-tab {
+    width: 148px;
+    border-right: 1px solid #e5e5e5;
+    height: 100%;
+    overflow-y: auto;
+}
+.batch-addition-modal .nav-tab-li {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.batch-addition-modal .nav-tab-li.act {
+    background-color: #4682ee;
+    color: #fff;
+}
+.batch-addition-modal .second-level {
+    width: 207px;
+    border-right: 1px solid #e5e5e5;
+    height: 100%;
+    overflow-y: auto;
+}
+.batch-addition-modal .api-list {
+    /*width: 207px;
+    border-right: 1px solid #e5e5e5;
+    height: 100%;
+    overflow-y: auto;*/
+    display: none;
+}
+.batch-addition-modal .api-list.act {
+    display: block;
+}
+.batch-addition-modal .api-list-li {
+    padding: 13px 0 13px 18px;
+}
+.batch-addition-modal .api-list-licon {
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    padding-left: 30px;
+    background: url('../images/user/cart_mark.png') no-repeat 0 0;
+    cursor: pointer;
+}
+.batch-addition-modal .api-list-licon.apiBlueBox {
+    background-position: 0 -14px;
+}
+.batch-addition-modal .api-add {
+    padding: 12px 13px 0 24px;
+    width: 243px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto;
+}
+.batch-addition-modal .api-add-li {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #4682ee;
+    margin-right: 7px;
+    padding: 0 6px 0 8px;
+    margin-bottom: 12px;
+}
+.batch-addition-modal .api-add-li input {
+    color: #fff;
+    font-size: 18px;
+    padding: 0;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.batch-addition-modal .batch-bottom {
+    text-align: center;
+    margin: 25px 0 27px;
+}
+.batch-addition-modal .bb-btn {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.batch-addition-modal .batch-bottom-submit {
+    background-color: #4682ee;
+    color: #fff;
+    border: 1px solid #4682ee;
+    margin-right: 20px;
+}
+.batch-addition-modal .batch-bottom-cancel {
+    border: 1px solid #d3d3d3;
+}
+/*batch-addition-modal结束*/
+/*del-modal开始*/
+.del-modal {
+    position: fixed;
+    top: 0;
+    width:100%;
+    height: 100%;
+    z-index: 1000;
+    color: #666;
+    font-size: 14px;
+    display: none;
+}
+.del-modal .laywer {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+.del-modal .del-modal-tip {
+    background-color: #fff;
+    width: 274px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    top: 50%;
+    margin-top: -101px;
+    margin-left: -137px;
+    text-align: center;
+}
+.del-modal .del-modal-top {
+    font-size: 15px;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+}
+.del-modal .close-icon {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 13px;
+    background: url('../images/user/close.png') no-repeat 0 0;
+    background-size: 100%;
+    cursor: pointer;
+}
+.del-modal .del-modal-middle {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.del-modal .del-modal-bottom {
+    margin-bottom: 15px;
+}
+.del-modal .del-modal-btn {
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.del-modal .del-modal-cancel {
+    background-color: #5189ef;
+    color: #fff;
+    margin-right: 10px;
+}
+/*del-modal结束*/

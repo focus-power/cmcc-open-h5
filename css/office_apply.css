@@ -1,0 +1,560 @@
+.office-apply .office-apply-step{
+    position: relative;
+}
+.office-apply-step .info-title h2{
+    margin-bottom: 0;
+}
+.office-apply-step .info-title span{
+    font-size: 18px;
+}
+.office-apply-step .info-title a{
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    width: 108px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #3399ff;
+    font-size: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #5c90ef;
+}
+.office-apply-step .office-choose-list{
+    margin-left: 30px;
+    height: 59px;
+    background: #f7f7f7;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.office-choose-list li{
+    float: left;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 59px;
+    height: 59px;
+    width: auto;
+}
+.office-choose-list li.choose-color{
+    color: #4682ee;
+}
+.office-choose-list li.choose-color i{
+    background: #4682ee;
+}
+.office-choose-list li:first-child{
+    margin: 0 10px 0 41px;
+}
+.office-choose-list li b{
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    height: 1px;
+    background: #dddddd;
+}
+.office-choose-list li i{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    background: #c2c2c2;
+    font-size: 14px;
+    color: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-style: normal;
+    margin-right: 12px;
+}
+.office-apply-content .office-apply-main > li{
+    padding: 16px 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.office-apply-main .main-title{
+    width: 20%;
+    height: 40px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 11px;
+    font-size: 14px;
+    color: #666666;
+}
+.main-title em{
+    color: #ff3a3a;
+    font-size: 12px;
+}
+.office-apply-main > li > input,.office-apply-main > li > select{
+    width: 392px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #dadada;
+    font-size: 14px;
+    color: #999999;
+    padding:11px 0 11px 8px;
+    outline: none;
+    vertical-align: top;
+    cursor: pointer;
+}
+.office-apply-main > li > select{
+    width: 402px;
+    height: auto;
+    padding:10px 0 10px 4px;
+    color: #999999;
+}
+.main-choose .main-title{
+    margin-right: 6px;
+}
+.office-apply-content .office-apply-main .main-error ,.office-apply-content .office-apply-main .main-office-organization-prompt{
+    font-size: 12px;
+    color: #999999;
+    padding: 0 0 0 21.3%;
+    height: 12px;
+    line-height: 12px;
+}
+.office-apply-content .office-apply-main .main-error a{
+    color: #4682ee;
+    font-size: 12px;
+}
+
+/*上传图片*/
+.office-apply-content .office-apply-main .main-office-organization{
+    height: 80px;
+    font-size: 0;
+}
+.main-office-organization .office-organization{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.office-organization .office-organization-close{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-image: url("../images/user/user-icon07.png");
+    width: 12px;
+    height: 12px;
+    z-index: 5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #4682ee;
+    cursor: pointer;
+    background-size: cover;
+    border: 1px solid #4682ee;
+}
+/*上传图片插件样式更改*/
+.office-organization .uploadify-button{
+    display:inline-block;
+    margin:0px;
+    border:1px dashed #808080;
+    background-color: #fff;
+    line-height:18px;
+    border-radius:0px;
+    padding:22px 24px;
+    font-size:12px;
+    font-weight: 600;
+    font-family: '微软雅黑';
+    color:#999999;
+    cursor:pointer;
+    text-decoration:none;
+    text-align: center;
+}
+.office-organization .uploadify-queue .uploadify-queue-item{
+    margin-top:-50px;
+    line-height: 0;
+}
+.office-organization .up_filename,.up_percent{
+    display: none;
+    line-height: 0;
+}
+.office-organization .delfilebtn{
+    line-height:12px;
+    padding:1px 6px;
+    margin-left: 0;
+    background: #cccccc;
+    color: #000;
+    font-size: 10px;
+}
+.office-organization .uploadify-progress{
+    margin-bottom:8px;
+    line-height: 0;
+}
+.office-organization .selectbtn{
+    display: none;
+}
+.office-organization-img{
+    border: 1px solid #c2c2c2;
+    width: 150px;
+    height: 150px;
+}
+
+/*有效时间段*/
+.main-time-slot{
+    font-size: 0;
+}
+/*有效时间段插件修改*/
+.main-time-slot .time-slot-star ,.main-time-slot .time-slot-end{
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+}
+.main-time-slot .time-slot-star{
+    margin-right: 2px;
+}
+.main-time-slot .textbox-label-top{
+    display: inline-block;
+}
+.main-time-slot .textbox-label{
+    width: 75px;
+    padding-right: 0;
+}
+.main-time-slot .time-slot-end .textbox-label{
+    width: 69px;
+}
+.main-time-slot .textbox{
+    border-color: #dadada;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 0;
+}
+
+/*修改所属地区插件*/
+.main-city{
+    font-size: 0;
+}
+.main-city .textbox{
+    vertical-align: top;
+    border-color: #dadada;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 6px;
+}
+.main-city .textbox .textbox-text{
+    color: #999999;
+}
+
+/*上传附件*/
+.office-apply-content .office-apply-main .main-office-accessory , .office-apply-content .office-apply-main .main-office-proxy{
+    padding: 16px 0 8px 0;
+    font-size: 0;
+}
+.main-office-accessory .office-accessory-img , .main-office-proxy .office-proxy-img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #c2c2c2;
+    display: inline-block;
+}
+.office-accessory , .office-proxy{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+/*上传附件插件修改*/
+.office-accessory .uploadify-button , .office-proxy .uploadify-button{
+    padding:6px  26px;
+    border: none;
+    background: #4682ee;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin: 0;
+    line-height: 18px;
+}
+.office-accessory-text ,.office-accessory-pdf ,.office-proxy-text ,.office-proxy-pdf{
+    font-size: 12px;
+}
+.office-accessory-text img , .office-accessory-pdf img ,.office-proxy-text img , .office-proxy-pdf img{
+    vertical-align: -5px;
+    margin-right: 4px;
+}
+.office-accessory-text .office-accessory-close , .office-accessory-pdf .office-accessory-close ,.office-accessory-img .office-accessory-close , .office-proxy-text .office-proxy-close , .office-proxy-pdf .office-proxy-close ,.office-proxy-img .office-proxy-close{
+    display: inline-block;
+    background-image: url("../images/user/user-icon07.png");
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #4682ee;
+    cursor: pointer;
+    background-size: cover;
+    border: 1px solid #4682ee;
+    vertical-align: -2px;
+    margin-left: 10px;
+}
+.office-accessory-img .office-accessory-close ,.office-proxy-img .office-proxy-close{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    z-index: 5;
+}
+.office-accessory .uploadify-queue , .office-proxy .uploadify-queue{
+    line-height: normal;
+    position: relative;
+    top: 7px;
+    text-align: center;
+}
+.office-accessory .uploadify-queue .uploadify-queue-item , .office-proxy .uploadify-queue .uploadify-queue-item{
+    margin-top: -40px;
+}
+.office-accessory .uploadify-progress ,.office-proxy .uploadify-progress{
+    margin-bottom: 0;
+}
+.office-accessory .up_filename,.up_percent ,.office-proxy .up_filename,.up_percent{
+    display: none;
+    line-height: 0;
+}
+.office-accessory .delfilebtn ,.office-proxy .delfilebtn{
+    line-height:12px;
+    padding:1px 6px;
+    margin-left: 0;
+    background: #cccccc;
+    color: #000;
+    font-size: 10px;
+}
+
+/*提交*/
+.office-btn{
+    padding: 68px 0 50px 0;
+    font-size: 0;
+}
+.office-btn .main-title ,.controller-btn .main-title{
+    width: 20%;
+    height: 40px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 11px;
+    vertical-align: top;
+}
+.office-btn .office-btn-next{
+    width: 250px;
+    height: 40px;
+    background: #4682ee;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 14px;
+    padding: 0;
+}
+.office-btn .office-btn-keep{
+    width: 105px;
+    height: 40px;
+    color: #4682ee;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    border: 1px solid #4682ee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    padding: 0;
+    margin-right: 16px;
+}
+
+/*管理者证件上传*/
+.office-apply .office-apply-content .main-controller-id{
+    height: 59px;
+    font-size: 0;
+}
+.office-apply-content .main-controller-id input{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.office-apply-content .main-controller-id .office-full-face , .office-apply-content .main-controller-id .office-reverse-photo{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 59px;
+    height: 59px;
+    text-align: center;
+    margin-right: 12px;
+}
+.main-controller-id .office-full-face .office-full-face-close ,.main-controller-id .office-reverse-photo  .office-reverse-photo-close{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-image: url("../images/user/user-icon07.png");
+    width: 12px;
+    height: 12px;
+    z-index: 5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #4682ee;
+    cursor: pointer;
+    background-size: cover;
+    border: 1px solid #4682ee;
+}
+/*管理员身份证上传   插件样式更改*/
+.office-apply-main .main-controller-id .uploadify-button{
+    display:inline-block;
+    margin:0px;
+    border:1px dashed #808080;
+    background-color: #fff;
+    line-height:18px;
+    border-radius:0px;
+    padding:10px 16px;
+    font-size:12px;
+    font-weight: 600;
+    font-family: '微软雅黑';
+    color:#999999;
+    cursor:pointer;
+    text-decoration:none;
+    text-align: center;
+}
+.main-controller-id .uploadify-queue .uploadify-queue-item{
+    margin-top:-45px;
+    line-height: 0;
+}
+.main-controller-id .up_filename,.up_percent{
+    display: none;
+    line-height: 0;
+}
+.main-controller-id .delfilebtn{
+    line-height:10px;
+    padding:0 0px;
+    margin-left: 0;
+    background: #cccccc;
+    color: #000;
+    font-size: 10px;
+}
+.main-controller-id .uploadify-progress{
+    margin-bottom:8px;
+    line-height: 0;
+}
+.main-controller-id .selectbtn{
+    display: none;
+}
+.office-full-face-img , .office-reverse-photo-img{
+    border: 1px solid #c2c2c2;
+    width: 150px;
+    height: 150px;
+}
+
+/*委托书有效期 日期*/
+.office-apply-content .office-apply-main .main-office-term{
+    font-size: 0;
+}
+.office-apply-content .office-apply-main .main-office-term > input{
+    padding: 10px 0 10px 0;
+}
+/*修改日期插件样式*/
+.office-apply-main .main-office-term .textbox{
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-color: #dadada;
+}
+.main-office-term .textbox .textbox-text{
+    width: 392px;
+    height: 39px;
+    line-height: 39px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding-top: 1px;
+}
+.main-office-term .validatebox-invalid ,.main-office-term .textbox-invalid{
+    background-color: #fff;
+    border-color: #dadada;
+}
+
+/*管理者提交*/
+.controller-btn{
+    padding: 55px 0 48px 0;
+    font-size: 0;
+}
+.controller-btn .controller-btn-back , .controller-btn .controller-btn-next ,  .controller-btn .controller-btn-keep{
+    width: 105px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    border: 1px solid #4682ee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #4682ee;
+    padding: 0;
+    margin-right: 16px;
+}
+.controller-btn .controller-btn-back ,  .controller-btn .controller-btn-keep{
+    color: #4682ee;
+    background: #fff;
+}
+
+/*提交成功的页面和审核通知页面*/
+.office-submit{
+    width: 100%;
+    text-align: center;
+    padding: 51px 0 90px 0;
+}
+.office-submit-img img{
+    width: 85px;
+    height: 85px;
+    vertical-align: top;
+}
+.office-submit h4{
+    font-size: 18px;
+    color: #666666;
+    font-weight: 600;
+    line-height: 64px;
+    height: 64px;
+    margin-bottom: 7px;
+}
+.office-submit .office-submit-text{
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+}
+.office-submit .office-submit-text a{
+    font-size: 14px;
+    color: #4682ee;
+}
+/*提交成功和审核页面的切换*/
+.office-submit.office-submit-hidden{
+    display: none;
+}
+
+/*步骤的页面显示和隐藏*/
+.office-apply .office-apply-content.office-apply-content-hidden{
+    display: none;
+}
+/*错误提示的显示和隐藏*/
+.office-apply .main-error.main-error-hidden{
+    display: none;
+}
+.office-apply .main-error.main-error-color , .office-apply-main .main-office-organization-prompt.prompt-color{
+    color: #ff3a3a;
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="bitbug_favicon-3.ico">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/common_new.css">
+    <link rel="stylesheet" type="text/css" href="css/solution.css">
+    <!--[if IE 8]>
+      <link href='css/index_ie8.css' rel='stylesheet'>
+  <![endif]-->
+    <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/lib/handlebars-v3.0.0.js"></script>
+    <script type="text/javascript" src="js/lib/unslider.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.slideunlock.js"></script>
+    <script type="text/javascript" src="data/solution_json.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/api_json.js"></script>
+    <!--<script type="text/javascript" src="js/index.js"></script>-->
+    <script type="text/javascript" src="js/solution.js"></script>
+    <script type="text/javascript" src="js/solution_data.js"></script>
+    <!-- <script src="js/lib/director.js"></script>
+    <script src="js/main.js"></script> -->
+</head>
+<body>
+    <!-- head部分 -->
+    <div class="head">
+        <div class="wrap h-content">
+            <div class="logo">
+                <a href="index.html">
+                    <!-- <img src="images/logo.png" alt=""> -->
+                    <img src="images/logo-beta.png" alt="">
+                </a>
+            </div>
+            <div class="h-menu">
+                <ul>
+                    <li class="menu-list">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="api.html">能力API</a>
+                    </li>
+                    <li class="menu-list show">
+                        <a href="solution.html">解决方案</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="help/website_intro.html">帮助中心</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="news.html">新闻动态</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="https://www.hc.10086.cn">和创空间</a>
+                    </li>
+                    <li class="menu-list-search">
+                        <span class="search-line"></span>
+                        <form>
+                            <div class="api-search">
+                                <div class="">
+                                    <i class="search-v"><img src="images/search_new.png"></i>
+                                    <input type="text" class="" placeholder="输入API关键词" onfocus="this.placeholder=''"  onblur="this.placeholder='输入API关键词'">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div class="cooperate">
+                <a href="user/shopping_cart.html"><img src="images/api_06.png" onmouseover="this.src='images/api_06h.png'" onmouseout="this.src='images/api_06.png'"></a>
+                <div class="coo-add">
+                    <p class="coo-num"></p>
+                </div>
+            </div>
+            <div class="login-register">
+                <span class="no-login"><a href="login.html">登录</a><i></i><a href="user_register.html">注册</a></span>
+                <div class="yes-login">
+                    <!--<img src="images/login/login-icon14.png" alt="">-->
+                    <img src="images/login/login-icon-new14.png" alt="">
+                </div>
+                <ul class="personal-info">
+                    <li class="info-list1"><a href="user/user_center.html"><span class="user-center"></span>用户中心</a></li>
+                    <li class="info-list2"><a href="javascript:;"><span class="sign-out"></span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--ban-->
+    <div id="spolution_data_con">
+
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <a class="csd" href="https://support.open.10086.cn/" target="_blank"></a>
+        <div class="footer-menu">
+            <ul>
+                <li>
+                    <a href="http://dev.10086.cn/?from=open10086cn" target="_blank">互联网能力平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://cmccopen.cn/" target="_blank">通信开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://open.iot.10086.cn/" target="_blank">OneNET平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <!--<a href="http://api.iot.10086.cn/" target="_blank">物联卡能力开放平台</a>-->
+                    <a href="http://api.iot.10086.cn/" target="_blank">OneLink能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://open.home.10086.cn/dev/" target="_blank">数字家庭能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <!--<a href="http://112.35.23.8:1080/open_devportal/index.jsp" target="_blank">行业应用使能平台</a>-->
+                    <a href="http://aep.open.10086.cn/" target="_blank">行业应用使能平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://www.cmpay.com/" target="_blank">和包支付</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://www.migucloud.com/index" target="_blank">咪咕视频云</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://it.open.10086.cn" target="_blank">IT能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://ecloud.10086.cn/product/" target="_blank">移动云</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://xinyong.cmri.cn/client/index" target="_blank">信用服务平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://ditu.10086.cn/" target="_blank">位置服务平台</a>
+                </li>
+            </ul>
+        </div>
+        <div class="information">
+            <!-- <ul class="inf-one">
+                <li>
+                    <span>掌上营业厅：</span>
+                    <a>wap.10086.cn</a>
+                </li>
+                <li>
+                    <span>语音自助服务：</span>
+                    <a>10086</a>
+                </li>
+                <li>
+                    <span>短信营业厅：</span>
+                    <a>10086</a>
+                </li>
+                <li>
+                    <span>自助终端</span>
+                </li>
+                <li>
+                    <span>营业厅</span>
+                </li>
+                <li>
+                    <span>手机营业厅下载</span>
+                </li>
+            </ul>
+            <ul class="inf-two">
+                <li>Copyright©1999-2017</li>
+                <li>中国移动</li>
+                <li>版权所有</li>
+            </ul> -->
+            <ul class="inf-thr">
+                <li>中华人民共和国增值电信业务经营许可证</li>
+                <li>
+                    <span>经营许可证编号：</span>
+                    <a>A2.B1.B2-20100001</a>
+                </li>
+            </ul>
+            <div class="footer-customer">客服电话：400-1000-225（工作日 9:00-12:00、14:00-17:30）</div>
+            <ul class="inf-four">
+                <li>
+                    <a href=""><img src="images/yanzheng.png" alt=""></a>
+                </li>
+                <li>
+                    <img src="images/icon0.png" alt="">
+                </li>
+                <li>京ICP备05002571号</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 案例详情弹窗 -->
+    <div class="pop pop-s">
+        <div class="lawyer"></div>
+        <div class="pop-details">
+            <div class="pop-title">
+                <h2>案例详情</h2>
+                <i class="pop-icon"></i>
+            </div>
+            <div class="details-con">
+                <h4></h4>
+                <div class="details-text">
+                    <p id="cooperative_content"></p>
+                    <p id="cooperative_effect"></p>
+                </div>
+                <div class="details-img">
+                    <img id="cooperative_img" src="" alt="" />
+                    <!--<p id="loadingText">Loading...</p >-->
+                </div>
+            </div>
+        </div>
+    </div>
+      <script id="solution_data" type="text/x-handlebars-template">
+        {{#with solution}}
+          <div class="banWrap">
+            <div class="wrap banCon clearfix">
+                <div class="banLeft">
+                    <h2>解决方案</h2>
+                    <div class="nav-box" id="navBox">
+                        <ul id="nav-left" class="scrollbar">
+                        </ul>
+                    </div>
+                   <!--  <div class="bottom">
+                       <i class="bottom-icon"></i>
+                   </div> -->
+                </div>
+                <div class="banRight">
+                    <div id="title" class="title">
+                        <h2><img src="images/solution_img/tit-wuliu.png" />物流行业</h2>
+                        <p>快递员可使用来电身份提示、云端群呼、被叫彩信等能力，提高送货效率。</p>
+                    </div>
+                    <div class="adv">
+                        <div class="adv-list">
+                            <!-- 一站式 -->
+                            <ul id="advantage" class="rCon clearfix">
+                                {{#each advantage}}
+                                    <li>
+                                        <div>
+                                            <h3><i class="icon icon1"></i>{{name}}</h3>
+                                            <p>{{ad_description}}</p>
+                                        </div>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="arrow">
+                            <i id="left" class="arrow-left"></i>
+                            <i id="right" class="arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--tab-->
+        <div class="tabWrap">
+            <div class="wrap">
+                <ul class="tabTitle clearfix">
+                    <li class="act"><a>痛点分析及解决方案</a></li>
+                    <li><a>使用能力</a></li>
+                    <li><a>应用效果</a></li>
+                    <li><a>成功案例</a></li>
+                    <li><a>更多详情</a></li>
+                    <div class="clear"></div>
+                </ul>
+
+                <div id="" class="tabCon">
+                    <h2>痛点分析及解决方案</h2>
+                   <table class="tabTable">
+                    <thead>
+                        <tr>
+                            <!-- <th class="one"></th> -->
+                            <th class="two">痛点分析</th>
+                            <th class="three">解决方案</th>
+                        </tr>
+                    </thead>
+                    <tbody id="analysis_and_solution">
+                        {{#each analysis_and_solution}}
+                        <tr>
+                            <!-- <td>1</td> -->
+                            <td>{{analysis}}</td>
+                            <td>{{solution}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+                </div>
+                <div id="" class="tabCon">
+                    <h2>使用能力</h2>
+                    <div class="ability">
+                        <ul id="use_ability" class="engA clearfix">
+                        {{#each use_ability}}
+                            <li>
+                                <div>
+
+                                    <div class="uaimg"><img src={{icon}}''></div>
+                                    <p class="title">{{name}}</p>
+                                    <!-- <p class="ab_description"></p> -->
+                                </div>
+                            </li>
+                        {{/each}}
+                        </ul>
+                    </div>
+                    <div class="arrowA">
+                       <i id="A-left" class="arrowA-left"></i>
+                       <i id="A-right" class="arrowA-right"></i>
+                    </div>
+                </div>
+
+                <div id="" class="tabCon">
+                    <h2>应用效果</h2>
+                    <p id="result" class="show">{{result}}</p>
+                </div>
+
+                <div id="" class="tabCon">
+                    <h2>成功案例</h2>
+                    <ul id="successful_cases" class="eng eg clearfix">
+                    {{#each successful_cases}}
+                        <li>
+                            <div class="img">
+                                <img src='{{icon}}' alt="">
+                            </div>
+                            <p class="title">{{name}}</p>
+                            <p class="text">{{cases_description}}</p>
+                        </li>
+                    {{/each}}
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+
+                <div id="" class="tabCon">
+                    <h2>更多详情</h2>
+                    <div>
+                        <p id="" class="more-info show">获取本解决方案更多详情，请点击</p>
+                        <a id="suc-url" class="suc-url"  target="_blank">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="toTop">
+
+                </div>
+            </div>
+        </div>
+        {{/with}}
+    </script>
+</body>
+<script src="js/scrollbar.js" type="text/javascript"></script>
+<script src="js/scrollbar.js" type="text/javascript"></script>
+<script>
+
+    $(function(){
+        if(browserRedirect() === 'pc') {
+            // $('.nav-box')[0].style.overflow = 'auto',
+            $(".nav-box").panel({iWheelStep:32});
+        }else{
+            $('.nav-box').css("overflow","auto");
+        }
+    });
+
+    //判断浏览器
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            return 'mobile';
+        } else {
+            return 'pc';
+        }
+    }
+</script>
+
+</html>

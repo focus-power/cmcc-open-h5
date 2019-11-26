@@ -1,0 +1,197 @@
+/*
+* @Author: name
+* @Date:   2017-10-30 10:30:44
+* @Last Modified by:   name
+* @Last Modified time: 2017-11-14 10:46:48
+*/
+.c-main {
+    margin-bottom: 80px;
+}
+
+.c-main h2 {
+    margin-bottom:30px;
+    border-bottom: 1px solid #b5cdf8;
+    font-size: 26px;
+    font-weight: 400;
+    color: #4682ee;
+    line-height: 50px;
+}
+.c-hel{
+    margin-top:30px;
+}
+
+/* .left-nav{
+    position: fixed;
+}
+.main{
+    margin-left:190px;
+} */
+.c-main .information-list h2{
+    font-size: 22px;
+    color:#4682ee;
+}
+.information-list{
+    margin-top:0;
+    margin-bottom:30px;
+}
+.information-list .information-list-blue {
+    color: #4682ee;
+}
+.information-list .information-list-red {
+    color: red;
+}
+.information-list .information-list-dis {
+    margin: 10px 0 20px;
+}
+.information-list .information-list-det {
+    text-decoration: underline;
+}
+.information-list .information-list-form {
+    text-align: center;
+}
+.information-list .information-list-concat {
+    padding-left: 50px;
+}
+.c-main .information-list h4{
+    margin:20px 0;
+    color: #4682ee;
+    font-family: "Microsoft YaHei";
+    font-weight: 400;
+}
+.b-title h2{
+    margin-bottom: 0;
+    border:none;
+    font-size:26px;
+    font-weight:300;
+    color: #333333;
+}
+.surveyL{
+    margin-bottom:30px;
+}
+.information-list img{
+    max-width: 810px;
+    height: auto;
+}
+.t-title h2{
+    margin-bottom:0;
+    border:none;
+    font-size: 20px;
+    font-weight:200;
+    color: #666666;
+}
+
+.trends {
+    width: 100%;
+    padding:40px 0;
+}
+.menu2{
+    border-bottom: 1px solid rgba(225,225,225,.3);
+}
+
+.menu2-show .icon{
+    float: left;
+    width: 18px;
+    height: 20px;
+    margin: 14px 6px 0 20px;
+    background: url(../images/help-icon.png) no-repeat;
+}
+.menu2-show .icon.icon0{background-position: 0 0}
+.menu2-show .icon.icon1{background-position: 0 -20px}
+.menu2-show .icon.icon2{background-position: 0 -40px}
+.menu2-show .icon.icon3{background-position: 0 -60px}
+.menu2-show .icon.icon4{background-position: 0 -80px}
+
+.nav-one>li .menu3-show{
+    height: 30px;
+    line-height:30px;
+}
+.tri-i{
+    position: absolute;
+    top: 10px;
+}
+.nav-three li{
+    height:30px;
+    width: 144px;
+    margin:0 8px;
+}
+.icon-thr{
+    float:left;
+    width:3px;
+    height:3px;
+
+}
+.nav-three li div{
+    height:30px;
+    line-height:30px;
+    font-size:12px;
+}
+
+.information-list p,
+.information-list p a {
+    /*display: block;*/
+    color: #000;
+    font-size: 12px;
+    line-height: 20px;
+    text-indent: 2em;
+}
+
+.api-table thead th{
+    text-align: left;
+    text-indent:1em;
+}
+
+.api-table thead .api-index th {
+    text-indent:0;
+    padding: 1em 5px 1em 1em;
+    line-height: 20px;
+}
+
+.information-list .text{
+    margin-bottom:30px;
+}
+
+.information-list .sm-tit{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000;
+    text-indent: 0;
+}
+.information-list .sm-ti {
+    text-indent: 0;
+}
+.information-list .sm-ti1{
+    text-indent:2em;
+    line-height:32px;
+}
+
+.nav-hide li.act{
+    background: #fff;
+    color: rgba(70,130,238,0.9)
+}
+.nav-hide li.act a{
+    color: rgba(70,130,238,0.9);
+}
+
+/**=======*/
+.tabWrap{
+    width:100%;
+    background:#fff;
+    padding-bottom:80px;
+}
+.tabWrap.fixed{padding-top:60px;}
+.tabWrap.fixed .wrap{position:relative;}
+.tabWrap.fixed .wrap .left-nav{
+    position: fixed;
+    top:0;
+    z-index:99;
+}
+
+.api-t a{
+    color: #666;
+    font-size:12px;
+    margin-right: 10px;
+}
+.api-t a:hover{
+    color:#3399ff;
+}

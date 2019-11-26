@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="bitbug_favicon-3.ico">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/common.css">-->
+    <link rel="stylesheet" type="text/css" href="css/common_new.css">
+    <link rel="stylesheet" type="text/css" href="css/solution_new.css">
+
+    <script src="data/api_new_json.js" type="text/javascript"></script>
+    <script src="data/solution_json_new.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/common_new.js"></script>
+</head>
+<body>
+<!-- head部分 -->
+<div class="head">
+        <div class="wrap h-content">
+            <div class="logo">
+                <a href="index.html">
+                    <!-- <img src="images/logo.png" alt=""> -->
+                    <img src="images/logo-beta.png" alt="">
+                </a>
+            </div>
+            <div class="h-menu">
+                <ul class="h-menu-list">
+                    <li class="menu-list">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="menu-list menu-list-api">
+                        <!--<a href="api.html">能力API</a>-->
+                        <a href="api_new.html">能力API</a>
+                        <div class="api-choose main-choose-nav">
+                            <div class="header-bj-layer"></div>
+                            <ul class="head-api-list" id="api-list">
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list show menu-list-solution">
+                        <!--<a href="solution.html">解决方案</a>-->
+                        <a href="javascript:;">解决方案</a>
+                        <div class="solution-choose main-choose-nav clearfix">
+                            <div class="header-bj-layer"></div>
+                            <ul class="solution-new-list" id="solution-new-list">
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list">
+                        <a href="help/website_intro.html">帮助中心</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="news.html">新闻动态</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="https://www.hc.10086.cn">和创空间</a>
+                    </li>
+                    <li class="menu-list-search">
+                        <span class="search-line"></span>
+                        <form>
+                            <div class="api-search">
+                                <div class="">
+                                    <i class="search-v"><img src="images/search_new.png"></i>
+                                    <input type="text" class="" placeholder="输入API关键词" onfocus="this.placeholder=''"  onblur="this.placeholder='输入API关键词'">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    <!-- <li>
+                        <span>|</span>
+                        <img src="images/shopping-cart.png" alt="">
+                    </li> -->
+                </ul>
+            </div>
+            <div class="cooperate">
+                <a href="user/shopping_cart.html"><img src="images/api_06.png" onmouseover="this.src='images/api_06h.png'" onmouseout="this.src='images/api_06.png'"></a>
+                <div class="coo-add">
+                    <p class="coo-num"></p>
+                </div>
+            </div>
+            <div class="login-register">
+                <span class="no-login"><a href="login.html">登录</a><i></i><a href="user_register.html">注册</a></span>
+                <div class="yes-login">
+                    <img src="images/login/login-icon-new14.png" alt="">
+                </div>
+                <ul class="personal-info">
+                    <li class="info-list1"><a href="user/user_center.html"><span class="user-center"></span>用户中心</a></li>
+                    <li class="info-list2"><a href="javascript:;"><span class="sign-out"></span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="solution-main clearfix">
+
+    <!--<div class="header">
+        <div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/solution_new/logo.png" alt="">
+                </a>
+            </div>
+            <div class="h-menu">
+                <ul class="h-menu-list">
+                    <li class="menu-list show">
+                        <a href="index.html" class="menu-list-text">首页</a>
+                    </li>
+                    <li class="menu-list menu-list-api">
+                        <a href="api.html" class="menu-list-text">能力API</a>
+                        <div class="api-choose main-choose-nav clearfix">
+                            <ul class="api-list" id="api-list">
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list menu-list-solution">
+                        <a href="solution_new.html" class="menu-list-text">解决方案</a>
+                        <div class="solution-choose main-choose-nav clearfix">
+                            <ul class="solution-new-list" id="solution-new-list">
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list">
+                        <a href="help/website_intro.html" class="menu-list-text">帮助中心</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="news.html" class="menu-list-text">新闻动态</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="https://www.hc.10086.cn" class="menu-list-text">和创空间</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <form>
+                            <div class="api-search">
+                                <div class="">
+                                    <i class="search-v"><img src="images/search.png"></i>
+                                    <input type="text" class="" placeholder="输入API关键词" onfocus="this.placeholder=''"  onblur="this.placeholder='输入API关键词'">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    &lt;!&ndash; <li>
+                        <span>|</span>
+                        <img src="images/shopping-cart.png" alt="">
+                    </li> &ndash;&gt;
+                </ul>
+            </div>
+            <div class="cooperate">
+                <a href="user/shopping_cart.html"><img src="images/api_04.png" onmouseover="this.src='images/api_04h.png'" onmouseout="this.src='images/api_04.png'"></a>
+                <div class="coo-add">
+                    <p class="coo-num"></p>
+                </div>
+            </div>
+            <div class="login-register">
+                <span class="no-login"><a href="login.html">登录</a><i></i><a href="user_register.html">注册</a></span>
+                <div class="yes-login">
+                    <img src="images/solution_new/login_icon.png" alt="">
+                </div>
+                <ul class="personal-info">
+                    <li class="info-list1"><a href="user/user_center.html"><span class="user-center"></span>用户中心</a></li>
+                    <li class="info-list2"><a href="javascript:;"><span class="sign-out"></span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>-->
+    <!--banner-->
+    <div class="solution-banner">
+        <!--<img src="images/solution_new/banner01.png" alt="">-->
+        <div class="solution-banner-content"></div>
+        <div class="solution-adv">
+            <div class="solution-adv-list">
+                <ul class="clearfix solution-adv-con">
+                    <!--{{#each advantage}}-->
+                    <!--<li>-->
+                        <!--<div>-->
+                            <!--<i class="icon"> 01</i>-->
+                            <!--<h3>多场景支持</h3>-->
+                            <!--<div><p>高度集成的监控设备，快速完成共享设备的云端接入，满足各类共享场景。</p></div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--{{/each}}-->
+                </ul>
+                <a href="javascript:;" class="solution-adv-left"></a>
+                <a href="javascript:;" class="solution-adv-right"></a>
+            </div>
+        </div>
+    </div>
+    <!--tab-->
+    <div class="solution-tab">
+        <div class="solution-tab-title">
+            <ul class="clearfix tab-title center">
+                <li class="change-color tab-title-first"><a href="javascript:;">痛点分析及解决方案</a></li>
+                <li><a href="javascript:;">使用能力</a></li>
+                <li><a href="javascript:;">应用效果</a></li>
+                <li><a href="javascript:;">成功案例</a></li>
+            </ul>
+        </div>
+        <div class="solution-plan solution-box">
+            <div class="center">
+                <div class="solution-plan-title solution-new-title"><div class="title-h4">痛点分析及解决方案</div></div>
+                <div class="solution-plan-content">
+                    <div class="plan-left">
+                        <h5>痛点分析</h5>
+                        <div class="plan-left-img plan-img"><b></b><div class="plan-left-image1"><img src="images/solution_new/icon17.png" alt=""></div><div class="plan-left-image2"><img
+                                src="images/solution_new/icon18.png" alt=""></div></div>
+                        <ul class="plan-left-list">
+                            <!--{{#each plan-list}}-->
+                            <!--<li><i></i>传统设备无法远程开启/关闭，无法实现无人值守条件下的业务运营</li>-->
+                            <!--{{/each}}-->
+                        </ul>
+                    </div>
+                    <div class="plan-right">
+                        <h5>解决方案</h5>
+                        <div class="plan-right-img plan-img"><b></b><div class="plan-right-img1"><img src="images/solution_new/icon19.png" alt=""></div><div class="plan-right-img2"><img src="images/solution_new/icon20.png" alt=""></div></div>
+                        <div class="plan-right-content">基于OneNET平台实现设备的统一管理，智能同步共享设备业务数据、应用数据，实现设备的云端接入、状态监控、远程控制、故障定位等功能，并为设备运营管理平台提供数据支持，帮助企业实现无人值守条件下的业务运营。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-use solution-box">
+            <div class="center">
+                <div class="solution-use-title solution-new-title"><div class="title-h4">使用能力</div></div>
+                <div class="solution-use-content">
+                    <ul class="solution-use-list clearfix">
+                        <!--{{#each use}}-->
+                        <!--<li><div class="solution-use-list-main"><span class="solution-use-list-main-title">基本业务订购</span><div><img src="data/images/solution/ua1-1.png" alt=""></div></div></li>-->
+                        <!--{{/each}}-->
+                    </ul>
+                    <a href="javascript:;" class="solution-use-btnL solution-use-btn"><i></i></a>
+                    <a href="javascript:;" class="solution-use-btnR solution-use-btn"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="solution-result solution-box">
+            <div class="solution-result-main center">
+                <div class="solution-result-title solution-new-title"><div class="title-h4">应用效果</div></div>
+                <div class="solution-result-content clearfix">
+                    <div class="solution-result-img"><img src="images/solution_new/icon03.png" alt=""></div>
+                    <div class="solution-result-list">
+                        <!--{{#each result}}-->
+                        <!--<div class="result-list-main">-->
+                            <!--<p>依靠推送能力和设备云引擎，让用户及时捕捉到智能设备的动向和检测数据的变化。让家庭环境更智能更安全。</p>-->
+                        <!--</div>-->
+                        <!--{{/each}}-->
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="solution-success-case solution-box">
+            <div class="center">
+                <div class="solution-success-case-title solution-new-title"><div class="title-h4">成功案例</div></div>
+                <div class="solution-success-case-content">
+                    <ul class="clearfix solution-success-case-list">
+                        <!--{{#each success}}-->
+                        <!--<li>-->
+                            <!--<div class="success-case-content-top"><img src="images/solution_new/icon15.png" alt=""></div>-->
+                            <!--<div class="success-case-content-bottom">-->
+                                <!--<h4>京东商城</h4>-->
+                                <!--<p>2014年10月快速成功对接，启动了移动4G合约、套餐及流量包的一点商品上架，一点订单下达，实现了为31省用户实时办理通信业务。</p>-->
+                                <!--<div><a href="javascript:;">进一步了解</a></div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--{{/each}}-->
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--案例详情弹窗-->
+<div class="success-pop">
+    <div class="success-pop-main">
+        <div class="pop-main-title"><span>案例详情</span></div>
+        <div class="pop-main-content">
+            <div class="pop-main-content-text">
+                <h3>平安优联</h3>
+                <div class="pop-content-text">
+                    <p class="pop-content-text-top">合作背景：平安优联前期存在用户信息获取难、短信验证费用高和用户注册转化率低下等问题。通过与中国移动统一认证能力合作，实现用户身份识别，通过“数据网t络网关+短信网关”，为三网用户提供手机号码一键免密登录能力。</p>
+                    <p class="pop-content-text-bottom"><br/>合作成效：<br/>用户层：优化体验流程，让用户实现3秒快捷登录，降低流失率；<br/>产品层：用户注册流程化繁为简，带动网络取号能力，与网关及上行合作，节省短验费用；完善平安优联用户账号体系，实现用户账号与手机号码互相匹配；</p>
+                </div>
+                <div class="pop-content-img">
+                    <img src="data/images/solution/1_pinganyoulian_des.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <i class="success-pop-close"></i>
+    </div>
+    <div class="success-pop-bg"></div>
+</div>
+<div class="toTop"></div>
+<!-- 底部 -->
+<div class="footer">
+    <a class="csd" href="https://support.open.10086.cn/" target="_blank"></a>
+    <div class="footer-menu">
+        <ul>
+            <li>
+                <a href="http://dev.10086.cn/?from=open10086cn" target="_blank">互联网能力平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://cmccopen.cn/" target="_blank">通信开放平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://open.iot.10086.cn/" target="_blank">OneNET平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <!--<a href="http://api.iot.10086.cn/" target="_blank">物联卡能力开放平台</a>-->
+                <a href="http://api.iot.10086.cn/" target="_blank">OneLink能力开放平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="http://open.home.10086.cn/dev/" target="_blank">数字家庭能力开放平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <!--<a href="http://112.35.23.8:1080/open_devportal/index.jsp" target="_blank">行业应用使能平台</a>-->
+                <a href="http://aep.open.10086.cn/" target="_blank">行业应用使能平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://www.cmpay.com/" target="_blank">和包支付</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="http://www.migucloud.com/index" target="_blank">咪咕视频云</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://it.open.10086.cn" target="_blank">IT能力开放平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://ecloud.10086.cn/product/" target="_blank">移动云</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="http://xinyong.cmri.cn/client/index" target="_blank">信用服务平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="http://ditu.10086.cn/" target="_blank">位置服务平台</a>
+            </li>
+        </ul>
+    </div>
+    <div class="information">
+        <!-- <ul class="inf-one">
+            <li>
+                <span>掌上营业厅：</span>
+                <a>wap.10086.cn</a>
+            </li>
+            <li>
+                <span>语音自助服务：</span>
+                <a>10086</a>
+            </li>
+            <li>
+                <span>短信营业厅：</span>
+                <a>10086</a>
+            </li>
+            <li>
+                <span>自助终端</span>
+            </li>
+            <li>
+                <span>营业厅</span>
+            </li>
+            <li>
+                <span>手机营业厅下载</span>
+            </li>
+        </ul>
+        <ul class="inf-two">
+            <li>Copyright©1999-2017</li>
+            <li>中国移动</li>
+            <li>版权所有</li>
+        </ul> -->
+        <ul class="inf-thr">
+            <li>中华人民共和国增值电信业务经营许可证</li>
+            <li>
+                <span>经营许可证编号：</span>
+                <a>A2.B1.B2-20100001</a>
+            </li>
+        </ul>
+        <div class="footer-customer">客服电话：400-1000-225（工作日 9:00-12:00、14:00-17:30）</div>
+        <ul class="inf-four">
+            <li>
+                <a><img src="images/yanzheng.png" alt=""></a>
+            </li>
+            <li>
+                <img src="images/icon0.png" alt="">
+            </li>
+            <li>京ICP备05002571号</li>
+        </ul>
+    </div>
+    <!-- <div class="clearfix"></div> -->
+
+</div>
+
+
+<!--<script type="text/javascript" src="js/lib/handlebars-v3.0.0.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<!--<script type="text/javascript" src="js/index.js"></script>-->
+<script type="text/javascript" src="js/solution_new.js"></script>
+<!--<script>-->
+    <!--(function() {-->
+        <!--function addScript(src, supported) {-->
+            <!--if(!supported)-->
+                <!--document.write('<script src="' + src + '" async ></' + 'script>');-->
+        <!--}-->
+        <!--addScript('js/lib/document.scrollingElement.js', document.scrollingElement);-->
+    <!--})();-->
+<!--</script>-->
+</body>
+</html>

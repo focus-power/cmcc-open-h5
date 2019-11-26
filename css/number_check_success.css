@@ -1,0 +1,66 @@
+body {
+    background-color: #f6f6f6;
+}
+.success .header {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 0 .35rem;
+    height: .78rem;
+    line-height: .78rem;
+}
+.success .header-close {
+    display: block;
+    width: .28rem;
+    height: .28rem;
+    background: url('../images/mobile/close.png') no-repeat 0 ;
+    background-size: 100%;
+    position: absolute;
+    top: .25rem;
+}
+.success .header-title {
+    font-size: .34rem;
+    color: #000;
+}
+.success .pass {
+    font-size: 0;
+    text-align: center;
+    padding: .57rem 0 .47rem;
+}
+.success .pass-logo {
+    width: 1.58rem;
+}
+.success .pass-tip {
+    font-size: .24rem;
+    margin-top: .27rem;
+}
+.success .user-center {
+    background-color: #fff;
+    padding: .52rem .41rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+.success .user-center-left {
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-right: .37rem;
+}
+.success .user-center-left img {
+    width: 100%;
+    height: 100%;
+}
+.success .user-center-right {
+    margin-top: .22rem;
+    font-size: .3rem;
+}
+.success .footer {
+    margin: .64rem .25rem .47rem;
+    height: .9rem;
+}
+.success .try-again {
+    width: 100%;
+    height: 100%;
+    background-color: #517eea;
+    color: #fff;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-size: .34rem;
+}

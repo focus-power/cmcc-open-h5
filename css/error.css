@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+}
+.error {
+    height: 100%;
+    background-color: #efeff1;
+}
+.error .error-wrap {
+    width: 420px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -188.5px;
+    margin-left: -210px;
+}
+.error .error-img-wrap {
+    font-size: 0;
+    margin-bottom: 42px;
+}
+.error .error-des {
+    margin-bottom: 47px;
+    font-size: 24px;
+    color: #333;
+}
+.error .error-back {
+    display: block;
+    width: 105px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #5698f2;
+    margin: 0 auto;
+}

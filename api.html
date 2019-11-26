@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name=description content=""> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name=viewport content="width=device-width, initial-scale=1"> -->
+    <meta name="format-detection" content="telephone=no">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="bitbug_favicon-3.ico">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/common_new.css">
+    <!--[if IE 8]>
+      <link href='css/index_ie8.css' rel='stylesheet'>
+  <![endif]-->
+    <script src="js/lib/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <!-- <script src="js/lib/jquery.cookie.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="js/lib/handlebars-v3.0.0.js"></script>
+    <!--<script src="js/api_json.js" type="text/javascript"></script>-->
+    <script src="data/api_json.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- head部分 -->
+    <div class="head">
+        <div class="wrap h-content">
+            <div class="logo">
+                <a href="index.html">
+                    <!-- <img src="images/logo.png" alt=""> -->
+                    <img src="images/logo-beta.png" alt="">
+                </a>
+            </div>
+            <div class="h-menu">
+                <ul>
+                    <li class="menu-list">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="menu-list show">
+                        <a href="api.html">能力API</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="solution.html">解决方案</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="help/website_intro.html">帮助中心</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="news.html">新闻动态</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="https://www.hc.10086.cn">和创空间</a>
+                    </li>
+                    <li class="menu-list-search">
+                        <span class="search-line"></span>
+                        <form>
+                            <div class="api-search">
+                                <div class="">
+                                    <i class="search-v"><img src="images/search_new.png"></i>
+                                    <input type="text" class="" placeholder="输入API关键词" onfocus="this.placeholder=''"  onblur="this.placeholder='输入API关键词'">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div class="cooperate">
+                <a href="user/shopping_cart.html"><img src="images/api_06.png" onmouseover="this.src='images/api_06h.png'" onmouseout="this.src='images/api_06.png'"></a>
+                <div class="coo-add">
+                    <p class="coo-num"></p>
+                </div>
+            </div>
+            <div class="login-register">
+                <span class="no-login"><a href="login.html">登录</a><i></i><a href="user_register.html">注册</a></span>
+                <div class="yes-login">
+                    <img src="images/login/login-icon-new14.png" alt="">
+                </div>
+                <ul class="personal-info">
+                    <li class="info-list1"><a href="user/user_center.html"><span class="user-center"></span>用户中心</a></li>
+                    <li class="info-list2"><a href="javascript:;"><span class="sign-out"></span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+   <!--<script id="tpl" type="text/x-handlebars-template"> -->
+        <div class="content">
+            <div class="wrap" id="api_con">
+                <div class="left-nav">
+                <div class="nav-title">能力API</div>
+                <ul class="nav-one" id="left_nav">
+
+                </ul>
+            </div>
+            <div class="main">
+                <div class="basic-inf">
+                    <div class="inf-text">
+                        <h2></h2>
+                        <div class="des" id="des"></div>
+                        <div class="btnCQ">
+                            <button type="button" class="btn-coo">加入合作意向</button>
+                            <span id="isShow"><button type="button" class="btn-q">在线订购签约</button></span>
+                        </div>
+                    </div>
+                    <div class="inf-img">
+                        <div class="">
+                            <img src="data/images/api/api1-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 应用场景 -->
+                <div class="information-list sence">
+                    <h2>应用场景</h2>
+                    <div class="clearfix"></div>
+                    <div class="sence-inf">
+                        <div class="sence-icon">
+                            <img src="images/shenfen.png" alt="">
+                        </div>
+                        <div class="sence-explain">
+                            <ul id="application_scene">
+                                <li><span>物流通知：支持当物流状态发生变化时，系统自动下发发货通知、收货提醒等。</span></li>
+                                <li><span>验证码发送：支持客户提交验证码模板，审核通过后直接调用模板短信接口触发验证码发送。</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cap clearfix">
+                        <ul>
+                            <li class="cap-text">这些企业都在使用该能力：</li>
+                            <li>
+                                <ul class="cases" style="list-style: none;">
+                                    <li class="cap-img"><img src="data/images/api/35LOGO.png" alt=""></li>
+                                </ul>
+                            </li>
+                            <div class="clear"></div>
+                            <!-- <li class="cap-img"><img src="images/caiyun.png" alt=""></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="information-list">
+                    <h2>API列表</h2>
+                    <div class="clearfix"></div>
+                    <div class="api-inf">
+                        <span>本产品包括以下API:</span>
+                        <a id="api_list_more" href="" target="_blank">更多详情</a>
+                    </div>
+                    <table class="api-table">
+                        <thead>
+                            <tr>
+                                <th class="at-one">API子接口列表</th>
+                                <th class="at-two">API子接口描述</th>
+                                <th class="at-thr">提供者</th>
+                                <th class="at-four">类型</th>
+                            </tr>
+                        </thead>
+                        <tbody class="api-t" id="api_list">
+                            <tr>
+                                <td>发送普通短信</td>
+                                <td>HTTP客户端向云MAS平台发送请求，带上相应的请求参数，云MAS平台接收请求，并进行验证，验证通过后进行短信发送。</td>
+                                <td>中国移动行业应用使能平台</td>
+                                <td>通信服务能力</td>
+                            </tr>
+                            <tr>
+                                <td>发送模板短信</td>
+                                <td>模板短信发送，HTTP客户端向云MAS平台发送请求，根据指定模板ID，传入模板所需参数发送短信，云MAS平台接收请求，并进行验证，验证通过后进行短信发送。</td>
+                                <td>中国移动行业应用使能平台</td>
+                                <td>通信服务能力</td>
+                            </tr>
+                            <tr>
+                                <td>推送状态报告</td>
+                                <td>云MAS平台将提交报告采用POST方式推送至开户时设定的HTTP 地址，如果推送失败，两秒后将再次推送，连续失败三次后将丢弃数据。</td>
+                                <td>中国移动行业应用使能平台</td>
+                                <td>通信服务能力</td>
+                            </tr>
+                            <tr>
+                                <td>推送上行短信</td>
+                                <td>云MAS平台将上行短信采用POST方式推送至开户时设定的HTTP地址，如果推送失败，两秒后将再次推送，连续失败三次后将丢弃数据。</td>
+                                <td>中国移动行业应用使能平台</td>
+                                <td>通信服务能力</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </div>
+<!--//    </script>-->
+    <div class="clearfix"> </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <a class="csd" href="https://support.open.10086.cn/" target="_blank"></a>
+        <div class="footer-menu">
+            <ul>
+                <li>
+                    <a href="http://dev.10086.cn/?from=open10086cn" target="_blank">互联网能力平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://cmccopen.cn/" target="_blank">通信开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://open.iot.10086.cn/" target="_blank">OneNET平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <!--<a href="http://api.iot.10086.cn/" target="_blank">物联卡能力开放平台</a>-->
+                    <a href="http://api.iot.10086.cn/" target="_blank">OneLink能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://open.home.10086.cn/dev/" target="_blank">数字家庭能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <!--<a href="http://112.35.23.8:1080/open_devportal/index.jsp" target="_blank">行业应用使能平台</a>-->
+                    <a href="http://aep.open.10086.cn/" target="_blank">行业应用使能平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://www.cmpay.com/" target="_blank">和包支付</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://www.migucloud.com/index" target="_blank">咪咕视频云</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://it.open.10086.cn" target="_blank">IT能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://ecloud.10086.cn/product/" target="_blank">移动云</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://xinyong.cmri.cn/client/index" target="_blank">信用服务平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://ditu.10086.cn/" target="_blank">位置服务平台</a>
+                </li>
+            </ul>
+        </div>
+        <div class="information">
+            <ul class="inf-thr">
+                <li>中华人民共和国增值电信业务经营许可证</li>
+                <li>
+                    <span>经营许可证编号：</span>
+                    <a>A2.B1.B2-20100001</a>
+                </li>
+            </ul>
+            <div class="footer-customer">客服电话：400-1000-225（工作日 9:00-12:00、14:00-17:30）</div>
+            <ul class="inf-four">
+                <li>
+                    <a><img src="images/yanzheng.png" alt=""></a>
+                </li>
+                <li>
+                    <img src="images/icon0.png" alt="">
+                </li>
+                <li>京ICP备05002571号</li>
+            </ul>
+        </div>
+        <!-- <div class="clearfix"></div> -->
+
+    </div>
+    <div class="toTop"></div>
+    <!-- 加入购物车弹窗 -->
+    <div class="pop pop-sc">
+        <div class="lawyer"></div>
+        <div class="pop-cart">
+            <div class="pop-title">
+                <i class="pop-icon1"></i>
+            </div>
+            <div class="suc-text">
+                <p>已添加进合作意向，请点击购物车查看！</p>
+            </div>
+            <div class="pop-close">
+                <i class="pop-icon"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/common.js" type="text/javascript"></script>
+<script src="js/api_data.js" type="text/javascript"></script>
+<script src="js/api.js" type="text/javascript"></script>
+</html>

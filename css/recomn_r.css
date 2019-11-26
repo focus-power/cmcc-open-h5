@@ -1,0 +1,54 @@
+/* tab切换 */
+.recomn-tab .recomn-tab-wrap li:hover {
+    background-color: #47023c;
+}
+.recomn-tab .recomn-tab-wrap li:hover a {
+    color: #ffc74d;
+}
+
+/* 子api */
+.recomn-tab .polygon-wrap:hover {
+    color: #400b41;
+} 
+.recomn-tab .polygon-wrap:hover .light-effect {
+    display: block;
+} 
+.recomn-tab .polygon-wrap:hover .click-look {
+    display: block;
+} 
+#comSer .polygon-wrap1:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_s1.png') no-repeat 0 0;
+}
+#comSer .polygon-wrap2:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_s3.png') no-repeat 0 0;
+}
+#comSer .polygon-wrap3:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_s2.png') no-repeat 0 0;
+}
+#comSer .polygon-wrap1:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#comSer .polygon-wrap2:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#comSer .polygon-wrap3:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#creScore .polygon-wrap4:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_s2.png') no-repeat 0 0;
+}
+#creScore .polygon-wrap5:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_s1.png') no-repeat 0 0;
+}
+#creScore .polygon-wrap6:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_s3.png') no-repeat 0 0;
+} 
+#creScore .polygon-wrap4:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#creScore .polygon-wrap5:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#creScore .polygon-wrap6:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+} 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="../bitbug_favicon.ico">
+    <link rel="stylesheet" href="../css/mobile_basic.css">
+    <link rel="stylesheet" href="../css/number_check.css">
+    <script src="../js/calcBaseRem.js"></script>
+    <script src="../js/lib/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <div class="home">
+        <div class="header">
+            <i class="header-close"></i>
+            <h1 class="header-title">本机号码校验</h1>
+        </div>
+        <div class="main-logo">
+            <img src="../images/mobile/yidong_logo.png" alt="" class="main-logo-top"><br/>
+            <img src="../images/mobile/yidong_title.png" alt="" class="main-logo-bottom">
+        </div>
+        <div class="content">
+            <div class="mobile-wrap">
+                <input type="text" class="mobile-input" id="mobileInput" placeholder="请输入您的本机号码" maxlength="11">
+            </div>
+            <p class="error-tip" id="mobileHelpBlock">手机号码不能为空</p>
+            <div class="btn-wrap">
+                <button class="verify-btn" id="verifyBtn">本机号码校验</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="problem">
+                <h2 class="footer-title">什么是本机号码校验？</h2>
+                <p class="footer-content">通过运营商独有网关取号能力，对比用户输入号码与本机号码是否一致，号码判别并校验，前端无感知。</p>
+            </div>
+            <div class="step">
+                <h2 class="footer-title">demo体验步骤</h2>
+                <div class="footer-content">
+                    <div class="exper-step">
+                        <img src="../images/mobile/exper_step.png" alt="" class="exper-step-img">
+                    </div>
+                    <ul class="step-details">
+                        <li>输入11位手机号码</li>
+                        <li>点击本机号码校验</li>
+                        <li>检验完成免短验</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sure-modal active">
+            <div class="sure-lawyer"></div>
+            <div class="sure-popup">
+                <div class="sure-content">
+                    <p class="sure-words">您正在进行</p>
+                    <p class="sure-words">本机号码校验功能体验</p>
+                </div>
+                <div class="sure-footer">
+                    <button class="sure-btn" id="sureBtn">确定</button>
+                </div>
+            </div>
+        </div>
+        <div class="check-modal">
+            <div class="check-lawyer"></div>
+            <div class="check-popup">
+                <div class="check-popup-lawyer"></div>
+                <div class="check-content">
+                    <p class="sure-words">您输入的非本机号码</p>
+                    <p class="sure-words">请重新输入</p>
+                </div>
+            </div>
+        </div>
+        <div class="loader">
+            <div class="laywer"></div>
+            <div class="ball-loader-backdrop">
+                <div class="spinner">
+                    <div class="spinner-container container1">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                    </div>
+                    <div class="spinner-container container2">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                    </div>
+                    <div class="spinner-container container3">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>
+                        <div class="circle4"></div>
+                    </div>
+                </div>
+                <div class="loader-text">正在获取手机号码...</div>
+            </div>
+        </div>
+    </div>
+<script src="../js/number_check.js"></script>
+</body>
+</html>

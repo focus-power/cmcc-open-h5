@@ -1,0 +1,52 @@
+.uniform-nav {
+    height: 50px;
+    line-height: 50px;
+    background-color: #4682ee;
+    color: #bbcff8;
+    font-size: 14px;
+}
+.uniform-nav a {
+    color: #fff;
+    font-size: 14px;
+}
+.uniform-wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+.uniform-auth-content {
+    padding: 40px 0 50px;
+}
+.auth-section {
+    width: 989px;
+    margin: 0 auto;
+    display: none;
+}
+.uniform-auth-content .uniform-auth-btn {
+    font-size: 14px;
+    margin: 45px auto 0;
+    width: 508px;
+}
+.uniform-auth-content .back-exp {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #9cc715;
+    border-radius: 2px;
+    float: left;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+}
+.uniform-auth-content .imme-use {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #4682ee;
+    border-radius: 2px;
+    float: right;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+}

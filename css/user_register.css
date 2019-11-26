@@ -1,0 +1,358 @@
+b{
+    font-weight: normal;
+}
+i,em{  font-style: normal;  }
+img{  border-style:none  }
+.user-register{
+    width: 100%;
+    height: auto;
+    background: #f1f1f1;
+}
+#register{
+    padding: 50px 21px;
+    width: 958px;
+}
+.register-top{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background: #3399ff;
+    line-height: 80px;
+}
+.register-bottom{
+    width: 100%;
+    background: #fff;
+    padding: 30px 0 54px;
+}
+.register-info{
+    /*padding-left: 209px;*/
+    padding-left: 22%;
+    width: 78%;
+}
+.register-info li{
+    position: relative;
+    padding: 12px 0;
+    text-align: left;
+}
+.register-info li em{
+    font-size: 6px;
+    color: #ff3333;
+}
+.register-info li b{
+    font-size: 14px;
+    color: #666666;
+    padding: 0 12px 0 4px;
+}
+.register-info li input{
+    width: 392px;
+    padding: 12px 0 12px 8px;
+    font-size: 14px;
+    color: #999999;
+    border:1px solid #cccccc;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.register-info .register-number , .register-info .confirm-code{
+    padding-left: 14px;
+}
+.register-info li div{
+    /*display: inline;*/
+    display: inline-block;
+}
+.register-info .register-email , .register-info .register-code{
+    padding-left: 42px;
+}
+.register-info .register-sms input{
+    /*width: 256px;*/
+    width: 270px;
+}
+.register-info .register-sms button{
+    /*width: 127px;*/
+    width: 116px;
+    padding: 0;
+    line-height: 40px;
+    vertical-align: top;
+    margin-left: 2px;
+    border:1px solid #3399ff;
+    outline: none;
+    background: #def1ff;
+    text-align: center;
+    color: #3399ff;
+    font-size: 14px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.register-info .register-sms button:hover{
+    cursor: pointer;
+    background: #3399ff;
+    color: #ffffff;
+}
+.register-info li span{
+    display: none;
+    position: absolute;
+    top:23px;
+    right: 264px;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.register-info .register-sms span{
+    right: 400px;
+}
+.register-info li .info-yes{
+    background: url("../images/login/login-icon07.png") no-repeat;
+}
+.register-info li .info-no{
+    background: url("../images/login/login-icon08.png") no-repeat;
+}
+.register-info li span.span-show{
+    display: block;
+}
+.register-info li i{
+    display: none;
+    position: absolute;
+    top:26px;
+    left: 99px;
+    font-size: 14px;
+    color: #999999;
+}
+.register-info li i.info-show{
+    display: block;
+}
+.register-info .register-error{
+    display: none;
+    padding:0 0 0 90px;
+    font-size: 12px;
+    color: #ff3333;
+    height: 12px;
+}
+.register-info .register-error.
+, .agree .agree-error.error-show{
+    display: block;
+}
+.agree{
+    padding: 15px 0 34px 296px;
+}
+.agree input{
+    width: 14px;
+    height: 14px;
+    outline: none;
+}
+.agree input:hover{
+    cursor: pointer;
+}
+.agree span{
+    font-size: 12px;
+    color: #666666;
+}
+.agree a{
+    font-size: 12px;
+    color: #6699ff;
+}
+.agree .agree-error{
+    display: none;
+    font-size: 12px;
+    color: #ff3333;
+    height: 12px;
+    text-indent: 4px;
+}
+.register-login{
+    width: 402px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background: #6699ff;
+    margin-left: 300px;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    border:none;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+
+/*注册成功页面*/
+.login-succe{
+    display: none;
+    width: 100%;
+    background: #fff;
+    padding: 91px 0 182px;
+    text-align: center;
+}
+.succe-icon{
+    width: 100%;
+    text-align: center;
+}
+.succe-icon img{
+    width: 85px;
+    height: 85px;
+    vertical-align: top;
+    display: inline-block;
+}
+.login-succe h3{
+    font-size: 18px;
+    color: #666666;
+    line-height: 46px;
+    /*padding-top: 17px;*/
+    padding: 17px 0 25px;
+    display: inline-block;
+}
+.login-succe p{
+    font-size: 16px;
+    color: #666666;
+    line-height: 44px;
+    padding-bottom: 25px;
+}
+.login-succe div a{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    width: 128px;
+    height: 40px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    text-align: center;
+    line-height: 40px;
+}
+.login-succe div .authentication{
+    background: #3399ff;
+    margin-right: 14px;
+}
+.login-succe div .talk-later{
+    background: #66cc66;
+}
+
+
+/*去掉默认样式*/
+.retrieve-content input::-ms-clear, .register-info li input::-ms-reveal{display: none;}
+.register-info li input::-webkit-input-placeholder{ color: #999999;}
+.register-info li input::-moz-placeholder{ color: #999999; }
+.register-info li input:-ms-input-placeholder{ color: #999999; }
+
+
+
+/*@media only screen and (max-width: 960px){*/
+    /*#register{*/
+        /*padding: 33px 14px;*/
+        /*width: 638px;*/
+    /*}*/
+    /*.register-top{*/
+        /*height: 52px;*/
+        /*font-size: 16px;*/
+        /*line-height: 52px;*/
+    /*}*/
+/*}*/
+
+/*服务协议*/
+.user-agreement{
+    position: fixed;
+    z-index: 200;
+    /*top:20%;*/
+    top:70px;
+    left: 50%;
+    margin-left: -500px;
+    width: 992px;
+    overflow: hidden;
+    border: 4px solid rgba(0,0,0,.1);
+    box-shadow: 0 2px 10px #cccccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.agreement-title{
+    color: #000;
+    font-weight: 700;
+    padding: 0 10px;
+    background: #f3f3f3;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+}
+.agreement-content{
+    width: 972px;
+    height: 430px;
+    overflow: auto;
+    background: #fff;
+    padding: 10px;
+}
+.protocol-con{
+    height: 360px;
+    padding:10px ;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+.protocol-con p{
+    line-height: 22px;
+    font-size: 12px;
+    color: #333;
+}
+.protocol-con p.p-Thickening{
+    font-weight: 600;
+    font-size: 14px;
+}
+.protocol-con h2{
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    line-height: 36px;
+}
+.protocol-btn{
+    text-align: center;
+}
+.protocol-btn button{
+    width: 74px;
+    height: 26px;
+    outline: none;
+    font-size: 12px;
+    text-align: center;
+    line-height: 26px;
+    padding: 0;
+    border: none;
+    background: #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #000;
+    cursor: pointer;
+}
+.user-agreement.user-agreement-hidden{
+    display: none;
+}
+body.modal-open {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+}
+.register-sms{
+    /*font-size: 0;*/
+}
+.register-sms .sms-img-code{
+    display: inline-block;
+    width: 116px;
+    height: 40px;
+    padding: 1px 0;
+    vertical-align: top;
+    margin-left: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.sms-img-code img{
+    width: 116px;
+    height: 40px;
+    vertical-align: top;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}

@@ -1,0 +1,53 @@
+.search_api_table{
+    width:100%;
+}
+.search_api_table thead{
+    height:40px;
+    line-height: 40px;
+    background: #4682ee;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color:white;
+}
+.search_api_table th{
+    padding-left:15px;
+}
+.search_api_table tr{
+    border-bottom:1px solid #c7d9fa;
+}
+.search_api_table tbody tr:nth-child(odd){
+    background: white;
+}
+.search_api_table tbody tr:nth-child(even){
+    background: #f6f9fe;
+}
+.search_api_table td{
+    padding-top:15px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color:#666666;
+    padding-left:15px;
+}
+.search_result{
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    color:#666666;
+}
+.search_result span{
+    padding:5px;
+    margin:auto 10px;
+    background: #dae6fc;
+    color:#4682ee;
+}
+.api_search{
+    margin-bottom: 80px;
+}
+
+.head{
+    border-bottom:1px solid rgb(233,233,233);
+}
+.information-list{
+    margin-top: 40px;
+}

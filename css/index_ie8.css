@@ -1,0 +1,450 @@
+.ietips {
+    width: 100%;
+    background-color: #fef8d4;
+    cursor: pointer;
+    color: #353c4e;
+    padding: 3px 0;
+    border-top: 1px solid #afa081;
+    border-bottom: 1px solid #afa081;
+    font-size: 12px;
+}
+.ietips a{
+    font-size: 12px;
+}
+.banLeft li.act a{
+    color: #4682ee;
+}
+.tabTitle{
+    border-bottom:1px solid #e2e2e2;
+}
+.engA li>div {
+    background-color: #eff4fc;
+}
+
+.eg li {
+    border: 1px solid rgb(230, 226, 226);
+}
+.nav-hide li.act a {
+    color: rgb(70,130,238);
+    /*filter:alpha(opacity=90);*/
+    font-family: "Microsoft YaHei";
+}
+/* common footer*/
+.footer .information ul li,
+.footer .information ul li a{
+    color:#64676a;
+}
+
+.lawyer{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background:#000;
+    filter:alpha(opacity=25);
+}
+.nav-one>li {
+    border-bottom: 1px solid #86adf4;
+}
+.left-nav a{
+    display: inherit;
+}
+
+/*qi修改*/
+.solution-list .solution-description p{
+    position: absolute;
+    top:0;
+    display: none;
+    /*filter:alpha(opacity=100);*/
+
+}
+
+
+/*
+*update date 20180514
+*update gyj
+*/
+/**{*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*}*/
+.clear {
+    clear: both;
+    zoom: 1;
+}
+.clearfix::after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.clearfix{
+    clear: both;
+    zoom:1;/*IE/7/6*/
+}
+.login-windowul ul ,.login-windowul li{
+    list-style: none;
+}
+.login-main b{
+    font-weight: normal;
+}
+.login-main i,.login-main em{  font-style: normal;  }
+.login-main img{  border-style:none  }
+#login-main{
+    display: none;
+    position: fixed;
+    z-index: 30;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: auto;*/
+}
+.main-bg{
+    position: relative;
+    z-index: 25;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    background: #000;
+    opacity:0.3;
+    -ms-filter: Alpha(Opacity=30);
+    filter: Alpha(Opacity=30);
+}
+.login-window{
+    position: absolute;
+    z-index: 30;
+    top:50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -210px;
+    width: 420px;
+    /*height: 400px;*/
+    height: auto;
+    background: #fff;
+}
+.reminder{
+    width:100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background: #6699ff;
+    text-indent: 16px;
+}
+.login-title{
+    width: 100%;
+    height: 52px;
+    overflow: hidden;
+}
+.login-title li{
+    position: relative;
+    float: left;
+    width: 210px;
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+    font-size: 16px;
+    color:#666666;
+    border-bottom: 1px solid #cccccc;
+}
+.login-title li:hover{
+    cursor: pointer;
+}
+.login-title li.on{
+    color: #6699ff;
+}
+.title-left:after{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    /*display: block;*/
+    content: '';
+    width: 1px ;
+    height: 41px;
+    background: #dfdfdf;
+}
+.password-login , .sms-login{
+    display: none;
+    padding: 26px 30px 25px 30px;
+    width: 360px;
+}
+.form-show{
+    display: block;
+}
+.password-login>div , .sms-login>div{
+    position: relative;
+    width: 360px;
+    height: 40px;
+    padding: 5px 0;
+}
+.password>input,.phone-number>input{
+    position: relative;
+    z-index: 35;
+    width: 314px;
+    padding: 12px 0 12px 44px;
+    outline: none;
+    font-size: 14px;
+    color: #999999;
+    border:1px solid #cccccc;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.password>img,.phone-number>img{
+    position: absolute;
+    z-index: 35;
+    top:14px;
+    left: 14px;
+    width: 19px;
+    height: 21px;
+}
+.login-main .password-login .slider1 , .login-main .sms-login .slider1{
+    height: 31px;
+}
+.login-main #slider , .login-main #slider1 {
+    width: 358px;
+    height: 29px;
+    position: relative;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius: 2px;
+    background-color: transparent;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    color: #999999;
+    border: 1px solid #cccccc;
+    /*z-index: 2;*/
+}
+.login-main .slider_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #6699ff;
+    /*z-index: 1;*/
+}
+.login-main .label{
+    width: 46px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 29px;
+    line-height: 27px;
+    background: #6699ff;
+    z-index: 3;
+    cursor: move;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    border: 1px solid transparent;
+
+    -webkit-border-bottom-right-radius: 1px;
+    -webkit-border-top-right-radius: 1px;
+    -moz-border-bottom-right-radius: 1px;
+    -moz-border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 1px;
+}
+.login-main #labelTip2 ,.login-main #labelTip1{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    z-index: 2;
+}
+.password-login .checkout{
+    font-size: 14px;
+    color: #6699ff;
+    height: 14px;
+    line-height: 14px;
+}
+.password-login .checkout>div{
+    display: inline;
+}
+.checkout input{
+    vertical-align: -2px;
+    width: 12px;
+    height: 12px;
+    margin-right:6px;
+}
+.forget-password{
+    color: #6699ff;
+    margin-left: 43px;
+    text-decoration: none;
+
+}
+.forget-password:hover{
+    text-decoration: underline;
+}
+.login{
+    width:360px;
+    height:46px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    color: #fff;
+    background: #6699ff;
+    text-align: center;
+    line-height: 46px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 25px 0 10px 0;
+}
+.login:hover{
+    cursor: pointer;
+}
+.register a{
+    display: block;
+    font-size: 14px;
+    color: #6699ff;
+    float: right;
+}
+.register a:hover{
+    text-decoration: underline;
+}
+.password-login > p , .sms-login > p{
+    display: none;
+    font-size: 12px;
+    color: #ff3333;
+    height: 12px;
+}
+.password-login > p.p-show , .sms-login > p.p-now{
+    display: block;
+}
+
+/*验证码登录*/
+.verification-code>div{
+    position: absolute;
+    top:5px;
+    left: 0;
+    width: 238px;
+    height: 40px;
+    float: left;
+}
+.verification-code>div input{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    /*width: 236px;*/
+    /*height: 38px;*/
+    width: 192px;
+    padding: 12px 0 12px 44px;
+    outline: none;
+    font-size: 14px;
+    color: #999999;
+    background: transparent;
+    /*text-indent: 44px;*/
+    border:1px solid #cccccc;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.verification-code>div img{
+    position: absolute;
+    z-index: 1;
+    top:9px;
+    left: 14px;
+    width: 19px;
+    height: 21px;
+}
+/*.verification-code>button{*/
+.verification-code .send-code{
+    position: absolute;
+    top:5px;
+    right: 0;
+    width: 116px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #dddddd;
+    background: #000000;
+    opacity: 0.2;
+    -ms-filter: Alpha(Opacity=20);
+    filter: Alpha(Opacity=20);
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+.sms-login .checkout-number{
+    height: 14px;
+}
+.checkout-number input{
+    margin-right: 6px;
+    width: 12px;
+    height: 12px;
+    vertical-align: -2px;
+}
+.checkout-number b{
+    font-size: 14px;
+    color: #6699ff;
+}
+.sms-login .register{
+    display: block;
+}
+.login-close{
+    position: absolute;
+    right: 14px;
+    top:14px;
+    width: 9px;
+    height: 9px;
+    background: url("../images/login/login-close.png") no-repeat;
+}
+.login-close:hover{
+    cursor: pointer;
+}
+.sms-login{
+    padding-bottom: 26px;
+}
+/*去掉input默认样式*/
+.password input::-ms-clear, .password input::-ms-reveal{display: none;}
+.phone-number input::-ms-clear, .phone-number input::-ms-reveal{display: none;}
+.verification-code input::-ms-clear, .verification-code input::-ms-reveal{display: none;}
+
+.password input::-webkit-input-placeholder{ color: #cccccc;}
+.password input::-moz-placeholder{ color: #cccccc; }
+.password input:-ms-input-placeholder{ color: #cccccc; }
+.phone-number input::-webkit-input-placeholder{ color: #cccccc;}
+.phone-number input::-moz-placeholder{ color: #cccccc; }
+.phone-number input:-ms-input-placeholder{ color: #cccccc; }
+.verification-code input::-webkit-input-placeholder{ color: #cccccc;}
+.verification-code input::-moz-placeholder{ color: #cccccc; }
+.verification-code input:-ms-input-placeholder{ color: #cccccc; }
+.phone-number  em , .password em , .verification-code em{
+    display: none;
+    position: absolute;
+    top:15px;
+    left: 44px;
+    font-size: 14px;
+    color: #cccccc;
+}
+.verification-code em{
+    top:10px;
+}
+.phone-number  em.em-show , .password em.em-show , .verification-code em.em-show{
+    display: block;
+}
+.login-main input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    z-index: 0;
+}
+/*已订购能力*/
+.ordered-card .ordered-list.off-the-shelves .ordered-list-name a {
+    cursor: default;
+}

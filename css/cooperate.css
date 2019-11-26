@@ -1,0 +1,347 @@
+@font-face {
+    font-family:qi;
+    src: url('../font/HYQiHei-40S.otf'),
+    url('../font/HYQiHei-40S.eot'); /* IE9+ */
+
+    font-family: FZZHJW;
+    src: url('../font/FZZHJW.eot'),
+    url('../font/FZZHJW.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family:'微软雅黑'
+}
+a:hover{
+    text-decoration: none;
+}
+.head .cooperate {
+    /*float: right;*/
+    height: 30px;
+    line-height: 26px;
+    margin-top: 20px;
+}
+.header{
+    width: 100%;
+    background-color: #4682ee;
+    height: 50px;
+    line-height: 50px;
+}
+.header .breadcrumb{
+    float:left;
+    padding: 0;
+    background-color: #4682ee;
+    border-radius: 0;
+}
+.header .breadcrumb a{
+    color: #fff;
+}
+.header .breadcrumb li:before{
+    color: #fff;
+}
+
+.phone{
+    float:right;
+    color:#fff;
+    font-size:12px;
+}
+
+.con .wrap-des img {
+    width: 100%;
+    height: 100%;
+}
+
+/*.con .wrap h2{*/
+/*font-size: 26px;*/
+/*color: #4682ee;*/
+/*text-align: center;*/
+/*margin-top: 40px;*/
+/*margin-bottom: 30px;*/
+/*}*/
+/*.con .wrap h5{*/
+/*font-size: 14px;*/
+/*color: #333;*/
+/*line-height: 24px;*/
+/*font-family: FZZHJW;*/
+/*font-weight: 700;*/
+/*}*/
+/*.con .wrap small{*/
+/*font-size: 12px;*/
+/*color: #333;*/
+/*line-height: 20px;*/
+/*}*/
+.key{
+    /*border: 1px solid #c7d9fa;*/
+    /*margin-top: 40px;*/
+    margin-bottom: 80px;
+    padding: 20px 0px 40px 0px;
+}
+.key .top-desc {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #5c5c5c;
+}
+.key .top-desc p {
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+.con .wrap .key h5{
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight:500;
+}
+.key .form-group {
+    margin-bottom: 0px;
+}
+.key .form-content {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.key .form-content .form-check {
+    float: left;
+    width: 628px;
+}
+.key .form-content .form-input {
+    float: right;
+    width: 330px;
+}
+.key .form-group .sign{
+    color: #ff3a3a;
+}
+.key .form-group label{
+    color: #666;
+    font-size: 12px;
+    display: block;
+}
+.key .form-group input{
+    color: #666;
+    font-size: 12px;
+    width: 330px;
+    height: 32px;
+    display: inline-block;
+}
+.key .form-group .noneIn{
+    color: #ff3a3a;
+    font-size: 12px;
+    margin-left: 10px;
+    display: none;
+}
+.key .form-group textarea{
+    color: #666;
+    font-size: 12px;
+    width: 100%;
+}
+.key .message label{
+    display: block;
+}
+.key .message input{
+    display: inline-block;
+    width: 195px;
+    margin-right: 10px;
+}
+.key .message button{
+    width: 120px;
+    background-color: #ecf2fd;
+    border: 1px solid #4682ee;
+    color: #4682ee;
+}
+.key .submit{
+    width: 100px;
+    margin-right: 10px;
+    background-color: #4682ee;
+    border:none;
+}
+.key .remove{
+    width: 60px;
+    border: 1px solid #4682ee;
+    color: #4682ee;
+}
+.key .api{
+    border: 1px solid #c7d9fa;
+    height: 556px;
+}
+.api .nav-tabs{
+    width: 148px;
+    height: 538px;
+    padding: 8px 10px;
+    display: inline-block;
+    border-bottom: none;
+    float: left;
+}
+.api .nav-tabs a{
+    padding: 6px;
+}
+.api .nav-tabs > li.active > a{
+    background-color: #5698f2;
+}
+.api .nav-tabs > li.active > a:hover{
+    background-color: #5698f2;
+}
+.api .api-list{
+    width: 150px;
+    height: 100%;
+    display: inline-block;
+    border-left: 1px solid #9cbcf6;
+    border-right: 1px solid #9cbcf6;
+    background-color: #f6f9fe;
+    float: left;
+    padding-top: 8px;
+}
+.api .api-list .tab-pane{
+    /*width: 168px;*/
+    height: 100%;
+    background-color: #f6f9fe;
+    padding-left: 10px;
+}
+/* .api .api-list ul{
+    width: 100%;
+    height: 364px;
+    background-color: #f6f9fe;
+    padding: 12px;
+    margin-bottom: 0;
+    overflow-y: auto;
+    -webkit-scrollbar-face-color:#e1e5ea;
+} */
+/*设置滚动条的样式*/
+/*.api .api-list ul::-webkit-scrollbar {
+    width: 8px;
+}*/
+/*滚动槽 */
+/*.api .api-list ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    border-radius: 10px;
+}*/
+/*滚动条滑块 */
+/*.api .api-list ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(229,235,248,1.0);
+    -webkit-box-shadow: inset 0 0 6px rgba(229,235,248,1.0);
+}*/
+/*.api .api-list ul::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(229,235,248,1.0);
+}*/
+.api .api-list li{
+    height: 34px;
+    line-height: 34px;
+}
+.api .api-list li input{
+    width: 14px;
+    height: 14px;
+    margin-top: 12px;
+}
+.api .api-list li input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    display:none
+}
+.api .api-list li label{
+    display:inline-block;
+    cursor:pointer;
+    padding-left: 0;
+    font-size: 12px;
+    color: #666;
+}
+.api .api-list li label .whiteBox{
+    padding-left:24px;
+    display:inline-block;
+    background:url(../images/input_03.png)  no-repeat;
+    background-position:0 7px;
+}
+.api .api-list li label .blueBox{
+    background-position:0 -25px
+}
+
+.api .api-inner{
+    width: 328px;
+    height: 536px;
+    padding: 0 20px;
+    display: inline-block;
+    overflow-y: auto;
+    margin-top: 18px;
+    /*margin-bottom: 18px;*/
+    /*-webkit-scrollbar-face-color:#e1e5ea;*/
+}
+
+/* 设置滚动条的样式 */
+/*.api .api-inner::-webkit-scrollbar {
+    width: 8px;
+}*/
+/* 滚动槽 */
+/*.api .api-inner::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    border-radius: 10px;
+}*/
+/* 滚动条滑块 */
+/*.api .api-inner::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(229,235,248,1.0);
+    -webkit-box-shadow: inset 0 0 6px rgba(229,235,248,1.0);
+}*/
+
+.footer{
+    height:243px;
+}
+.footer .information ul.inf-thr a{
+    font-size: 12px;
+    color: rgba(255,255,255,.25);
+}
+.api .api-inner span{
+    height: 24px;
+    line-height: 24px;
+    background: #dae6fc;
+    font-size: 12px;
+    color: #4682ee;
+    display: inline-block;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.api .api-inner input{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    background: #dae6fc;
+    font-size: 22px;
+    color: #4682ee;
+    border: none;
+    margin-top: -4px;
+    padding-left: 4px;
+    padding-top: 0;
+}
+.key .form-btn {
+    padding-top: 40px;
+    border-top: 1px dashed #d1d1d1;
+    text-align: center;
+}
+.key .form-input .input-error {
+    line-height: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+}
+
+/* 滚动条样式-兼容IE */
+.zUIpanelScrollBox,.zUIpanelScrollBar{
+    width:8px;
+    top:0px;
+    right:2px;
+    border-radius:4px;
+}
+.zUIpanelScrollBox{
+    /*  background:black; */
+    opacity:0.1;
+    filter:alpha(opacity=10);
+}
+.zUIpanelScrollBar{
+    background:#e5ebf8;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+.conmuni{
+    margin-bottom:0;
+    font-size: 12px;
+    color:red;
+}
+

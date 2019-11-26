@@ -1,0 +1,192 @@
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.ordered a {
+    color: #629ef2;
+    cursor: pointer;
+}
+.order-search-input::-webkit-input-placeholder{ color: #a9a9a9;}
+.order-search-input::-moz-placeholder{ color: #a9a9a9; }
+.order-search-input:-ms-input-placeholder{ color: #a9a9a9; }
+.main {
+    margin-left: 20px;
+    width: 820px;
+}
+.ordered {
+    font-size: 14px;
+    color: rgb( 102, 102, 102 );
+}
+.cart .mian-list {
+    border: 1px solid #ccccff;
+    margin-bottom: 25px;
+}
+.user-wrap .info-title {
+    height: 54px;
+    border-bottom: 1px solid #3399ff;
+    margin-left: 30px;
+    padding-right: 32px;
+}
+.cart .info-title h2 {
+    border: none;
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.cart .batch-addition {
+    color: #3399ff;
+    cursor: pointer;
+    line-height: 70px;
+    font-size: 14px;
+}
+.ordered .order-search {
+    float: right;
+    height: 30px;
+    margin-top: 15px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+}
+.ordered .order-search-wrap {
+    width: 100%;
+    height:100%;
+}
+.ordered .order-search-input {
+    width: 160px;
+    height: 100%;
+    padding-left: 11px;
+}
+.ordered .order-search-btn {
+    padding: 0 10px;
+    background-color: #629ef2;
+    color: #fff;
+    height: 100%;
+    line-height: 30px;
+    cursor: pointer;
+}
+.cart .change-batch {
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background: url('../images/user/change.png') no-repeat 0 0;
+    margin-left: 7px;
+}
+/*ordered-card开始*/
+.ordered-card {
+    margin: 12px 32px 20px 30px;
+}
+.ordered-card .card-sort {
+    border: 1px solid #ededed;
+}
+.ordered-card .card-info {
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f9f9f9;
+}
+.ordered-card .order-time {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+.ordered-card .ordered-list {
+    height:80px;
+}
+.ordered-card .ordered-list td {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.ordered-card .ordered-list-name {
+    width: 163px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ededed;
+    position: relative;
+}
+.ordered-card .ordered-list-des {
+    width: 478px;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    border-right: 1px solid #ededed;
+}
+.ordered-card .ordered-list.off-the-shelves .ordered-list-name a {
+    pointer-events: none;
+    color: #d7d7d7;
+}
+.ordered-card .ordered-list.off-the-shelves .ordered-list-des {
+    color: #d7d7d7;
+}
+.ordered-card .ordered-list .off-the-shelves-tip {
+   display: block;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: url('../images/user/off_shelves.png') no-repeat 0 0;
+   background-size: 100% 100%;
+}
+.ordered-card .look-det {
+    text-align: center;
+    width: 115px;
+}
+.empty-ordered {
+    text-align: center;
+    display: none;
+}
+.empty-ordered .empty-api-logo {
+    margin: 62px 0 20px;
+}
+.empty-ordered .empty-tip {
+    font-size: 18px;
+    color: rgb( 102, 102, 102 );
+}
+.empty-ordered .go-around {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    display: block;
+    background-color: #5698f2;
+    margin: 30px auto 65px;
+}
+/*ordered-card结束*/
+/*recomme-for-you开始*/
+.recomme-for-you .recomme-wrap {
+    padding: 0 10.8px 0 32px;
+    margin-bottom: 35px;
+}
+.recomme-for-you .recomme-list {
+    float: left;
+    margin-right: 21.2px;
+    width: 108px;
+}
+.recomme-for-you .recomme-list a {
+    display: block;
+    text-align: center;
+}
+.recomme-for-you .recomme-list .recomme-list-top {
+    width: 108px;
+    height: 108px;
+    margin-bottom: 14px;
+    background: url('../images/user/circle_bj.png');
+    position: relative;
+}
+.recomme-for-you .recomme-list-top img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 50%;
+    max-height: 70%;
+}
+.recomme-for-you .recomme-list-bottom {
+    color: rgb( 102, 102, 102 );
+    font-size: 14px;
+}
+/*recomme-for-you结束*/

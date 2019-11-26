@@ -1,0 +1,388 @@
+.user-wrap b{
+    font-weight: normal;
+}
+.user-wrap em{
+    font-style: normal;
+}
+/*.user-wrap .user-left{
+    background: none;
+}
+.user-wrap .user-left .nav-one{
+    background: #3399ff;
+}
+.user-wrap .user-left-top{
+    height: 180px;
+    background: #d5e2ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.user-wrap .head-portrait{
+    padding: 34px 0 14px;
+}
+.user-wrap .head-text{
+    font-size: 12px;
+    color: #666666;
+}
+.user-wrap .head-text i{
+    font-style: normal;
+    color: #999999;
+}*/
+
+
+
+.user-wrap .user-main-list{
+    border:1px solid #ccccff;
+}
+.user-wrap .user-main .info-title , .user-wrap .user-main .revise-title{
+    padding-left: 30px;
+}
+.user-wrap .user-main{
+    margin-bottom: 0;
+}
+.user-wrap .user-main  h2{
+    font-size: 22px;
+    /*color: #3399ff;*/
+    line-height: 54px;
+    padding-left: 6px;
+    /*border-bottom:1px solid #3399ff;*/
+    border-bottom:1px solid #4682ee;
+    margin-bottom: 90px;
+}
+.user-wrap .user-main .info-list{
+    padding-left: 30%;
+    font-size: 14px;
+    color: #666666;
+}
+.user-wrap .user-main .info-list b{
+    display: inline-block;
+    width: 60px;
+    margin-right: 10px;
+    letter-spacing: 6px;
+}
+.user-wrap .user-main .info-list span{
+    padding-left: 10px;
+}
+.user-wrap .user-main .list-email b{
+    letter-spacing: 0;
+}
+.user-wrap .user-main .list-number{
+    padding: 48px 0 36px;
+}
+.user-wrap .user-main .list-number a{
+    margin-left: 28px;
+    font-size: 14px;
+    /*color: #3399ff;*/
+    color: #4682ee;
+}
+.user-wrap .user-main .list-email input{
+    width: 248px;
+    /*height: 38px;*/
+    border:1px solid #cccccc;
+    padding: 12px 0 12px 10px;
+    font-size: 14px;
+    color: #999999;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    outline: none;
+}
+.user-wrap .user-main .list-email{
+    position: relative;
+    margin-bottom: 14px;
+}
+.user-wrap .user-main .list-email em{
+    display: none;
+    position: absolute;
+    top:14px;
+    left: 80px;
+    font-size: 14px;
+    color: #999999;
+}
+.user-wrap .user-main .email-error{
+    display: none;
+    padding-left: 70px;
+    font-size: 12px;
+    color: #ff3333;
+    padding-bottom: 2px;
+    padding-top: -5px;
+}
+.user-wrap .user-main .email-error.info-error-show{
+    display: block;
+}
+.user-wrap .user-main .account-info button{
+    margin-left: 38.6%;
+    width: 105px;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    /*background: #3399ff;*/
+    background: #4682ee;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    margin-bottom: 115px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+
+/*修改手机号*/
+.user-wrap .user-main .revise-title h2{
+    margin-bottom: 36px;
+}
+.user-wrap .user-main .revise-list{
+    padding-left: 20%;
+    font-size: 14px;
+    color: #666666;
+}
+.user-main .revise-list li{
+    position: relative;
+    padding: 12px 0;
+    font-size: 14px;
+}
+.user-main .revise-list .revise-error{
+    display: none;
+    padding:0 0 0 90px;
+    font-size: 12px;
+    color: #ff3333;
+}
+.user-main .revise-list .revise-error.revise-error-show{
+    display: block;
+}
+.user-main .revise-list .revise-old b{
+    padding: 0 76px 0 9px;
+    font-size: 14px;
+}
+.user-main .revise-list .revise-old a{
+    font-size: 14px;
+    color: #3399ff;
+}
+.user-main .revise-list li > div{
+    display: inline-block;
+    width: 73px;
+    text-align: right;
+    margin-right: 11px;
+}
+.user-main .revise-list li input{
+    width: 257px;
+    /*height: 38px;*/
+    border:1px solid #cccccc;
+    font-size: 14px;
+    color: #999999;
+    padding: 12px 0 12px 8px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    outline: none;
+}
+.user-main .revise-list  .revise-number input{
+    width: 392px;
+}
+.user-main .revise-list li em{
+    display: none;
+    position: absolute;
+    top:25px;
+    left: 97px;
+    font-size: 14px;
+    color: #999999;
+}
+.user-main .revise-list li em.em-revise-show , .user-wrap .user-main .list-email em.em-revise-show{
+    display: block;
+}
+.user-main .revise-list li button{
+    width: 127px;
+    padding: 12px 0;
+    text-align: center;
+    color: #3399ff;
+    font-size: 14px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    border:1px solid #3399ff;
+    outline: none;
+    background: #def1ff;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.user-main .revise .revise-slider .slider{
+    height: 40px;
+    width: 402px;
+    margin: 0 auto;
+}
+.user-main .revise .revise-slider #slider{
+    width: 400px;
+    height: 38px;
+    position: relative;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius: 2px;
+    background-color: transparent;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    color: #999999;
+    font-size: 14px;
+    /*z-index: 2;*/
+    border:1px solid #cccccc;
+}
+.user-main .revise .revise-slider .slider_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #3399ff;
+    z-index: 1;
+}
+.user-main .revise .revise-slider .label{
+    width: 51px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 38px;
+    line-height: 38px;
+    background: #3399ff;
+    z-index: 3;
+    cursor: move;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+}
+.user-main .revise .revise-slider #labelTip{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    z-index: 2;
+}
+.user-main .revise .revise-slider-name{
+    vertical-align: 13px;
+}
+.user-main .revise>button{
+    margin: 12px 0 38px 251px;
+    width: 105px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border:none;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    /*background: #3399ff;*/
+    background: #4682ee;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/*联系客服*/
+.call-us{
+    display: none;
+    position: fixed;
+    z-index: 35;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.call-bg{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    -ms-filter: Alpha(Opacity=30);
+    filter: Alpha(Opacity=30);
+}
+.call-main{
+    position: absolute;
+    z-index: 40;
+    width: 428px;
+    height: 220px;
+    left: 50%;
+    top:50%;
+    margin-left: -214px;
+    margin-top: -110px;
+}
+.call-main h2{
+    width: 100%;
+    height:30px;
+    background: #3399ff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 30px;
+    text-indent: 10px;
+}
+.call-main > div{
+    width: 100%;
+    /*height:190px;*/
+    padding: 48px 0 76px;
+    text-align: center;
+    background: #ffffff;
+    font-size: 14px;
+    color: #666666;
+}
+.call-main > div h4{
+    font-weight: normal;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+.call-main > div a{
+    font-size: 20px;
+    color: #666666;
+}
+.call-main .call-close{
+    position: absolute;
+    top:9px;
+    right: 13px;
+    width: 13px;
+    height: 13px;
+    background: url("../images/login/cell-clocse.png") no-repeat;
+    cursor: pointer;
+}
+
+/*修改成功*/
+.revise-succe{
+    /*display: none;*/
+}
+.revise-succe .success{
+    text-align: center;
+    padding: 90px 0 167px;
+}
+.revise-succe .success h3{
+    font-size: 18px;
+    color: #666666;
+    font-weight: 900;
+    margin-top: 28px;
+}
+.revise-succe .success img{
+    width: 85px;
+    height: 85px;
+}
+
+
+#user-main > div{
+    display: none;
+}
+#user-main > div.user-show{
+    display: block;
+}
+
+
+/*去掉默认样式*/
+.user-main .info-list li input::-ms-clear, .user-main .info-list li input::-ms-reveal{display: none;}
+.user-main .info-list li input::-webkit-input-placeholder{ color: #999999;}
+.user-main .info-list li input::-moz-placeholder{ color: #999999; }
+.user-main .info-list li input:-ms-input-placeholder{ color: #999999; }
+
+.user-main .revise-list li input::-ms-clear, .user-main .revise-list li input::-ms-reveal{display: none;}
+.user-main .revise-list li input::-webkit-input-placeholder{ color: #999999;}
+.user-main .revise-list li input::-moz-placeholder{ color: #999999; }
+.user-main .revise-list li input:-ms-input-placeholder{ color: #999999; }

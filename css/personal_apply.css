@@ -1,0 +1,261 @@
+.personal-apply .info-title{
+    position: relative;
+}
+.personal-apply .info-title h2{
+    margin-bottom: 30px;
+}
+.personal-apply .info-title span{
+    font-size: 18px;
+}
+.personal-apply .info-title a{
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    width: 108px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #3399ff;
+    font-size: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #5c90ef;
+}
+.personal-apply-main1 > li{
+    padding: 16px 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.personal-apply-main1 .main1-title{
+    width: 20%;
+    height: 40px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 11px;
+    font-size: 14px;
+    color: #666666;
+}
+.personal-apply-main1 .main1-title em{
+    color: #ff3a3a;
+    font-size: 12px;
+}
+.personal-apply-main1 li>input{
+    width: 392px;
+    /*height: 38px;*/
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #dadada;
+    font-size: 14px;
+    color: #999999;
+    padding:11px 0 11px 8px;
+    outline: none;
+    vertical-align: top;
+    cursor: pointer;
+}
+.personal-apply-main1 .apply-main1-list3{
+    height: 59px;
+}
+.personal-apply-main1 .apply-main1-list3 .main1-title{
+    margin-right: 6px;
+}
+.personal-apply-main1 .apply-main1-list3 input{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.personal-apply-main1 .full-face ,.personal-apply-main1 .reverse-photo ,.personal-apply-main1 .full-face1 ,.personal-apply-main1 .reverse-photo1{
+    display: inline-block;
+    vertical-align: top;
+    width: 59px;
+    height: 59px;
+    text-align: center;
+    margin-right: 12px;
+}
+.personal-apply-main1 .main1-list3-prompt{
+    font-size: 12px;
+    color: #999999;
+    padding: 0 0 0 21.3%;
+    height: 12px;
+    line-height: 12px;
+    width: 78.708%;
+}
+.full-face , .reverse-photo , .full-face1 , .reverse-photo1{
+    position: relative;
+}
+.full-face .full-face-close ,.reverse-photo .reverse-photo-close , .full-face1 .full-face-close1 ,.reverse-photo1 .reverse-photo-close1{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-image: url("../images/user/user-icon07.png");
+    width: 12px;
+    height: 12px;
+    z-index: 5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #4682ee;
+    cursor: pointer;
+    background-size: cover;
+    border: 1px solid #4682ee;
+}
+.full-face-img , .reverse-photo-img , .full-face-img1 , .reverse-photo-img1{
+    border: 1px solid #c2c2c2;
+    width: 150px;
+    height: 150px;
+}
+
+/*插件样式更改*/
+.uploadify-button{
+    display:inline-block;
+    margin:0;
+    border:1px dashed #808080;
+    background-color: #fff;
+    line-height:18px;
+    border-radius:0;
+    padding:10px 16px;
+    font-size:12px;
+    font-weight: 600;
+    /*font-family: '微软雅黑';*/
+    color:#999999;
+    cursor:pointer;
+    text-decoration:none;
+    text-align: center;
+}
+.uploadify-queue .uploadify-queue-item{
+    margin-top:-45px;
+    line-height: 0;
+}
+.up_filename,.up_percent{
+   display: none;
+    line-height: 0;
+}
+.delfilebtn{
+    line-height:10px;
+    padding:0 0;
+    margin-left: 0;
+    background: #cccccc;
+    color: #000;
+    font-size: 10px;
+
+    display: none;
+}
+.uploadify-progress{
+    margin-bottom:8px;
+    line-height: 0;
+
+    display: none;
+}
+.selectbtn{
+    display: none;
+}
+
+
+.personal-apply-main1 .main1-error{
+    /*display: none;*/
+    font-size: 12px;
+    color: #ff3a3a;
+    padding: 0 0 0 21.3%;
+    height: 12px;
+    line-height: 12px;
+}
+.apply-main1-list4 #demo3{
+    width:128px ;
+}
+.apply-main1-list4 #demo4{
+    width:249px ;
+}
+/*.apply-main1-list4 .main1-title{
+    margin-right: 6px;
+}*/
+.personal-apply-main1 .apply-main1-list5{
+    padding: 39px 0 48px 21.3%;
+    /*width: 78.708%;*/
+}
+.apply-main1-list5 > button{
+    width: 105px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background: #4682ee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.tabWrap ,.trends{
+    padding-bottom: 0;
+}
+.apply-main{
+    margin-bottom: 0;
+}
+.apply-main1-list5 .personal-btn1{
+    margin-right: 10px;
+}
+
+/*提交审核页面*/
+.personal-submit{
+    width: 100%;
+    /*height: auto;*/
+    text-align: center;
+    padding-bottom: 92px;
+}
+.personal-submit-img{
+    padding: 73px 0 22px;
+
+}
+.personal-submit-img img{
+    width: 85px;
+    height: 85px;
+    vertical-align: top;
+}
+.personal-submit h4{
+    font-size: 18px;
+    color: #666666;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 28px;
+}
+.personal-submit-text{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+.personal-submit-text a{
+    color: #4682ee;
+}
+
+/*修改地区插件 默认样式*/
+.textbox{
+    border-color: #dadada;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 6px;
+}
+.apply-main1-list4{
+    font-size: 0;
+}
+.personal-apply-main1 .apply-main1-list4 .textbox{
+    vertical-align: top;
+}
+
+/*信息保存页面*/
+.personal-apply-content .personal-apply-conserve li > input{
+    border-color: transparent;
+    cursor: none;
+}
+
+/*控制哪个部分显示和隐藏*/
+.main1-hidden{
+    display: none;
+}
+/*控制错误提示的显示和隐藏*/
+.main1-error.main1-error-hidden{
+    display: none;
+}

@@ -1,0 +1,565 @@
+.company-apply .info-title{
+    position: relative;
+}
+.company-apply .info-title h2{
+    margin-bottom: 0;
+}
+.company-apply .info-title span{
+    font-size: 18px;
+}
+.company-apply .info-title a{
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    width: 108px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #3399ff;
+    font-size: 14px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #5c90ef;
+}
+.company-choose-list{
+    /*width: 100%;*/
+    margin-left: 30px;
+    height: 59px;
+    background: #f7f7f7;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.company-choose-list li{
+    float: left;
+    margin: 0 10px;
+    font-size: 14px;
+    /*color: #4682ee;*/
+    color: #666666;
+    line-height: 59px;
+    height: 59px;
+    width: auto;
+}
+.company-choose-list li.choose-color{
+    color: #4682ee;
+}
+.company-choose-list li i.choose-background{
+    background: #4682ee;
+}
+.company-choose-list li:first-child{
+    margin: 0 10px 0 41px;
+}
+.company-choose-list li b{
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    height: 1px;
+    background: #dddddd;
+}
+.company-choose-list li i{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    /*background: #4682ee;*/
+    background: #c2c2c2;
+    font-size: 14px;
+    color: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-style: normal;
+    margin-right: 12px;
+}
+/*企业三证合一或者是三证的显示和隐藏*/
+.company-apply-main1.company-apply-main1-hide{
+    display: none;
+}
+.company-apply-main1 > li{
+    padding: 16px 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+/*.three-evidence{
+    background: indianred;
+}
+.syncretic{
+    background: blueviolet;
+}*/
+.company-apply-main1 .main1-title{
+    width: 20%;
+    height: 40px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 11px;
+    font-size: 14px;
+    color: #666666;
+}
+.company-apply-main1 .main1-title em{
+    color: #ff3a3a;
+    font-size: 12px;
+}
+.company-apply-main1 li>input ,.company-apply-main1 li>select{
+    width: 392px;
+    /*height: 38px;*/
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #dadada;
+    font-size: 14px;
+    color: #999999;
+    padding:11px 0 11px 8px;
+    outline: none;
+    vertical-align: top;
+    cursor: pointer;
+}
+.company-apply-main1 li>select{
+    width: 402px;
+    height: auto;
+    padding:10px 0 10px 4px;
+    color: #999999;
+}
+.main1-choose .main1-title{
+    margin-right: 6px;
+}
+.company-apply-main1 .main1-error{
+    font-size: 12px;
+    color: #999999;
+    padding: 0 0 0 21.3%;
+    height: 12px;
+    line-height: 12px;
+}
+.company-apply-main1 .main1-error a{
+    color: #4682ee;
+    font-size: 12px;
+}
+
+
+.company-apply-main1 .main1-date>input ,.company-apply-main1 .main1-term>input{
+    padding: 10px 0 10px 0;
+}
+/*修改日期插件样式*/
+.main1-date .textbox ,.main1-term .textbox{
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border-color: #dadada;
+}
+.main1-date  .textbox .textbox-text ,.main1-term  .textbox .textbox-text{
+    width: 392px;
+    height: 39px;
+    line-height: 39px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding-top: 1px;
+}
+.main1-date .main1-title ,.main1-term .main1-title{
+    margin-right: 6px;
+}
+.main1-date .validatebox-invalid , .main1-date .textbox-invalid ,.main1-term .validatebox-invalid , .main1-term .textbox-invalid{
+    background-color: #fff;
+    border-color: #dadada;
+}
+
+
+.main1-time-slot{
+    font-size: 0;
+}
+/*修改有效时间段时间插件*/
+.main1-time-slot .textbox-label-top{
+    display: inline-block;
+}
+.main1-time-slot .time-slot-star ,.main1-time-slot .time-slot-end{
+    display: inline-block;
+    /*width: 300px;*/
+    font-size: 14px;
+    color: #666666;
+}
+.main1-time-slot .time-slot-star{
+    margin-right: 2px;
+}
+.main1-time-slot .textbox-label{
+    width: 75px;
+    padding-right: 0;
+}
+.main1-time-slot .time-slot-end .textbox-label{
+    width: 69px;
+}
+.main1-time-slot .textbox{
+    border-color: #dadada;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 0;
+}
+
+
+/*上传照片修改*/
+.company-apply-main1 .main1-organization ,.company-apply-main1 .main1-tax ,.company-apply-main1 .main1-license{
+    height: 80px;
+}
+.organization ,.tax , .license{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.organization .organization-close ,.tax .tax-close ,.license .license-close{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-image: url("../images/user/user-icon07.png");
+    width: 12px;
+    height: 12px;
+    z-index: 5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #4682ee;
+    cursor: pointer;
+    background-size: cover;
+    border: 1px solid #4682ee;
+}
+/*上传照片 插件样式更改*/
+.uploadify-button{
+    display:inline-block;
+    margin:0px;
+    border:1px dashed #808080;
+    background-color: #fff;
+    line-height:18px;
+    border-radius:0px;
+    padding:22px 24px;
+    font-size:12px;
+    font-weight: 600;
+    font-family: '微软雅黑';
+    color:#999999;
+    cursor:pointer;
+    text-decoration:none;
+    text-align: center;
+}
+.uploadify-queue .uploadify-queue-item{
+    margin-top:-50px;
+    line-height: 0;
+}
+.up_filename,.up_percent{
+    display: none;
+    line-height: 0;
+}
+.delfilebtn{
+    line-height:12px;
+    padding:1px 6px;
+    margin-left: 0;
+    background: #cccccc;
+    color: #000;
+    font-size: 10px;
+}
+.uploadify-progress{
+    margin-bottom:8px;
+    line-height: 0;
+}
+.selectbtn{
+    display: none;
+}
+.organization-img , .tax-img , .license-img{
+    border: 1px solid #c2c2c2;
+    width: 150px;
+    height: 150px;
+}
+.organization-choice img , .tax-choice img .license-choice img{
+    width: 30px;
+    height: 30px;
+}
+.company-apply-main1 .main1-organization-prompt , .company-apply-main1 .main1-tax-prompt , .company-apply-main1 .main1-license-prompt{
+    font-size: 12px;
+    color: #999999;
+    padding: 0 0 0 21.3%;
+    height: 12px;
+    line-height: 12px;
+}
+.main1-organization .main1-title , .main1-tax .main1-title , .main1-license .main1-title{
+    margin-right: 7px;
+}
+
+/*修改地区插件 默认样式*/
+.textbox{
+    border-color: #dadada;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 6px;
+}
+.textbox .textbox-text{
+    color: #999999;
+}
+.main1-city1{
+    font-size: 0;
+}
+.company-apply-main1 .main1-city1 .textbox{
+    vertical-align: top;
+}
+
+
+.company-apply-main1 .main1-accessory ,.company-apply-main1 .main1-proxy{
+    padding: 16px 0 8px 0;
+    font-size: 0;
+}
+.main1-accessory .accessory-img ,.main1-proxy .proxy-img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #c2c2c2;
+    display: inline-block;
+}
+/*上传文件 插件修改*/
+.accessory ,.proxy{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.accessory .uploadify-button ,.proxy .uploadify-button{
+    padding:6px  26px;
+    border: none;
+    background: #4682ee;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.accessory-text ,.accessory-pdf ,.proxy-text ,.proxy-pdf{
+    font-size: 12px;
+}
+.accessory-text img , .accessory-pdf img ,.proxy-text img , .proxy-pdf img{
+    vertical-align: -5px;
+    margin-right: 4px;
+}
+.accessory-text .accessory-close , .accessory-pdf .accessory-close ,.accessory-img .accessory-close ,.proxy-text .proxy-close , .proxy-pdf .proxy-close ,.proxy-img .proxy-close{
+    display: inline-block;
+    background-image: url("../images/user/user-icon07.png");
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #4682ee;
+    cursor: pointer;
+    background-size: cover;
+    border: 1px solid #4682ee;
+    vertical-align: -2px;
+    margin-left: 10px;
+}
+.accessory-img .accessory-close ,.proxy-img .proxy-close{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    z-index: 5;
+}
+.accessory .uploadify-queue ,.proxy .uploadify-queue{
+    line-height: normal;
+    position: relative;
+    top: 7px;
+    text-align: center;
+}
+.accessory .uploadify-queue .uploadify-queue-item ,.proxy .uploadify-queue .uploadify-queue-item{
+    margin-top: -40px;
+}
+.accessory .uploadify-progress ,.proxy .uploadify-progress{
+    margin-bottom: 0;
+}
+
+/*提交*/
+.company-btn{
+    padding: 68px 0 50px 0;
+    font-size: 0;
+}
+.controller-btn{
+    padding: 55px 0 48px 0;
+    font-size: 0;
+}
+.company-btn .main1-title ,.controller-btn .main1-title{
+    width: 20%;
+    height: 40px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 11px;
+    vertical-align: top;
+}
+.company-btn .company-btn-next{
+    width: 250px;
+    height: 40px;
+    background: #4682ee;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 14px;
+    padding: 0;
+}
+.company-btn .company-btn-keep ,.controller-btn .controller-btn-back,.controller-btn  .controller-btn-next,  .controller-btn .controller-btn-keep{
+    width: 105px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    border: 1px solid #4682ee;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #4682ee;
+    padding: 0;
+    margin-right: 16px;
+}
+.company-btn .company-btn-keep ,.controller-btn .controller-btn-back, .controller-btn .controller-btn-keep{
+    color: #4682ee;
+    background: #fff;
+}
+
+/*提交成功的页面和审核通知页面*/
+.company-submit{
+    width: 100%;
+    text-align: center;
+    padding: 51px 0 90px 0;
+}
+.company-submit-img img{
+    width: 85px;
+    height: 85px;
+    vertical-align: top;
+}
+.company-submit h4{
+    font-size: 18px;
+    color: #666666;
+    font-weight: 600;
+    line-height: 64px;
+    height: 64px;
+    margin-bottom: 7px;
+}
+.company-submit .company-submit-text{
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+}
+.company-submit .company-submit-text a{
+    font-size: 14px;
+    color: #4682ee;
+}
+/*提交成功和审核页面的切换*/
+.company-submit.company-submit-hiden{
+    display: none;
+}
+
+
+/*管理员身份证上传*/
+.company-apply-main1 .apply-main1-id{
+    height: 59px;
+}
+.company-apply-main1 .apply-main1-id .main1-title{
+    margin-right: 6px;
+}
+.company-apply-main1 .apply-main1-id input{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.company-apply-main1 .apply-main1-id .controller-full-face ,.company-apply-main1 .apply-main1-id .controller-reverse-photo{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 59px;
+    height: 59px;
+    text-align: center;
+    margin-right: 12px;
+}
+.apply-main1-id .controller-full-face .controller-full-face-close ,.apply-main1-id .controller-reverse-photo .controller-reverse-photo-close{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-image: url("../images/user/user-icon07.png");
+    width: 12px;
+    height: 12px;
+    z-index: 5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #4682ee;
+    cursor: pointer;
+    background-size: cover;
+    border: 1px solid #4682ee;
+}
+/*管理员身份证上传   插件样式更改*/
+.company-apply-main1 .apply-main1-id .uploadify-button{
+    display:inline-block;
+    margin:0px;
+    border:1px dashed #808080;
+    background-color: #fff;
+    line-height:18px;
+    border-radius:0px;
+    padding:10px 16px;
+    font-size:12px;
+    font-weight: 600;
+    font-family: '微软雅黑';
+    color:#999999;
+    cursor:pointer;
+    text-decoration:none;
+    text-align: center;
+}
+.apply-main1-id .uploadify-queue .uploadify-queue-item{
+    margin-top:-45px;
+    line-height: 0;
+}
+.apply-main1-id .up_filename,.up_percent{
+    display: none;
+    line-height: 0;
+}
+.apply-main1-id .delfilebtn{
+    line-height:10px;
+    padding:0 0px;
+    margin-left: 0;
+    background: #cccccc;
+    color: #000;
+    font-size: 10px;
+}
+.apply-main1-id .uploadify-progress{
+    margin-bottom:8px;
+    line-height: 0;
+}
+.apply-main1-id .selectbtn{
+    display: none;
+}
+.controller-full-face-img , .controller-reverse-photo-img{
+    border: 1px solid #c2c2c2;
+    width: 150px;
+    height: 150px;
+}
+
+
+/*提交的页面显示和隐藏*/
+.company-apply-content.company-apply-content-hiden{
+    display: none;
+}
+/*错误提示的显示和隐藏*/
+.company-apply-main1 .main1-error.error-hidden{
+    display: none;
+}
+.company-apply-main1 .main1-error.error-show-color{
+    color: #ff3a3a;
+}
+.company-apply-main1 .main1-prompt.prompt-show-color{
+    color: #ff3a3a;
+}

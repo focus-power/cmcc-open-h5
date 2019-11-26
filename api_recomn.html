@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="bitbug_favicon-3.ico">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/common_new.css">
+    <link rel="stylesheet" type="text/css" href="css/api_recomn.css">
+    <!--[if IE 8]>
+      <link href='css/index_ie8.css' rel='stylesheet'>
+  <![endif]-->
+    <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/lib/handlebars-v3.0.0.js"></script>
+    <!--<script type="text/javascript" src="js/lib/unslider.min.js"></script>-->
+    <script>
+        var MobileUA = (function() {  
+            var ua = navigator.userAgent.toLowerCase();  
+            
+            var mua = {  
+                IOS: /ipod|iphone|ipad/.test(ua), //iOS  
+                IPHONE: /iphone/.test(ua), //iPhone  
+                IPAD: /ipad/.test(ua), //iPad  
+                ANDROID: /android/.test(ua), //Android Device  
+                WINDOWS: /windows/.test(ua), //Windows Device  
+                TOUCH_DEVICE: ('ontouchstart' in window) || /touch/.test(ua), //Touch Device  
+                MOBILE: /mobile/.test(ua), //Mobile Device (iPad)  
+                ANDROID_TABLET: false, //Android Tablet  
+                WINDOWS_TABLET: false, //Windows Tablet  
+                TABLET: false, //Tablet (iPad, Android, Windows)  
+                SMART_PHONE: false //Smart Phone (iPhone, Android)  
+        };  
+  
+        mua.ANDROID_TABLET = mua.ANDROID && !mua.MOBILE;  
+        mua.WINDOWS_TABLET = mua.WINDOWS && /tablet/.test(ua);  
+        mua.TABLET = mua.IPAD || mua.ANDROID_TABLET || mua.WINDOWS_TABLET;  
+        mua.SMART_PHONE = mua.MOBILE && !mua.TABLET;  
+  
+        return mua;  
+    }());  
+  
+    //SmartPhone
+    var linkTag;   
+    if (!MobileUA.SMART_PHONE) {  
+        // 移动端链接地址  
+        linkTag = '<link rel="stylesheet" type="text/css" href="css/recomn_r.css">'; 
+        $($('head')[0]).append(linkTag);
+    }  
+    </script>
+    <!--<script type="text/javascript" src="js/index.js"></script>-->
+    <script type="text/javascript" src="js/api_recomn.js"></script>
+    <!-- <script src="js/lib/director.js"></script>
+    <script src="js/main.js"></script> -->
+</head>
+<body>
+    <!-- head部分 -->
+    <div class="head">
+        <div class="wrap h-content">
+            <div class="logo">
+                <a href="index.html">
+                    <!-- <img src="images/logo.png" alt=""> -->
+                    <img src="images/logo-beta.png" alt="">
+                </a>
+            </div>
+            <div class="h-menu">
+                <ul>
+                    <li class="menu-list show">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="api.html">能力API</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="solution.html">解决方案</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="help/website_intro.html">帮助中心</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="news.html">新闻动态</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="https://www.hc.10086.cn">和创空间</a>
+                    </li>
+                    <li class="menu-list-search">
+                        <span class="search-line"></span>
+                        <form>
+                            <div class="api-search">
+                                <div class="">
+                                    <i class="search-v"><img src="images/search_new.png"></i>
+                                    <input type="text" class="" placeholder="输入API关键词" onfocus="this.placeholder=''"  onblur="this.placeholder='输入API关键词'">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div class="cooperate">
+                <a href="user/shopping_cart.html"><img src="images/api_06.png" onmouseover="this.src='images/api_06h.png'" onmouseout="this.src='images/api_06.png'"></a>
+                <div class="coo-add">
+                    <p class="coo-num"></p>
+                </div>
+            </div>
+            <div class="login-register">
+                <span class="no-login"><a href="login.html">登录</a><i></i><a href="user_register.html">注册</a></span>
+                <div class="yes-login">
+                    <img src="images/login/login-icon-new14.png" alt="">
+                </div>
+                <ul class="personal-info">
+                    <li class="info-list1"><a href="user/user_center.html"><span class="user-center"></span>用户中心</a></li>
+                    <li class="info-list2"><a href="javascript:;"><span class="sign-out"></span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--ban-->
+    <div class="recomn-tab">
+        <div class="recomn-tab-title">
+            <img class="tab-title-yellow1" src="images/api_recomn/tab_left.png"/>
+            <ul class="recomn-tab-wrap clearfix" id="recomnTabTitle">
+                <li class="act"><a>统一<br/>认证</a></li>
+                <li><a>通信服<br/>务能力</a></li>
+                <li><a>OneNet共<br/>享设备管理</a></li>
+                <li><a>AndLink家<br/>庭智能连接</a></li>
+                <li><a>和包<br/>支付</a></li>
+                <li><a>电商一<br/>点对接</a></li>
+                <li><a>智能语<br/>音云</a></li>
+                <li><a>行业<br/>视频+</a></li>
+                <li><a class="last-a">和信<br/>用分</a></li>
+                <div class="clear"></div>
+            </ul>
+            <img class="tab-title-yellow2" src="images/api_recomn/tab_right.png" />
+        </div>
+        <div class="recomn-tab-section">
+            <div class="recomn-tab-con">
+                <img src="images/api_recomn/api_recomn_main.png" alt="" class="recomn-tab-bg">
+            </div>
+            <div class="recomn-tab-con rtc">
+                <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: left;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-1-</span>
+                            </div>
+                            <p class="recomn-con-title-size">统一认证</p>
+                        </div>
+                        <p class="recomn-tab-des act">
+                        是中国移动面向移动互联网应用提供的登录及认证服务。基于运营商独有的数据网络认证+数据能力，为企业提供全面的用户账号使用和数据管理一站式解决方案，将手机号码从单一的通信行业账号打造成为服务于“通信、互联网、物联网、银行”等多行业的账号体系。
+                        </p>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail">
+                            <a href="api.html?id=2&subId=1" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: right;margin-top: 136px;">
+                        <img src="images/api_recomn/uam_icon.png" alt="" class="recomn-tab-icon">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_1.png" alt="" class="recomn-tab-bg">     
+            </div>
+            <div class="recomn-tab-con rtc" id="comSer">
+                <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: right;text-align: right;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-2-</span>
+                            </div>
+                            <p class="recomn-con-title-size">通信服务能力-<span class="recomn-con-sub-size">模板短信</span></p>
+                        </div>
+                        <p class="recomn-tab-des act" style="text-align: right;">
+                            通过API的方式，提供发送模板短信的能力，客户在发送前先提交模板给中国移动进行审核，审核通过后，客户可通过系统接口下发符合模板内容的短信。
+                        </p>
+                        <p class="recomn-tab-des" style="text-align: right;">
+                            新型手机号验证方式，用户拨打平台分配号码，即可完成验证，验证安全级别更高，更难窃取，有效防止刷单、信息泄露，提升验证便利性。
+                        </p>
+                        <p class="recomn-tab-des" style="text-align: right;">
+                            此方案依托全网移动号码资源，面向商户和用户双方提供中间安全号码，充分发挥虚拟副号灵活绑定的优势，实现临时号码跟随订单状态的捆绑使用功能，从而实现在交易双方之间建立安全屏障。
+                        </p>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item" style="float: right;">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                         <ul class="information-record clearfix">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item" style="float: right;">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                         <ul class="information-record clearfix">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item" style="float: right;">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail see-detail-dire">
+                            <a href="api.html?id=1&subId=1" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book_right.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: left;margin-top: 136px;">
+                        <div class="recomn-mul-api" style="left: 219px;">
+                            <div class="polygon-wrap polygon-wrap1 act" style="display: inline-block;">
+                                <i class="polygon-big"></i>
+                                <i class="polygon-small add-back"></i>
+                                <div class="sub-title-wrap" style="left: 52px;">
+                                    <i class="polygon-wrap-logo change-icon1"></i>
+                                    <span class="sub-title" style="left: 10px;">模板短信</span> 
+                                </div>
+                                <i class="light-effect light-act" style="left: -34px;"></i>
+                                <p class="click-look" style="left: -60px;top: 132px;">
+                                    <span class="click-look-opacity"></span>
+                                    <span class="click-look-size">点击查看</span>
+                                </p>
+                            </div>
+                            <div class="polygon-wrap polygon-wrap2" style="display: inline-block;margin-left: -7px;">
+                                <i class="polygon-big"></i>
+                                <i class="polygon-small"></i>
+                                <div class="sub-title-wrap" style="left: 64px;">
+                                    <i class="polygon-wrap-logo"></i>
+                                    <span class="sub-title" style="left: -6px;">拨打验证</span>
+                                </div>
+                                <i class="light-effect" style="right: -34px;"></i>
+                                <p class="click-look" style="right: -60px;top: 132px;">
+                                    <span class="click-look-opacity"></span>
+                                    <span class="click-look-size">点击查看</span>
+                                </p>
+                            </div>
+                            <div class="polygon-wrap polygon-wrap3" style="margin-left: 90px;margin-top: -56px;">
+                                <i class="polygon-big"></i>
+                                <i class="polygon-small"></i>
+                                <div class="sub-title-wrap" style="left: 60px;">
+                                    <i class="polygon-wrap-logo"></i>
+                                    <span class="sub-title" style="left: 6px;">中间号</span>
+                                </div>
+                                <i class="light-effect" style="left: 54px;top: 168px;"></i>
+                                <p class="click-look" style="right: 27px;top: 132px;">
+                                    <span class="click-look-opacity"></span>
+                                    <span class="click-look-size">点击查看</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_2.png" alt="" class="recomn-tab-bg"> 
+            </div>
+            <div class="recomn-tab-con rtc">
+                <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: left;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-3-</span>
+                            </div>
+                            <p class="recomn-con-title-size">OneNet共享设备管理</p>
+                        </div>
+                        <p class="recomn-tab-des act">
+                            基于共享设备状态监控、设备管理、故障预警、远程控制、数据分析等功能，实现共享设备无人值守条件下的业务运营。
+                        </p>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail">
+                            <a href="solution.html?id=2" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: right;margin-top: 136px;">
+                        <img src="images/api_recomn/one_net_icon.png" alt="" class="recomn-tab-icon">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_3.png" alt="" class="recomn-tab-bg">
+            </div>
+            <div class="recomn-tab-con rtc">
+                <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: right;text-align: right;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-4-</span>
+                            </div>
+                            <p class="recomn-con-title-size">AndLink家庭智能连接</p>
+                        </div>
+                        <p class="recomn-tab-des act" style="text-align: right;">
+                            智能设备全连接：设备一键入网，APP统一管控。并提供快速接入的自服务门户。
+                        </p>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item" style="float: right;">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail see-detail-dire">
+                            <a href="solution.html?id=3" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book_right.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: left;margin-top: 136px;">
+                        <img src="images/api_recomn/AndLink_icon.png" alt="" class="recomn-tab-icon">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_4.png" alt="" class="recomn-tab-bg">
+            </div>
+            <div class="recomn-tab-con rtc">
+                <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: left;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-5-</span>
+                            </div>
+                            <p class="recomn-con-title-size">和包支付</p>
+                        </div>
+                        <p class="recomn-tab-des act">
+                            合作商户的App可以使用和包支付能力完成订单支付及资金清结算。
+                        </p>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail">
+                            <a href="solution.html?id=4" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: right;margin-top: 136px;">
+                        <img src="images/api_recomn/pack_pay_icon.png" alt="" class="recomn-tab-icon">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_5.png" alt="" class="recomn-tab-bg">
+            </div>
+            <div class="recomn-tab-con rtc">
+                <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: right;text-align: right;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-6-</span>
+                            </div>
+                            <p class="recomn-con-title-size">电商一点对接</p>
+                        </div>
+                        <p class="recomn-tab-des act" style="text-align: right;">
+                            支持充值、合约、套餐、流量包等通信业务，开展各类通信+终端/服务营销活动，为用户提供查询、校验、鉴权等服务。
+                        </p>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item" style="float: right;">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail see-detail-dire">
+                            <a href="solution.html?id=5" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book_right.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: left;margin-top: 136px;">
+                        <img src="images/api_recomn/little_butt_icon.png" alt="" class="recomn-tab-icon">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_6.png" alt="" class="recomn-tab-bg">
+            </div>
+            <div class="recomn-tab-con rtc">
+                <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: left;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-7-</span>
+                            </div>
+                            <p class="recomn-con-title-size">智能语音云</p>
+                        </div>
+                        <p class="recomn-tab-des act">
+                            提供语音识别、语音合成、语义理解、声纹识别、语音评测等能力，让开发者享受高质量的智能语音服务。
+                        </p>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail">
+                            <a href="solution.html?id=6" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: right;margin-top: 136px;">
+                        <img src="images/api_recomn/intel_voice_icon.png" alt="" class="recomn-tab-icon">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_7.png" alt="" class="recomn-tab-bg">
+            </div>
+            <div class="recomn-tab-con rtc">
+                <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: right;text-align: right;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-8-</span>
+                            </div>
+                            <p class="recomn-con-title-size">行业"视频+"</p>
+                        </div>
+                        <p class="recomn-tab-des act" style="text-align: right;text-align: right;">
+                            政府企业用户借助视频会议、视频监控、视频对讲能力，实现办公实时对讲与智能监控，进行远程的视频会议。
+                        </p>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item" style="float: right;">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail see-detail-dire">
+                            <a href="solution.html?id=7" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book_right.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: left;margin-top: 136px;">
+                        <img src="images/api_recomn/indus_video_icon.png" alt="" class="recomn-tab-icon">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_8.png" alt="" class="recomn-tab-bg">
+            </div>
+            <div class="recomn-tab-con rtc" id="creScore">
+                 <div class="recomn-top clearfix">
+                    <div class="recomn-con-left" style="float: left;">
+                        <div class="recomn-con-title">
+                            <div class="recomn-title-img">
+                                <img src="images/api_recomn/title.png" alt="" class="recomn-con-title-img">
+                                <span class="recomn-con-title-id">-9-</span>
+                            </div>
+                            <p class="recomn-con-title-size">和信用分-<span class="recomn-con-sub-size">酒店快速入住</span></p>
+                        </div>
+                        <p class="recomn-tab-des">
+                            为中国移动信用分用户提供免押金骑行共享单车的服务。
+                        </p>
+                        <p class="recomn-tab-des act">
+                            为中国移动信用分用户在商旅过程中提供高效、全新的个性化酒店入住服务。
+                        </p>
+                        <p class="recomn-tab-des">
+                            通过在线风控模型为中国移动信用分用户进行购机贷款风险评估、实时的贷款审批、贷款发放等信贷服务。
+                        </p>
+                        <ul class="information-record clearfix">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（次）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <ul class="information-record clearfix act">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <ul class="information-record clearfix">
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">API调用次数（万次）</p>
+                            </li>
+                            <li class="information-record-item">
+                                <p class="record-item-data"></p>
+                                <p class="record-item-des">签约企业数（家）</p>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="see-detail">
+                            <a href="solution.html?id=9" target="_blank">查看详情</a>
+                        </div>
+                        <img src="images/api_recomn/book.png" class="recomn-book"/>
+                    </div>
+                    <div class="recomn-con-right" style="float: right;margin-top: 136px;">
+                        <div class="recomn-mul-api" style="left: 219px;">
+                            <div class="polygon-wrap polygon-wrap4" style="margin-left: 90px;">
+                                <i class="polygon-big"></i>
+                                <i class="polygon-small"></i>
+                                <div class="sub-title-wrap">
+                                    <i class="polygon-wrap-logo"></i>
+                                    <span class="sub-title">免押骑行</span>
+                                </div>
+                                <i class="light-effect" style="left: 55px;top: -32px;"></i>
+                                <p class="click-look" style="left: -60px;top: 37px;">
+                                    <span class="click-look-opacity"></span>
+                                    <span class="click-look-size">点击查看</span>
+                                </p>
+                            </div>
+                            <div class="polygon-wrap polygon-wrap5 act" style="display: inline-block;margin-top: -56px;">
+                                <i class="polygon-big"></i>
+                                <i class="polygon-small add-back"></i>
+                                <div class="sub-title-wrap" style="top: 48px;">
+                                    <i class="polygon-wrap-logo change-icon5"></i>
+                                    <span class="sub-title">酒店快速<br/>入住</span>
+                                </div>
+                                <i class="light-effect light-act" style="left: -34px;"></i>
+                                <p class="click-look" style="left: -60px;top: 132px;">
+                                    <span class="click-look-opacity"></span>
+                                    <span class="click-look-size">点击查看</span>
+                                </p>
+                            </div>
+                            <div class="polygon-wrap polygon-wrap6" style="margin-left: -7px;margin-top: -56px;display: inline-block;">
+                                <i class="polygon-big"></i>
+                                <i class="polygon-small"></i>
+                                <div class="sub-title-wrap" style="left: 52px;">
+                                    <i class="polygon-wrap-logo"></i>
+                                    <span class="sub-title" style="left: 5px;">信用购机</span>
+                                </div>
+                                <i class="light-effect" style="left: 142px;"></i>
+                                <p class="click-look" style="right: 0px;top: 132px;">
+                                    <span class="click-look-opacity"></span>
+                                    <span class="click-look-size">点击查看</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <img src="images/api_recomn/wave_9.png" alt="" class="recomn-tab-bg">
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <a class="csd" href="https://support.open.10086.cn/" target="_blank"></a>
+        <div class="footer-menu">
+            <ul>
+                <li>
+                    <a href="http://dev.10086.cn/?from=open10086cn" target="_blank">互联网能力平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://cmccopen.cn/" target="_blank">通信开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://open.iot.10086.cn/" target="_blank">OneNET平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <!--<a href="http://api.iot.10086.cn/" target="_blank">物联卡能力开放平台</a>-->
+                    <a href="http://api.iot.10086.cn/" target="_blank">OneLink能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://open.home.10086.cn/dev/" target="_blank">数字家庭能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <!--<a href="http://112.35.23.8:1080/open_devportal/index.jsp" target="_blank">行业应用使能平台</a>-->
+                    <a href="http://aep.open.10086.cn/" target="_blank">行业应用使能平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://www.cmpay.com/" target="_blank">和包支付</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://www.migucloud.com/index" target="_blank">咪咕视频云</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://it.open.10086.cn" target="_blank">IT能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://ecloud.10086.cn/product/" target="_blank">移动云</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://xinyong.cmri.cn/client/index" target="_blank">信用服务平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://ditu.10086.cn/" target="_blank">位置服务平台</a>
+                </li>
+            </ul>
+        </div>
+        <div class="information">
+            <!-- <ul class="inf-one">
+                <li>
+                    <span>掌上营业厅：</span>
+                    <a>wap.10086.cn</a>
+                </li>
+                <li>
+                    <span>语音自助服务：</span>
+                    <a>10086</a>
+                </li>
+                <li>
+                    <span>短信营业厅：</span>
+                    <a>10086</a>
+                </li>
+                <li>
+                    <span>自助终端</span>
+                </li>
+                <li>
+                    <span>营业厅</span>
+                </li>
+                <li>
+                    <span>手机营业厅下载</span>
+                </li>
+            </ul>
+            <ul class="inf-two">
+                <li>Copyright©1999-2017</li>
+                <li>中国移动</li>
+                <li>版权所有</li>
+            </ul> -->
+            <ul class="inf-thr">
+                <li>中华人民共和国增值电信业务经营许可证</li>
+                <li>
+                    <span>经营许可证编号：</span>
+                    <a>A2.B1.B2-20100001</a>
+                </li>
+            </ul>
+            <div class="footer-customer">客服电话：400-1000-225（工作日 9:00-12:00、14:00-17:30）</div>
+            <ul class="inf-four">
+                <li>
+                    <a><img src="images/yanzheng.png" alt=""></a>
+                </li>
+                <li>
+                    <img src="images/icon0.png" alt="">
+                </li>
+                <li>京ICP备05002571号</li>
+            </ul>
+        </div>
+        <!-- <div class="clearfix"></div> -->
+
+    </div>
+    <div class="toTop"></div>
+</body>
+<!--<script src="js/api_json.js" type="text/javascript"></script>-->
+<script src="js/scrollbar.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+<script>
+
+    $(function(){
+        if(browserRedirect() === 'pc') {
+            // $('.nav-box')[0].style.overflow = 'auto',
+            $(".nav-box").panel({iWheelStep:32});
+        }else{
+            $('.nav-box').css("overflow","auto");
+        }
+    });
+
+    //判断浏览器
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            return 'mobile';
+        } else {
+            return 'pc';
+        }
+    }
+</script>
+
+</html>

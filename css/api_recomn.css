@@ -1,0 +1,389 @@
+.recomn-tab {
+    position: relative;
+}
+.recomn-tab .recomn-tab-title {
+    width: 997px;
+    position: absolute;
+    left: 50%;
+    margin-left: -498.5px;
+    z-index: 99;
+}
+.recomn-tab .tab-title-yellow1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 34px;
+    height: 80px;
+}
+.recomn-tab .tab-title-yellow2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 34px;
+    height: 80px;
+    /* background: url('../images/api_recomn/tab_right.png') no-repeat 0 0; */
+    /* background-size: 100% 100%; */
+}
+.recomn-tab .recomn-tab-wrap {
+    position: relative;
+    margin: 0 34px;
+    border: 1px solid #ffc74d;
+    width: 927px;
+}
+
+/* .recomn-tab .recomn-tab-wrap li:hover {
+    background-color: #47023c;
+}
+.recomn-tab .recomn-tab-wrap li:hover a {
+    color: #ffc74d;
+} */
+.recomn-tab .recomn-tab-title li {
+    width: 103px;
+    padding: 25px 0;
+    float: left;
+    cursor: pointer;
+    background-color: #ffc74d;
+    text-align: center;
+}
+.recomn-tab .recomn-tab-title li.act {
+    background-color: #47023c;
+}
+.recomn-tab-title li a {
+    display: block;
+    font-size: 14px;
+    color: #47023c;
+    border-right: 1px solid #47023c;
+}
+.recomn-tab-title li a.last-a {
+    border: 0;
+}
+.recomn-tab-title li a.no-border {
+    border: 0;
+}
+.recomn-tab-title li.act a {
+    color: #ffc74d;
+}
+.recomn-tab.fixed .recomn-tab-title{
+    position: fixed;
+    top: 0;
+}
+.recomn-tab .recomn-tab-section {
+    width: 100%;
+    background: url('../images/api_recomn/api_recomn_purple.png') no-repeat 0 0;
+    background-size: 100% 100%;
+}   
+.recomn-tab .recomn-tab-con {
+    position: relative;
+}
+.recomn-tab .recomn-top {
+    width: 1075px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+.recomn-tab .recomn-con-left {
+    margin-top: 152px;
+}
+.recomn-tab .recomn-con-title {
+    color: #ffc74d;
+    position: relative;
+}
+.recomn-tab .recomn-con-title-img {
+    width: 70px;
+    position: absolute;
+    left: 0;
+}
+.recomn-tab .recomn-con-title-id {
+    font-size: 46px;
+    /* position: absolute;
+    left: 2px;
+    top: 15px; */
+}
+.recomn-tab .recomn-title-img {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    text-align: center;
+    width: 70px;
+    height: 81px;
+    line-height: 81px;
+}
+.recomn-tab .recomn-con-title-size {
+    font-size: 36px;
+    display: inline-block;
+    border-bottom: 1px solid #ffc74d;
+    padding-bottom: 24px;
+    margin-left: 15px;
+}
+.recomn-tab .recomn-tab-con.rtc {
+    height: 680px;
+}
+.recomn-tab .recomn-tab-con .recomn-tab-bg {
+    width: 100%;
+}
+.recomn-tab .recomn-tab-con.rtc .recomn-tab-bg {
+    position: absolute;
+    bottom: 0;
+}
+.recomn-tab .recomn-tab-con .recomn-tab-icon {
+    width: 502px;
+}
+.recomn-tab .recomn-tab-des {
+    color: #bbabb4;
+    font-size: 16px; 
+    width: 510px;
+    max-height: 104px;
+    line-height: 25px;
+    overflow: hidden;
+    display: none;
+    margin: 35px 0 25px;
+}
+
+.recomn-tab .recomn-tab-des.act {
+    display: block;
+}
+.recomn-tab .information-record {
+    color: #fff;
+    display: none;
+}
+.recomn-tab .information-record.act {
+    display: block;
+}
+.recomn-tab .information-record-item {
+    float: left;
+    width: 50%;
+}
+.recomn-tab .record-item-data {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.recomn-tab .record-item-des {
+    font-size: 14px;
+}
+.recomn-tab .see-detail {
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.recomn-tab .see-detail a {
+    font-size: 16px;
+    color: #47023c;
+    display: block;
+    width: 140px;
+    background-color: #ffc74d;
+}
+.recomn-tab .see-detail.see-detail-dire a {
+    float: right; 
+}
+
+.recomn-tab .polygon-wrap {
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    color: #ffc74d;
+}
+/* .recomn-tab .polygon-wrap:hover {
+    color: #400b41;
+} */
+.recomn-tab .polygon-wrap.act {
+    color: #400b41;
+}
+.recomn-tab .sub-title {
+    position: absolute;
+    text-align: center;
+    left: 2px;
+    top: 84px;
+    /* left: 58px;
+    top: 138px; */
+}
+.recomn-tab .light-effect {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: url('../images/api_recomn/light_effect.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 16px;
+}
+.recomn-tab .polygon-wrap .light-effect {
+    display: none;
+}
+/* .recomn-tab .polygon-wrap:hover .light-effect {
+    display: block;
+} */
+.recomn-tab .polygon-wrap .light-effect.light-act {
+    display: block;
+}
+.recomn-tab .polygon-big {
+    display: inline-block;
+    width: 179px;
+    height: 207px;
+    background: url('../images/api_recomn/polygon_big.png') no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.recomn-tab .polygon-small {
+    position: absolute;
+    left: 22.5px;
+    top: 26.5px;
+    width: 135px;
+    height: 154px;
+    background: url('../images/api_recomn/polygon_small_uns.png') no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+/* .recomn-tab .polygon-wrap .polygon-wrap-logo {
+    position: absolute;
+    left: 62px;
+    top: 57px;
+} */
+.recomn-tab .polygon-wrap .sub-title-wrap {
+    position: absolute;
+    left: 58px;
+    top: 57px;
+}
+#comSer .polygon-wrap .polygon-wrap-logo,
+#creScore .polygon-wrap .polygon-wrap-logo {
+    display: inline-block;
+    width: 84px;
+    height: 81px;
+    background-size: 100% 100%;
+}
+.recomn-tab .polygon-wrap .click-look {
+    width: 113px;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    z-index: 50;
+    display: none;
+}
+.recomn-tab .click-look-opacity {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 0, 62);
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+}
+.recomn-tab .click-look-size {
+    position: absolute;
+    top: 7px;
+    left: 29px;
+}
+/* .recomn-tab .polygon-wrap:hover .click-look {
+    display: block;
+} */
+#comSer .polygon-wrap1 .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_uns1.png') no-repeat 0 0;
+}
+#comSer .polygon-wrap2 .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_uns3.png') no-repeat 0 0;
+}
+#comSer .polygon-wrap3 .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_uns2.png') no-repeat 0 0;
+}
+
+/* #comSer .polygon-wrap1:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_s1.png') no-repeat 0 0;
+}
+#comSer .polygon-wrap2:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_s3.png') no-repeat 0 0;
+}
+#comSer .polygon-wrap3:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/com_ser_s2.png') no-repeat 0 0;
+} */
+
+#comSer .polygon-wrap1 .polygon-small {
+    background: url('../images/api_recomn/polygon_small_uns.png') no-repeat 0 0; 
+}
+#comSer .polygon-wrap2 .polygon-small {
+    background: url('../images/api_recomn/polygon_small_uns.png') no-repeat 0 0; 
+}
+#comSer .polygon-wrap3 .polygon-small {
+    background: url('../images/api_recomn/polygon_small_uns.png') no-repeat 0 0; 
+}
+
+/* #comSer .polygon-wrap1:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#comSer .polygon-wrap2:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#comSer .polygon-wrap3:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+} */
+
+#creScore .polygon-wrap4 .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_uns2.png') no-repeat 0 0;
+}
+#creScore .polygon-wrap5 .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_uns1.png') no-repeat 0 0;
+}
+#creScore .polygon-wrap6 .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_uns3.png') no-repeat 0 0;
+}
+
+/* #creScore .polygon-wrap4:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_s2.png') no-repeat 0 0;
+}
+#creScore .polygon-wrap5:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_s1.png') no-repeat 0 0;
+}
+#creScore .polygon-wrap6:hover .polygon-wrap-logo {
+    background: url('../images/api_recomn/credit_score_s3.png') no-repeat 0 0;
+} */
+
+#creScore .polygon-wrap4 .polygon-small {
+    background: url('../images/api_recomn/polygon_small_uns.png') no-repeat 0 0; 
+}
+#creScore .polygon-wrap5 .polygon-small {
+    background: url('../images/api_recomn/polygon_small_uns.png') no-repeat 0 0; 
+}
+#creScore .polygon-wrap6 .polygon-small {
+    background: url('../images/api_recomn/polygon_small_uns.png') no-repeat 0 0; 
+}
+
+/* #creScore .polygon-wrap4:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#creScore .polygon-wrap5:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+}
+#creScore .polygon-wrap6:hover .polygon-small {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0; 
+} */
+
+#comSer .polygon-wrap .polygon-small.add-back,
+#creScore .polygon-wrap .polygon-small.add-back {
+    background: url('../images/api_recomn/polygon_small_s.png') no-repeat 0 0;
+}
+
+#comSer .polygon-wrap .polygon-wrap-logo.change-icon1 {
+    background: url('../images/api_recomn/com_ser_s1.png') no-repeat 0 0;
+}
+
+#comSer .polygon-wrap .polygon-wrap-logo.change-icon2 {
+    background: url('../images/api_recomn/com_ser_s3.png') no-repeat 0 0;
+}
+
+#comSer .polygon-wrap .polygon-wrap-logo.change-icon3 {
+    background: url('../images/api_recomn/com_ser_s2.png') no-repeat 0 0;
+}
+
+#creScore .polygon-wrap .polygon-wrap-logo.change-icon4 {
+    background: url('../images/api_recomn/credit_score_s2.png') no-repeat 0 0;
+}
+
+#creScore .polygon-wrap .polygon-wrap-logo.change-icon5 {
+    background: url('../images/api_recomn/credit_score_s1.png') no-repeat 0 0;
+}
+
+#creScore .polygon-wrap .polygon-wrap-logo.change-icon6 {
+    background: url('../images/api_recomn/credit_score_s3.png') no-repeat 0 0;
+}
+
+

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="bitbug_favicon-3.ico">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/common_new.css">
+    <link rel="stylesheet" type="text/css" href="css/api.css">
+    <script src="js/lib/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script src="data/api_new_json.js" type="text/javascript"></script>
+    <script src="data/solution_json_new.js" type="text/javascript"></script>
+    <script src="js/common_new.js"></script>
+    <script src="js/api_new.js"></script>
+</head>
+<body>
+    <div class="head">
+        <div class="wrap h-content">
+            <div class="logo">
+                <a href="index.html">
+                    <!-- <img src="images/logo.png" alt=""> -->
+                    <img src="images/logo-beta.png" alt="">
+                </a>
+            </div>
+            <div class="h-menu">
+                <ul>
+                    <li class="menu-list">
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="menu-list show menu-list-api">
+                        <a href="javascript:void(0);">能力API</a>
+                        <div class="api-choose main-choose-nav clearfix">
+                            <div class="header-bj-layer"></div>
+                            <ul class="head-api-list" id="api-list">
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list menu-list-solution">
+                        <!--<a href="solution.html">解决方案</a>-->
+                        <a href="javascript:void(0);">解决方案</a>
+                        <div class="solution-choose main-choose-nav clearfix">
+                            <div class="header-bj-layer"></div>
+                            <ul class="solution-new-list" id="solution-new-list">
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list">
+                        <a href="help/website_intro.html">帮助中心</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="news.html">新闻动态</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="https://www.hc.10086.cn">和创空间</a>
+                    </li>
+                    <li class="menu-list-search">
+                        <span class="search-line"></span>
+                        <form>
+                            <div class="api-search">
+                                <div class="">
+                                    <i class="search-v"><img src="images/search_new.png"></i>
+                                    <input type="text" class="" placeholder="输入API关键词" onfocus="this.placeholder=''"  onblur="this.placeholder='输入API关键词'">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    <!-- <li>
+                        <span>|</span>
+                        <img src="images/shopping-cart.png" alt="">
+                    </li> -->
+                </ul>
+            </div>
+            <div class="cooperate">
+                <a href="user/shopping_cart.html"><img src="images/api_06.png" onmouseover="this.src='images/api_06h.png'" onmouseout="this.src='images/api_06.png'"></a>
+                <div class="coo-add">
+                    <p class="coo-num"></p>
+                </div>
+            </div>
+            <div class="news">
+                <i class="news-icon"></i>
+                <div class="news-add show">2</div>
+            </div>
+            <div class="login-register">
+                <span class="no-login"><a href="login.html">登录</a><i></i><a href="user_register.html">注册</a></span>
+                <div class="yes-login">
+                    <!--<img src="images/login/login-icon14.png" alt="">-->
+                    <img src="images/login/login-icon-new14.png" alt="">
+                </div>
+                <ul class="personal-info">
+                    <li class="info-list1"><a href="user/user_center.html"><span class="user-center"></span>用户中心</a></li>
+                    <li class="info-list2"><a href="javascript:;"><span class="sign-out"></span>退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="main">
+        <!--基本信息-->
+        <div class="general-inf section">
+            <div class="group">
+                <div class="inf-img"></div>
+                <div class="inf-text">
+                    <h1 class="title">模板短信</h1>
+                    <div class="des">通过API的方式，提供发送模板短信的能力，客户在发送前先提交模板给中国移动进行审核，审核通过后，客户可通过系统接口下发符合模板内容的短信。</div>
+                    <div class="coop-btn-wrap clearfix">
+                        <button type="button" class="online-order coop-btn">在线订购签约</button>
+                        <button type="button" class="join-coop coop-btn">加入合作意向</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--应用场景-->
+        <div class="scene section">
+            <div class="main-title">应用场景</div>
+            <div class="scene-mui-wrap">
+                <!--<div class="scene-mui">
+                    <ul class="scene-nav clearfix" id="sceneNav">
+                        <li class="scene-nav-list fl act">
+                            <div class="scene-nav-icon">
+                                <img src="images/apiImg_new/sms_auth_icon.png" alt="">
+                            </div>
+                            <span class="scene-nav-title">视频短信</span>
+                            <div class="scene-shade">
+                                <div class="scene-shade-icon">
+                                    <img src="images/apiImg_new/scene_shade_icon.png" alt="">
+                                </div>
+                                <h4 class="scene-shade-title">视频短信</h4>
+                            </div>
+                        </li>
+                        <li class="scene-nav-list fl">
+                            <div class="scene-nav-icon">
+                                <img src="images/apiImg_new/sms_auth_icon.png" alt="">
+                            </div>
+                            <span class="scene-nav-title">短信验证码</span>
+                            <div class="scene-shade">
+                                <div class="scene-shade-icon">
+                                    <img src="images/apiImg_new/scene_shade_icon.png" alt="">
+                                </div>
+                                <h4 class="scene-shade-title">短信验证码</h4>
+                            </div>
+                        </li>
+                        <li class="scene-nav-list fl">
+                            <div class="scene-nav-icon">
+                                <img src="images/apiImg_new/sms_auth_icon.png" alt="">
+                            </div>
+                            <span class="scene-nav-title">推广短信</span>
+                            <div class="scene-shade">
+                                <div class="scene-shade-icon">
+                                    <img src="images/apiImg_new/scene_shade_icon.png" alt="">
+                                </div>
+                                <h4 class="scene-shade-title">推广短信</h4>
+                            </div>
+                        </li>
+                        <li class="scene-nav-list fl">
+                            <div class="scene-nav-icon">
+                                <img src="images/apiImg_new/sms_auth_icon.png" alt="">
+                            </div>
+                            <span class="scene-nav-title">异步通知</span>
+                            <div class="scene-shade">
+                                <div class="scene-shade-icon">
+                                    <img src="images/apiImg_new/scene_shade_icon.png" alt="">
+                                </div>
+                                <h4 class="scene-shade-title">异步通知</h4>
+                            </div>
+                        </li>
+                        <li class="scene-nav-list fl">
+                            <div class="scene-nav-icon">
+                                <img src="images/apiImg_new/sms_auth_icon.png" alt="">
+                            </div>
+                            <span class="scene-nav-title">数据统计</span>
+                            <div class="scene-shade">
+                                <div class="scene-shade-icon">
+                                    <img src="images/apiImg_new/scene_shade_icon.png" alt="">
+                                </div>
+                                <h4 class="scene-shade-title">数据统计</h4>
+                            </div>
+                        </li>
+                        <li class="scene-nav-list fl">
+                            <div class="scene-nav-icon">
+                                <img src="images/apiImg_new/sms_auth_icon.png" alt="">
+                            </div>
+                            <span class="scene-nav-title">数据统计</span>
+                            <div class="scene-shade">
+                                <div class="scene-shade-icon">
+                                    <img src="images/apiImg_new/scene_shade_icon.png" alt="">
+                                </div>
+                                <h4 class="scene-shade-title">数据统计</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="scene-container">
+                        <div class="scene-container-wrap clearfix">
+                            <div class="scene-container-left fl" id="sceneImg">
+                                <img src="images/apiImg_new/scene/xinyonggouji_banner.png" alt="">
+                                <img src="images/apiImg_new/scene/xinyonggouji_banner.png" alt="">
+                                <img src="images/apiImg_new/scene/xinyonggouji_banner.png" alt="">
+                                <img src="images/apiImg_new/scene/xinyonggouji_banner.png" alt="">
+                                <img src="images/apiImg_new/scene/xinyonggouji_banner.png" alt="">
+                                <img src="images/apiImg_new/scene/xinyonggouji_banner.png" alt="">
+                            </div>
+                            <div class="scene-container-right fl">
+                                <h4 class="scene-des-title">场景描述</h4>
+                                <ul class="scene-des" id="sceneDes">
+                                    <li class="scene-des-lists">政府公益宣传：支持政府、公安等对管辖范围内民众发送公益宣传类视频短信，如“512防灾减灾日”下发防灾减灾宣传片。</li>
+                                    <li class="scene-des-lists">政府公益宣传：支持政府、公安等对管辖范围内民众发送公益宣传类视频短信，如“512防灾减灾日”下发防灾减灾宣传片。</li>
+                                    <li class="scene-des-lists">政府公益宣传：支持政府、公安等对管辖范围内民众发送公益宣传类视频短信，如“512防灾减灾日”下发防灾减灾宣传片。</li>
+                                    <li class="scene-des-lists">政府公益宣传：支持政府、公安等对管辖范围内民众发送公益宣传类视频短信，如“512防灾减灾日”下发防灾减灾宣传片。</li>
+                                    <li class="scene-des-lists">政府公益宣传：支持政府、公安等对管辖范围内民众发送公益宣传类视频短信，如“512防灾减灾日”下发防灾减灾宣传片。</li>
+                                    <li class="scene-des-lists">政府公益宣传：支持政府、公安等对管辖范围内民众发送公益宣传类视频短信，如“512防灾减灾日”下发防灾减灾宣传片。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="scene-show-more">查看更多</div>
+        </div>
+        <!--产品优势-->
+        <div class="advantage section">
+            <div class="main-title">产品优势</div>
+            <div class="advantage-container">
+                <ul class="advantage-card clearfix" id="advantageCard">
+                    <!--<li class="advantage-card-list fl">
+                        <div class="advantage-list-wrap">
+                            <div class="advantage-card-icon">
+                                <img src="./images/apiImg_new/advantage_icon.png" alt="">
+                            </div>
+                            <h3 class="advantage-card-title">强制弹屏</h3>
+                            <p class="advantage-card-des">弹屏消息不会接手机APP拦截，它是通过MAP信令将文本信息传输到手机。</p>
+                        </div>
+                    </li>
+                    <li class="advantage-card-list fl">
+                        <div class="advantage-list-wrap">
+                            <div class="advantage-card-icon">
+                                <img src="./images/apiImg_new/advantage_icon.png" alt="">
+                            </div>
+                            <h3 class="advantage-card-title">阅后即焚</h3>
+                            <p class="advantage-card-des">消息查看后，自动销毁，内存零消耗。</p>
+                        </div>
+                    </li>
+                    <li class="advantage-card-list fl">
+                        <div class="advantage-list-wrap">
+                            <div class="advantage-card-icon">
+                                <img src="./images/apiImg_new/advantage_icon.png" alt="">
+                            </div>
+                            <h3 class="advantage-card-title">及时稳定</h3>
+                            <p class="advantage-card-des">专业通道，消息能在5~10秒内到达，支持获取短信发送状态报告。</p>
+                        </div>
+                    </li>
+                    <li class="advantage-card-list fl clear-mar">
+                        <div class="advantage-list-wrap">
+                            <div class="advantage-card-icon">
+                                <img src="./images/apiImg_new/advantage_icon.png" alt="">
+                            </div>
+                            <h3 class="advantage-card-title">信息安全</h3>
+                            <p class="advantage-card-des">采用私密专线更能保护用户隐私不外泄。</p>
+                        </div>
+                    </li>-->
+                </ul>
+                <div class="advantage-previous" id="advantagePrevious">
+                    <div class="advantage-layer"></div>
+                    <i class="advantage-previous-icon"></i>
+                </div>
+                <div class="advantage-next" id="advantageNext">
+                    <div class="advantage-layer"></div>
+                    <i class="advantage-next-icon"></i>
+                </div>
+            </div>
+        </div> 
+        <!--客户案例-->
+        <div class="case section">
+            <div class="main-title">客户案例</div>
+            <div class="case-container">
+                <ul class="case-card clearfix" id="caseCard">
+                    <!--<li class="case-card-list">
+                        <div class="case-list-icon">
+                            <img src="./images/apiImg_new/case_icon.png" alt="">
+                        </div>
+                        <div class="case-video-duration">02:16</div>
+                    </li>
+                    <li class="case-card-list">
+                        <div class="case-list-icon">
+                            <img src="./images/apiImg_new/case_icon.png" alt="">
+                        </div>
+                        <div class="case-shade">
+                            <div class="case-shade-layer"></div>
+                            <div class="case-shade-content">
+                                <div class="case-shade-icon">
+                                    <img src="./images/apiImg_new/case_logo.png" alt="">
+                                </div>
+                                <p class="case-shade-des">基于滴滴出行对保护客户隐私号码的迫切需求，和多号中间号业务凭借“全国本地化号码资源及优异的平台性能”两大优势，与滴滴出行达成合作，推出中间号安全通信解决方案，实现交易双方手机号“双加密”，全程保护真实号码信息。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="case-card-list">3</li>
+                    <li class="case-card-list">4</li>
+                    <li class="case-card-list">5</li>
+                    <li class="case-card-list">6</li>-->
+                </ul>
+                <div class="case-previous" id="casePrevious">
+                    <div class="case-layer"></div>
+                    <i class="case-previous-icon"></i>
+                </div>
+                <div class="case-next" id="caseNext">
+                    <div class="case-layer"></div>
+                    <i class="case-next-icon"></i>
+                </div>
+            </div>
+            <div class="case-modal">
+                <div class="case-modal-layer"></div>
+                <div class="case-details">
+                    <!--<div class="case-details-title clearfix">
+                        <h4 class="case-details-left fl">案例详情</h4>
+                        <div class="case-details-close fr" id="caseDetailsClose">×</div>
+                    </div>
+                    <div class="case-details-content">
+                        <h3 class="details-title">湖南省购机直降</h3>
+                        <div class="details-text">
+                            <p id="cooperative_content">湖南省购机直降是和包结合湖南省公司营销政策推出的用户购买手机的直降产品，自2017年8月上线以来，反响强烈，已为湖南省公司带来终端销量超过30万台，丰富了用户的购机方式，降低了用户购机门槛，提高消费能力，并缩短换机周期。</p>
+                            <p id="cooperative_effect"><br/>合作成效：<br/>用户层：优化体验流程，让用户实现3秒快捷登录，降低流失率；<br/>产品层：<br/>1、用户注册流程化繁为简，带动网络取号能力，与网关及上行合作，节省短验费用；<br>2、完善平安优联用户账号体系，实现用户账号与手机号码互相匹配；</p>
+                        </div>
+                        <div class="details-img">
+                            <img src="./images/apiImg_new/pinganyoulian.jpg" alt="">
+                        </div>
+                    </div>-->
+
+                    <!--<div class="case-video-close" id="caseVideoClose">
+                        <div class="case-video-layer"></div>
+                        <span>×</span>
+                    </div>
+                    <video class="case-tech" src="https://hbnm3eqf9mju26279qj.exp.bcevod.com/mda-hkniqyvm0ux67mpy/mda-hkniqyvm0ux67mpy.mp4" controls="controls" autoplay></video>-->
+                </div>
+            </div>
+        </div>
+        <!--合作指引-->
+        <div class="guideline section">
+            <div class="guideline-title">合作指引</div>
+            <div class="guideline-container clearfix">
+                <!--<ul class="guideline2-card clearfix">
+                    <li class="guideline2-card-list guideline_card_0">
+                        <div class="guideline2-list-left">
+                            <div class="guideline-num">01</div>
+                            <h3 class="guideline2-card-title">注册认证</h3>
+                            <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                        </div>
+                        <div class="guideline2-list-right">
+                            <i class="guideline2-link-circle guideline2-link-circle1"></i>
+                            <div class="guideline2-link-long guideline2-link-long1"></div>
+                            <div class="guideline2-link-skew guideline2-link-skew1"></div>
+                            <i class="guideline2-link-circle guideline2-link-circle2"></i>
+                            <div class="guideline2-link-short"></div>
+                            <i class="guideline2-link-circle guideline2-link-circle3"></i>
+                            <div class="guideline2-link-long guideline2-link-long2"></div>
+                            <div class="guideline2-link-skew guideline2-link-skew2"></div>
+                        </div>
+                    </li>
+                    <li class="guideline2-card-list guideline_card_1">
+                        <div class="guideline2-list-left">
+                            <div class="guideline-num">02</div>
+                            <h3 class="guideline2-card-title">注册认证</h3>
+                            <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                        </div>
+                        <div class="guideline2-list-right">
+                            <i class="guideline2-link-circle guideline2-link-circle1"></i>
+                            <div class="guideline2-link-long guideline2-link-long1"></div>
+                            <div class="guideline2-link-skew guideline2-link-skew1"></div>
+                            <i class="guideline2-link-circle guideline2-link-circle2"></i>
+                            <div class="guideline2-link-short"></div>
+                            <i class="guideline2-link-circle guideline2-link-circle3"></i>
+                            <div class="guideline2-link-long guideline2-link-long2"></div>
+                            <div class="guideline2-link-skew guideline2-link-skew2"></div>
+                        </div>
+                    </li>
+                </ul>-->
+                <!--<div class="guideline3-card-wrap clearfix">
+                    <div class="guideline3-list-right fl">
+                        <i class="guideline3-link-circle guideline3-link-circle1"></i>
+                        <div class="guideline3-link-long guideline3-link-long1"></div>
+                        <div class="guideline3-link-skew guideline3-link-skew1"></div>
+                        <i class="guideline3-link-circle guideline3-link-circle2"></i>
+                        <div class="guideline3-link-short"></div>
+                        <i class="guideline3-link-circle guideline3-link-circle3"></i>
+                        <div class="guideline3-link-long guideline3-link-long2"></div>
+                        <div class="guideline3-link-skew guideline3-link-skew2"></div>
+                    </div>
+                    <ul class="guideline3-card fr">
+                        <li class="guideline3-card-list">
+                            <div class="guideline3-list-left">
+                                <div class="guideline-num">01</div>
+                                <h3 class="guideline3-card-title">注册认证</h3>
+                                <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                            </div>
+                        </li>
+                        <li class="guideline3-card-list">
+                            <div class="guideline3-list-left">
+                                <div class="guideline-num">02</div>
+                                <h3 class="guideline3-card-title">注册认证</h3>
+                                <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                            </div>
+                        </li>
+                        <li class="guideline3-card-list">
+                            <div class="guideline3-list-left">
+                                <div class="guideline-num">03</div>
+                                <h3 class="guideline3-card-title">注册认证</h3>
+                                <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>-->
+                <!--<ul class="guideline-card fl" id="guidelineCardL">
+                    <li class="guideline-card-list guideline_card_0 clearfix">
+                        <div class="guideline-list-left fl">
+                            <div class="guideline-num">01</div>
+                            <h3 class="guideline-card-title">注册认证</h3>
+                            <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                        </div>
+                        <div class="guideline-list-right fr">
+                            <i class="guideline-link-circle1"></i>
+                            <div class="guideline-link-long"></div>
+                            <div class="guideline-link-skew"></div>
+                            <i class="guideline-link-circle2"></i>
+                        </div>
+                    </li>
+                    <li class="guideline-card-list guideline_card_1 clearfix">
+                        <div class="guideline-list-left fl">
+                            <div class="guideline-num">02</div>
+                            <h3 class="guideline-card-title">购买产品</h3>
+                            <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                        </div>
+                        <div class="guideline-list-right fr">
+                            <i class="guideline-link-circle1"></i>
+                            <div class="guideline-link-long"></div>
+                            <div class="guideline-link-skew"></div>
+                            <i class="guideline-link-circle2"></i>
+                        </div>
+                    </li>
+                </ul>-->
+                <!--<ul class="guideline-card fr" id="guidelineCardR">
+                    <li class="guideline-card-list guideline_card_2 clearfix">
+                        <div class="guideline-list-left fr">
+                            <div class="guideline-num">03</div>
+                            <h3 class="guideline-card-title">创建应用</h3>
+                            <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                        </div>
+                        <div class="guideline-list-right fl">
+                            <i class="guideline-link-circle1"></i>
+                            <div class="guideline-link-long"></div>
+                            <div class="guideline-link-skew"></div>
+                            <i class="guideline-link-circle2"></i>
+                        </div>
+                    </li>
+                    <li class="guideline-card-list guideline_card_3 clearfix">
+                        <div class="guideline-list-left fr">
+                            <div class="guideline-num">04</div>
+                            <h3 class="guideline-card-title">在线开发</h3>
+                            <div class="guideline-card-con">这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍，这里是注册认证的文字介绍</div>
+                        </div>
+                        <div class="guideline-list-right fl">
+                            <i class="guideline-link-circle1"></i>
+                            <div class="guideline-link-long"></div>
+                            <div class="guideline-link-skew"></div>
+                            <i class="guideline-link-circle2"></i>
+                        </div>
+                    </li>
+                </ul>-->
+                <!--<div class="guideline-card">
+                    <img src="./images/apiImg_new/guideline/guideline_five1.png" alt="">
+                </div>-->
+            </div>
+        </div>
+        <!--API接口-->
+        <div class="interface section">
+            <div class="main-title">API接口</div>
+            <div class="interface-container">
+                <table border="0" cellspacing="0" class="interface-table">
+                    <thead>
+                        <tr class="interface-head">
+                            <th class="interface-head-name">API子接口列表</th>
+                            <th class="interface-head-des">API描述</th>
+                        </tr>
+                    </thead>
+                    <tbody id="interfaceTBody" class="interface-tbody">
+                        <!--<tr class="interface-list">
+                            <td class="interface-list-name">发送普通短信</td>
+                            <td class="interface-list-des">HTTP客户端向云MAS平台发送请求，带上相应的请求参数，云MAS平台接收请求，并进行验证，验证通过后进行短信发送。</td>
+                        </tr>
+                        <tr class="interface-list">
+                            <td class="interface-list-name">发送模板短信</td>
+                            <td class="interface-list-des">模板短信发送，HTTP客户端向云MAS平台发送请求，根据指定模板ID，传入模板所需参数发送短信，云MAS平台接收请求，并进行验证，验证通过后进行短信发送。</td>
+                        </tr>
+                        <tr class="interface-list">
+                            <td class="interface-list-name">推送状态报告</td>
+                            <td class="interface-list-des">模板短信发送，HTTP客户端向云MAS平台发送请求，根据指定模板ID，传入模板所需参数发送短信，云MAS平台接收请求，并进行验证，验证通过后进行短信发送。</td>
+                        </tr>
+                        <tr class="interface-list">
+                            <td class="interface-list-name">推送上行短信</td>
+                            <td class="interface-list-des">模板短信发送，HTTP客户端向云MAS平台发送请求，根据指定模板ID，传入模板所需参数发送短信，云MAS平台接收请求，并进行验证，验证通过后进行短信发送。</td>
+                        </tr>-->
+                    </tbody>
+                    <tfoot>
+                        <tr class="interface-footer">
+                            <td colspan="2">
+                                <i class="interface_drop"></i>
+                            </td>
+                        </tr>
+                </table>
+                <div class="interface-more">
+                    <a class="interface-learn-more" id="interLearnMore" href="javascript:void(0);" target="_blank">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <!--更多能力推荐-->
+        <div class="recommen section">
+            <div class="main-title">更多能力推荐</div>
+            <div class="recommen-container">
+                <div class="recommen-container-wrap">
+                    <!--<ul class="recommen-card clearfix">-->
+                    <!--<li class="recommen-card-list fl">
+                        <div class="recommen-card-icon">
+                            <img src="./images/apiImg_new/recommen_icon.png" alt="">
+                        </div>
+                        <h2 class="recommen-card-title">物联网能力</h2>
+                        <p class="recommen-card-des">包括基于OneNET平台的物联网应用开发、物联卡管理等能力。</p>
+                        <div class="recommen-shade">
+                            <div class="recommen-shade-layer"></div>
+                            <a href="#" class="recommen-see-detail">查看详情</a>
+                        </div> 
+                    </li>
+                    <li class="recommen-card-list fl">
+                        <div class="recommen-card-icon">
+                            <img src="./images/apiImg_new/recommen_icon.png" alt="">
+                        </div>
+                        <h2 class="recommen-card-title">数字家庭能力</h2>
+                        <p class="recommen-card-des">包括基于家庭网关的And-Link智能设备快速连接、管理等能力。</p>
+                        <div class="recommen-shade">
+                            <div class="recommen-shade-layer"></div>
+                            <a href="#" class="recommen-see-detail">查看详情</a>
+                        </div> 
+                    </li>
+                    <li class="recommen-card-list fl">
+                        <div class="recommen-card-icon">
+                            <img src="./images/apiImg_new/recommen_icon.png" alt="">
+                        </div>
+                        <h2 class="recommen-card-title">数字内容能力</h2>
+                        <p class="recommen-card-des">包括视频点播、广告发布等能力。</p>
+                        <div class="recommen-shade">
+                            <div class="recommen-shade-layer"></div>
+                            <a href="#" class="recommen-see-detail">查看详情</a>
+                        </div> 
+                    </li>
+                    <li class="recommen-card-list fl clear-mar">
+                        <div class="recommen-card-icon">
+                            <img src="./images/apiImg_new/recommen_icon.png" alt="">
+                        </div>
+                        <h2 class="recommen-card-title">云服务能力</h2>
+                        <p class="recommen-card-des">包括云主机、云存储、语音识别处理等能力。</p>
+                        <div class="recommen-shade">
+                            <div class="recommen-shade-layer"></div>
+                            <a href="#" class="recommen-see-detail">查看详情</a>
+                        </div> 
+                    </li>-->
+                <!--</ul>-->
+                </div>
+                <div class="another-batch">换一批</div>
+            </div>
+        </div>
+    </div>
+    <!-- 加入合作意向弹窗 -->
+    <div class="pop-sc">
+        <div class="lawyer"></div>
+        <div class="pop-cart">
+            <div class="pop-title">
+                <i class="pop-icon1"></i>
+            </div>
+            <div class="suc-text">
+                <p>已添加进合作意向，请点击<a class="suc-shop" href="./user/shopping_cart.html">购物车</a>查看！</p>
+            </div>
+            <div class="pop-close">
+                <i class="pop-icon"></i>
+            </div>
+        </div>
+    </div>
+     <!-- 底部 -->
+    <div class="footer">
+        <a class="csd" href="https://support.open.10086.cn/" target="_blank"></a> 
+        <div class="footer-menu">
+            <ul>
+                <li>
+                    <a href="http://dev.10086.cn/?from=open10086cn" target="_blank">互联网能力平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://cmccopen.cn/" target="_blank">通信开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://open.iot.10086.cn/" target="_blank">OneNET平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <!--<a href="http://api.iot.10086.cn/" target="_blank">物联卡能力开放平台</a>-->
+                    <a href="http://api.iot.10086.cn/" target="_blank">OneLink能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://open.home.10086.cn/dev/" target="_blank">数字家庭能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <!--<a href="http://112.35.23.8:1080/open_devportal/index.jsp" target="_blank">行业应用使能平台</a>-->
+                    <a href="http://aep.open.10086.cn/" target="_blank">行业应用使能平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://www.cmpay.com/" target="_blank">和包支付</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://www.migucloud.com/index" target="_blank">咪咕视频云</a>
+                </li>
+                <li>
+                    <a href="https://it.open.10086.cn" target="_blank">IT能力开放平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://ecloud.10086.cn/product/" target="_blank">移动云</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://xinyong.cmri.cn/client/index" target="_blank">信用服务平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://ditu.10086.cn/" target="_blank">位置服务平台</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="http://www.hedongli.com/web-mall/help/links/ZYlogistics/zhongyi.jsp?mchtId=35" target="_blank">中移物流</a>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="https://yuqing.bigcloudsys.cn/apps/nganalysis/home" target="_blank">中移舆情</a>
+                </li>
+            </ul>
+        </div>
+        <div class="information">
+            <!-- <ul class="inf-one">
+                <li>
+                    <span>掌上营业厅：</span>
+                    <a>wap.10086.cn</a>
+                </li>
+                <li>
+                    <span>语音自助服务：</span>
+                    <a>10086</a>
+                </li>
+                <li>
+                    <span>短信营业厅：</span>
+                    <a>10086</a>
+                </li>
+                <li>
+                    <span>自助终端</span>
+                </li>
+                <li>
+                    <span>营业厅</span>
+                </li>
+                <li>
+                    <span>手机营业厅下载</span>
+                </li>
+            </ul>
+            <ul class="inf-two">
+                <li>Copyright©1999-2017</li>
+                <li>中国移动</li>
+                <li>版权所有</li>
+            </ul> -->
+            <ul class="inf-thr">
+                <li>中华人民共和国增值电信业务经营许可证</li>
+                <li>
+                    <span>经营许可证编号：</span>
+                    <a>A2.B1.B2-20100001</a>
+                </li>
+            </ul>
+            <div class="footer-customer">客服电话：400-1000-225&nbsp;&nbsp;客服QQ：715227206（工作日 9:00-12:00、14:00-17:30）</div>
+            <ul class="inf-four">
+                <li>
+                    <a><img src="images/yanzheng.png" alt=""></a>
+                </li>
+                <li>
+                    <img src="images/icon0.png" alt="">
+                </li>
+                <li>京ICP备05002571号</li>
+            </ul>
+        </div>
+        <!-- <div class="clearfix"></div> -->
+
+    </div>
+</body>
+<script src="js/common.js" type="text/javascript"></script>
+</html>

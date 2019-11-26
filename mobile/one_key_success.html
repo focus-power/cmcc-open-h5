@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="../bitbug_favicon.ico">
+    <link rel="stylesheet" href="../css/mobile_basic.css">
+    <link rel="stylesheet" href="../css/one_key_success.css">
+    <script src="../js/calcBaseRem.js"></script>
+    <script src="../js/lib/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <div class="success">
+        <div class="header">
+            <i class="header-close"></i>
+            <h1 class="header-title">本机号码一键登录</h1>
+        </div>
+        <div class="content">
+            <div class="user-center clearfix">
+                <div class="user-center-left fl"> 
+                    <img src="../images/mobile/user_logo.png" alt="">
+                </div>
+                <div class="user-center-right fl">
+                    <p class="account-number">账号名称</p>
+                    <p class="account-info">13834563423</p>
+                </div>
+            </div>
+            <ul class="user-info">
+                <li class="user-info-list">已订购的能力</li>
+                <li class="user-info-list">账号信息</li>
+                <li class="user-info-list">认证信息</li>
+                <li class="user-info-list">修改密码</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <button class="try-again" id="tryAgain">再次体验</button>
+        </div>
+    </div>
+<script>
+    $(function() {
+        // 点击头部"×"
+        $('.header-close').click(function() {
+            history.back(-1);
+        });
+        
+        // 点击“再次体验”按钮
+        $('#tryAgain').click(function() {
+            window.location.href = './one_key.html';
+        })
+    })
+</script>
+</body>
+</html>

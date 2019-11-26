@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ie8 lt9"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lt9"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if (gt IE 9) | !(IE)]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>中国移动能力开放商店</title>
+    <link rel="icon" type="image/x-icon" href="../bitbug_favicon-3.ico">
+    <link rel="stylesheet" type="text/css" href="../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/common_new.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/help_center.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/user_common.css">
+    <link rel="stylesheet" type="text/css" href="../css/user_center.css">
+    <link rel="stylesheet" type="text/css" href="../css/lib/Huploadify.css">
+    <link rel="stylesheet" type="text/css" href="../css/lib/easyUI/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/lib/easyUI/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/lib/easyUI/demo.css">
+    <link rel="stylesheet" type="text/css" href="../css/company_apply.css">
+    <!--[if IE 8]>
+    <link href='../css/index_ie8.css' rel='stylesheet'>
+    <![endif]-->
+    <script src="../js/lib/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<!-- head部分 -->
+<div class="head">
+    <div class="wrap h-content">
+        <div class="logo">
+            <a href="../index.html">
+                <!-- <img src="images/logo.png" alt=""> -->
+                <img src="../images/logo-beta.png" alt="">
+            </a>
+        </div>
+        <div class="h-menu">
+            <ul>
+                <li class="menu-list show">
+                    <a href="../index.html">首页</a>
+                </li>
+                <li class="menu-list">
+                    <a href="../api.html">能力API</a>
+                </li>
+                <li class="menu-list">
+                    <a href="../solution.html">解决方案</a>
+                </li>
+                <li class="menu-list">
+                    <a href="../help/website_intro.html">帮助中心</a>
+                </li>
+                <li class="menu-list">
+                    <a href="../news.html">新闻动态</a>
+                </li>
+                <li class="menu-list">
+                    <a href="https://www.hc.10086.cn">和创空间</a>
+                </li>
+                <li class="menu-list-search">
+                    <span class="search-line"></span>
+                    <form>
+                        <div class="api-search">
+                            <div class="">
+                                <i class="search-v"><img src="../images/search_new.png"></i>
+                                <input type="text" class="" placeholder="输入API关键词" onfocus="this.placeholder=''"  onblur="this.placeholder='输入API关键词'">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="cooperate">
+            <a href="shopping_cart.html"><img src="../images/api_06.png" onmouseover="this.src='../images/api_06h.png'" onmouseout="this.src='../images/api_06.png'"></a>
+            <div class="coo-add">
+                <p class="coo-num"></p>
+            </div>
+        </div>
+        <div class="login-register">
+            <span class="no-login"><a href="../login.html">登录</a><i></i><a href="../user_register.html">注册</a></span>
+            <div class="yes-login">
+                <img src="../images/login/login-icon-new14.png" alt="">
+            </div>
+            <ul class="personal-info">
+                <li class="info-list1"><a href="user_center.html"><span class="user-center"></span>用户中心</a></li>
+                <li class="info-list2"><a href="../index.html"><span class="sign-out"></span>退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 面包屑 -->
+<div class="bread-crumb">
+    <div class="wrap">
+        <a href="../index.html">首页</a> \
+        <a href="shopping_cart.html">用户控制台</a> \
+        <span>认证信息</span>
+    </div>
+</div>
+
+<!-- 内容 -->
+<div class="tabWrap">
+    <div class="wrap user-wrap">
+        <div class="c-main apply-main">
+            <!--<h2 class="c-hel">帮助中心</h2>-->
+            <div class="trends clearfix">
+
+                <!-- 侧边导航 -->
+                <div class="left-nav user-left">
+                    <div class="user-left-top">
+                        <div class="head-portrait"><img src="../images/user/user-icon02.png" alt=""></div>
+                        <div class="head-text"><span class="head-phone">131*****111</span><i> | </i><span>个人中心</span></div>
+                    </div>
+                    <ul class="nav-one">
+                        <li class="help-navO">
+                            <a href="shopping_cart.html">
+                                <div class="menu2-show">
+                                    <i class="nav-icon nav-icon0"></i>
+                                    <span>我的购物车</span>
+                                    <!--<i class="icon-tri icon-triD"></i>-->
+                                </div>
+                            </a>
+                        </li>
+                        <li class="help-navO">
+                            <a href="ordered_api.html">
+                                <div class="menu2-show">
+                                    <i class="nav-icon nav-icon1"></i>
+                                    <span>已订购的能力</span>
+                                    <!--<i class="icon-tri icon-triD"></i>-->
+                                </div>
+                            </a>
+                        </li>
+                        <li class="help-navO">
+                            <a href="message_center.html">
+                                <div class="menu2-show">
+                                    <i class="nav-icon nav-icon2"></i>
+                                    <span>消息中心</span>
+                                    <!--<i class="icon-tri icon-triD"></i>-->
+                                </div>
+                            </a>
+                        </li>
+                        <li class="help-navO">
+                            <div class="menu2-show last-menu">
+                                <i class="nav-icon nav-icon3"></i>
+                                <span>用户中心</span>
+                                <i class="icon-tri icon-triD"></i>
+                            </div>
+                            <ul class="nav-hide" style="display: block">
+                                <li class="help-nav">
+                                    <a href="user_center.html">账号信息</a>
+                                </li>
+                                <li class="help-nav act">
+                                    <a href="apply_certification.html">认证信息</a>
+                                </li>
+                                <li class="help-nav">
+                                    <a href="change_password.html">修改密码</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 内容 -->
+                <div class="main">
+                    <div class="mian-list user-main-list">
+                        <div class="surveyL user-main company-apply">
+                            <!--第一步 公司信息-->
+                            <div class="company-apply-content company-apply-content1">
+                                <div class="info-title"><h2>认证信息<span> — 公司认证</span></h2><a href="apply_certification.html">切换认证角色</a></div>
+                                <ul class="company-choose-list clear">
+                                    <li class="choose-color choose-list1"><i class="choose-background">1</i><span>公司信息</span></li>
+                                    <li><b></b></li>
+                                    <li class=" choose-list2"><i>2</i><span>管理员信息</span></li>
+                                    <li><b></b></li>
+                                    <li class=" choose-list3"><i>3</i><span>提交审核</span></li>
+                                </ul>
+                                <!--公司信息提交-->
+                                <ul class="company-apply-main1">
+                                    <li class="company-name">
+                                        <div class="main1-title"><em>*</em><b>公司名称</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error company-name-error">请按照营业执照上登记的完整名称填写</li>
+                                    <li class="main1-city1">
+                                        <div class="main1-title"><em>*</em><b>公司所在地</b></div>
+                                        <input type="text" id="cityId" name="cityId" style="width: 154px ; height:40px"/>
+                                        <input type="text" id="countyId" name="countyId" class="easyui-combobox" data-options="valueField:'code',textField:'name_ch'" style="width: 242px ; height:40px"/>
+                                    </li>
+                                    <li class="main1-error error-hidden company-city-error error-show-color">请选择公司所在地</li>
+                                    <li class="company-address">
+                                        <div class="main1-title"><em>*</em><b>详细地址</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error company-address-error">公司地址必须与营业执照相同</li>
+                                    <li class="main1-choose main1-company-nature">
+                                        <div class="main1-title"><em>*</em><b>公司性质</b></div>
+                                        <select name="" id="company-nature" class="company-nature">
+                                            <option selected="selected" disabled>请选择</option>
+                                        </select>
+                                    </li>
+                                    <li class="main1-error error-hidden company-nature-error error-show-color">请选择公司性质</li>
+                                    <li class="main1-choose">
+                                        <div class="main1-title"><em>*</em><b>所属行业</b></div>
+                                        <select name="" id="trade" class="trade">
+                                            <option selected="selected" disabled>请选择</option>
+                                        </select>
+                                    </li>
+                                    <li class="main1-error error-hidden company-trade-error error-show-color">请选择所属行业</li>
+                                    <li class="main1-choose">
+                                        <div class="main1-title"><em>*</em><b>公司规模</b></div>
+                                        <select name="" id="company-size" class="company-size">
+                                            <option selected="selected" disabled>请选择</option>
+                                        </select>
+                                    </li>
+                                    <li class="main1-error error-hidden company-size-error error-show-color">请选择公司规模</li>
+                                    <li class="main1-date">
+                                        <div class="main1-title"><em>*</em><b>成立日期</b></div>
+                                        <input id="box" style="width: 402px;height: 40px" type="text" class="easyui-datebox" required="required">
+                                    </li>
+                                    <li class="main1-error error-hidden main1-date-error error-show-color">请选择成立日期</li>
+                                    <li class="main1-choose">
+                                        <div class="main1-title"><em>*</em><b>执照类型</b></div>
+                                        <select name="" id="main1-choose-license" class="main1-choose-license">
+                                            <option value="1" selected="selected">企业三证</option>
+                                            <option value="2">三证合一</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <!--企业三证-->
+                                <ul class="company-apply-main1 three-evidence">
+                                    <li class="company-organization">
+                                        <div class="main1-title"><em>*</em><b>组织机构代码</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error company-organization-error">请按照组织机构代码证上的代码填写，不要省略“—”；三证合一请填写统一信用识别代码。</li>
+                                    <li class="main1-organization">
+                                        <div class="main1-title"><em>*</em><b>组织机构证</b></div>
+                                        <div class="organization"></div>
+                                        <input type="hidden" class="organization-images-url">
+                                    </li>
+                                    <li class="main1-organization-prompt main1-prompt">
+                                        <p>将组织机构证原件或盖章的复印件扫描/拍照后上传，图片大小1M以内，格式jpg、png。</p>
+                                    </li>
+                                    <li class="main1-choose">
+                                        <div class="main1-title"><em>*</em><b>机构类型</b></div>
+                                        <select name="" id="organization-type" class="organization-type">
+                                            <option selected="selected" disabled>请选择</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </li>
+                                    <li class="main1-error error-hidden organization-type-error error-show-color">请选择机构类型</li>
+                                    <li class="main1-time-slot main1-time-slot1">
+                                        <div class="main1-title"><em>*</em><b>有效时间段</b></div>
+                                        <div style="" class="time-slot1-star time-slot-star">
+                                            <input class="easyui-datebox" label="Start Date:" style="width:200px;height: 40px;line-height: 40px">
+                                        </div>
+                                        <div style="" class="time-slot1-end time-slot-end">
+                                            <input class="easyui-datebox" label="End Date:" style="width:200px;height: 40px;line-height: 40px">
+                                        </div>
+                                    </li>
+                                    <li class="main1-error error-hidden time-slot1-error error-show-color">请选择时间段</li>
+                                    <li class="company-tax-id">
+                                        <div class="main1-title"><em>*</em><b>税务登记号</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error company-tax-id-error">请按照税务登记证上的代码填写。</li>
+                                    <li class="main1-tax">
+                                        <div class="main1-title"><em>*</em><b>税务登记证</b></div>
+                                        <div class="tax"></div>
+                                        <input type="hidden" class="tax-images-url">
+                                    </li>
+                                    <li class="main1-tax-prompt  main1-prompt">
+                                        <p>将税务登记证原件或盖章的复印件扫描/拍照后上传，图片大小1M以内，格式jpg、png。</p>
+                                    </li>
+                                    <li class="business-license">
+                                        <div class="main1-title"><em>*</em><b>营业执照号</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error business-license-error">请按照营业执照证上的代码填写。</li>
+                                </ul>
+                                <!--三证合一-->
+                                <ul class="company-apply-main1 syncretic company-apply-main1-hide">
+                                    <li class="company-syncretic">
+                                        <div class="main1-title"><em>*</em><b>统一社会信用代码</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error company-syncretic-error">请按照组织机构代码证上的代码填写，不要省略“—”；三证合一请填写统一信用识别代码。</li>
+                                </ul>
+                                <!--公司信息提交-->
+                                <ul class="company-apply-main1">
+                                    <li class="main1-license">
+                                        <div class="main1-title"><em>*</em><b>营业执照证</b></div>
+                                        <div class="license"></div>
+                                        <input type="hidden" class="license-images-url">
+                                    </li>
+                                    <li class="main1-license-prompt  main1-prompt">
+                                        <p>将营业执照证原件或盖章的复印件扫描/拍照后上传，图片大小1M以内，格式jpg、png。</p>
+                                    </li>
+                                    <li class="main1-time-slot main1-time-slot2">
+                                        <div class="main1-title"><em>*</em><b>营业日期</b></div>
+                                        <div style="" class="time-slot2-star time-slot-star">
+                                            <input class="easyui-datebox" label="Start Date:" style="width:200px;height: 40px;line-height: 40px">
+                                        </div>
+                                        <div style="" class="time-slot2-end time-slot-end">
+                                            <input class="easyui-datebox" label="End Date:" style="width:200px;height: 40px;line-height: 40px">
+                                        </div>
+                                    </li>
+                                    <li class="main1-error error-hidden time-slot2-error error-show-color">请选择营业日期</li>
+                                    <li class="legal-person">
+                                        <div class="main1-title"><em>*</em><b>法人代表</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error error-hidden legal-person-error error-show-color">请填写法人代表</li>
+                                    <li class="company-tell">
+                                        <div class="main1-title"><em>*</em><b>公司电话</b></div><input type="text" maxlength="32">
+                                    </li>
+                                    <li class="main1-error company-tell-error">只能包含数字0-9或中划线，且不能超过32位</li>
+                                    <li class="company-taxpayer">
+                                        <div class="main1-title"><em>*</em><b>纳税人识别号</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error error-hidden company-taxpayer-error error-show-color">请填写纳税人识别号</li>
+                                    <li class="main1-accessory">
+                                        <div class="main1-title"><em>*</em><b>说明附件</b></div>
+                                        <div class="accessory"></div>
+                                        <input type="hidden" class="accessory-images-url">
+                                    </li>
+                                    <li class="main1-error main1-accessory-error">如果企业名称与营业执照不符请上传说明附件。图片大小1M以内，格式DOC、DOCX、PDF、JPG。<a href="">下载模板</a></li>
+                                </ul>
+                                <div class="company-btn"><div class="main1-title"></div><button class="company-btn-next">下一步,填写管理员信息</button><button class="company-btn-keep">保存</button></div>
+                            </div>
+                            <!--第二步 管理者信息-->
+                            <div class="company-apply-content  company-apply-content2 company-apply-content-hiden">
+                                <div class="info-title"><h2>认证信息<span> — 公司认证</span></h2><a href="apply_certification.html">切换认证角色</a></div>
+                                <ul class="company-choose-list clear">
+                                    <li class="choose-color choose-list1"><i class="choose-background">1</i><span>公司信息</span></li>
+                                    <li><b></b></li>
+                                    <li class=" choose-list2 choose-color"><i class="choose-background">2</i><span>管理员信息</span></li>
+                                    <li><b></b></li>
+                                    <li class=" choose-list3"><i>3</i><span>提交审核</span></li>
+                                </ul>
+                                <!--管理员信息-->
+                                <ul class="company-apply-main1">
+                                    <li class="main1-choose">
+                                        <div class="main1-title"><em>*</em><b>是否是法人</b></div>
+                                        <select name="" id="company-corporation" class="company-corporation">
+                                            <option value="1" selected="selected">是</option>
+                                            <option value="2">否</option>
+                                        </select>
+                                    </li>
+                                    <li class="main1-error error-hidden error-show-color">请选择是否是法人</li>
+                                    <li class="company-controller-name">
+                                        <div class="main1-title"><em>*</em><b>姓名</b></div><input type="text" placeholder="请填写真实姓名">
+                                    </li>
+                                    <li class="main1-error error-hidden company-controller-name-error error-show-color">请填写真实姓名</li>
+                                    <li class="company-controller-id">
+                                        <div class="main1-title"><em>*</em><b>证件号码</b></div><input type="text" placeholder="请填写身份证号码" maxlength="18">
+                                    </li>
+                                    <li class="main1-error error-hidden company-controller-id-error error-show-color">请填写身份证号码</li>
+                                    <li class="apply-main1-id">
+                                        <div class="main1-title"><em>*</em><b>证件照</b></div>
+                                        <div  class="controller-full-face"></div>
+                                        <div class="controller-reverse-photo"></div>
+                                        <input type="hidden" class="controller-full-face-images-url">
+                                        <input type="hidden" class="controller-reverse-photo-images-url">
+                                    </li>
+                                    <li class="main1-error company-controller-photo-error">请上传真实有效的身份证扫描件/证件照片，确保证件内容清晰可见，图片大小1M以内，格式PNG、JPG。</li>
+                                    <li class="company-controller-department">
+                                        <div class="main1-title"><em>*</em><b>所属部门</b></div><input type="text">
+                                    </li>
+                                    <li class="main1-error error-hidden company-controller-department-error error-show-color">请填写所属部门</li>
+                                    <li class="main1-proxy">
+                                        <div class="main1-title"><em>*</em><b>授权委托书</b></div>
+                                        <div class="proxy"></div>
+                                        <input type="hidden" class="proxy-images-url">
+                                    </li>
+                                    <li class="main1-error main1-proxy-error">文件大小1M以内，格式DOC、DOCX、PDF、JPG。<a href="">下载模板</a></li>
+                                    <li class="main1-term">
+                                        <div class="main1-title"><em>*</em><b>委托书有效期</b></div>
+                                        <input id="box1" style="width: 402px;height: 40px" type="text" class="easyui-datebox" required="required">
+                                    </li>
+                                    <li class="main1-error error-hidden main1-term-error error-show-color">请选择委托书有效期</li>
+                                </ul>
+                                <div class="controller-btn"><div class="main1-title"></div><button class="controller-btn-back">上一步</button><button class="controller-btn-next">提交</button><button class="controller-btn-keep">保存</button></div>
+                            </div>
+                            <!--第三步 提交-->
+                            <div class="company-apply-content  company-apply-content3 company-apply-content-hiden">
+                                <div class="info-title"><h2>认证信息<span> — 公司认证</span></h2><a href="apply_certification.html">切换认证角色</a></div>
+                                <ul class="company-choose-list clear">
+                                    <li class="choose-color choose-list1"><i class="choose-background">1</i><span>公司信息</span></li>
+                                    <li><b></b></li>
+                                    <li class=" choose-list2 choose-color"><i class="choose-background">2</i><span>管理员信息</span></li>
+                                    <li><b></b></li>
+                                    <li class=" choose-list3 choose-color"><i class="choose-background">3</i><span>提交审核</span></li>
+                                </ul>
+                                <!--提交成功-->
+                                <div class="company-success company-submit company-submit-hiden">
+                                    <div class="company-submit-img"><img src="../images/login/login-icon09.png" alt=""></div>
+                                    <h4>提交成功</h4>
+                                    <div class="company-submit-text">资料审核中…审核时间1-2个工作日，请耐心等待。<br />您也可以联系<a href="">在线客服</a>或拨打<a href="tel:400-1000-225">400-1000-225</a>进行紧急审核！</div>
+                                </div>
+                                <!--审核失败-->
+                                <div class="company-failure company-submit">
+                                    <div class="company-submit-img"><img src="../images/user/user-icon06.png" alt=""></div>
+                                    <h4>审核未通过</h4>
+                                    <p class="company-submit-text company-submit-error">审核未通过原因</p>
+                                    <div class="company-submit-text">您可以<a href="">修改信息</a>，重新提交审核</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toTop">
+
+    </div>
+</div>
+<!--电话联系客服弹窗-->
+<div class="call-us">
+    <div class="call-main">
+        <h2>联系客服</h2>
+        <div>
+            <h4>请拨打客服电话</h4>
+            <a href="tel:400-1000-225">400-1000-225</a>
+        </div>
+        <i class="call-close"></i>
+    </div>
+    <div class="call-bg"></div>
+</div>
+<div class="clearfix"> </div>
+
+<!-- 底部 -->
+<div class="footer">
+    <a class="csd" href="https://support.open.10086.cn/" target="_blank"></a>
+    <div class="footer-menu">
+        <ul>
+            <li>
+                <a href="http://dev.10086.cn/?from=open10086cn" target="_blank">互联网能力平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://cmccopen.cn/" target="_blank">通信开放平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://open.iot.10086.cn/" target="_blank">OneNET平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <!--<a href="http://api.iot.10086.cn/" target="_blank">物联卡能力开放平台</a>-->
+                <a href="http://api.iot.10086.cn/" target="_blank">OneLink能力开放平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="http://open.home.10086.cn/dev/" target="_blank">数字家庭能力开放平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <!--<a href="http://112.35.23.8:1080/open_devportal/index.jsp" target="_blank">行业应用使能平台</a>-->
+                <a href="http://aep.open.10086.cn/" target="_blank">行业应用使能平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://www.cmpay.com/" target="_blank">和包支付</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="http://www.migucloud.com/index" target="_blank">咪咕视频云</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://it.open.10086.cn" target="_blank">IT能力开放平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="https://ecloud.10086.cn/product/" target="_blank">移动云</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="http://xinyong.cmri.cn/client/index" target="_blank">信用服务平台</a>
+                <span>|</span>
+            </li>
+            <li>
+                <a href="http://ditu.10086.cn/" target="_blank">位置服务平台</a>
+            </li>
+        </ul>
+    </div>
+    <div class="information">
+        <!-- <ul class="inf-one">
+            <li>
+                <span>掌上营业厅：</span>
+                <a>wap.10086.cn</a>
+            </li>
+            <li>
+                <span>语音自助服务：</span>
+                <a>10086</a>
+            </li>
+            <li>
+                <span>短信营业厅：</span>
+                <a>10086</a>
+            </li>
+            <li>
+                <span>自助终端</span>
+            </li>
+            <li>
+                <span>营业厅</span>
+            </li>
+            <li>
+                <span>手机营业厅下载</span>
+            </li>
+        </ul>
+        <ul class="inf-two">
+            <li>Copyright©1999-2017</li>
+            <li>中国移动</li>
+            <li>版权所有</li>
+        </ul> -->
+        <ul class="inf-thr">
+            <li>中华人民共和国增值电信业务经营许可证</li>
+            <li>
+                <span>经营许可证编号：</span>
+                <a>A2.B1.B2-20100001</a>
+            </li>
+        </ul>
+        <div class="footer-customer">客服电话：400-1000-225（工作日 9:00-12:00、14:00-17:30）</div>
+        <ul class="inf-four">
+            <li>
+                <a><img src="../images/yanzheng.png" alt=""></a>
+            </li>
+            <li>
+                <img src="../images/icon0.png" alt="">
+            </li>
+            <li>京ICP备05002571号</li>
+        </ul>
+    </div>
+    <!-- <div class="clearfix"></div> -->
+
+</div>
+<div class="toTop"></div>
+</body>
+<script src="../data/api_json.js"></script>
+<script src="../data/solution_json.js"></script>
+<!--<script src="../js/help_center.js"></script>-->
+<script src="../js/common.js"></script>
+<script src="../js/lib/jquery.Huploadify.js"></script>
+<script src="../js/lib/jquery.easyui.min.js"></script>
+<script src="../js/user_common.js"></script>
+<script src="../js/company_apply.js"></script>
+</html>

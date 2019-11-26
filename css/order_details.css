@@ -1,0 +1,133 @@
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.order-details {
+    width: 1000px;
+    margin: 0 auto;
+    color: #666;
+}
+.order-details .order-card {
+    background-color: #fff;
+    margin-bottom: 38px;
+}
+.order-details .card-head {
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 28px;
+    background-color: #4682ee;
+}
+.order-details .card-head .order-time {
+    margin-right: 70px;
+}
+.order-details .card-content {
+    font-size: 14px;
+}
+.order-details .card-content-left {
+    padding-left: 42px;
+    width: 623px;
+}
+.order-details .content-left-input {
+    width: 500px;
+    height: 37px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.order-details .content-left-input input {
+    line-height: 37px;
+    width: 100%;
+    height: 100%;
+    margin-top: -4px;
+}
+.order-details .content-left-item {
+    line-height: 37px;
+}
+.user-info {
+    margin-top: 40px;
+}
+.user-info .modify-tip {
+    display: none;
+}
+.user-info .modify-tip .modify-tip-blue {
+    color: #5698f2;
+}
+.user-info .card-content {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    border: 1px solid #e8e8e8;
+}
+.user-info .user-title {
+    padding-right: 10px;
+    text-align: right;
+}
+/*api-detailed开始*/
+.api-detailed table {
+    width: 100%;
+}
+
+.api-detailed .api-title {
+    height: 40px;
+    line-height: 40px;
+}
+.api-detailed .api-tr td {
+    vertical-align: middle;
+}
+.api-detailed .api-title-left {
+    padding-left: 30px;
+}
+.api-detailed .api-title-right {
+    padding-left: 18px;
+}
+.api-detailed .api-items {
+    height: 80px;
+}
+.api-detailed .api-items-name {
+    padding-left: 30px;
+    width: 121px;
+    position: relative;
+}
+.api-detailed .api-items-des {
+    padding-right:43px;
+    padding-left: 18px;
+    white-space:normal; 
+    word-break:break-all;
+}
+.api-detailed .api-items.off-the-shelves .api-items-name {
+    pointer-events: none;
+    color: #d7d7d7;
+}
+.api-detailed .api-items.off-the-shelves .api-items-des {
+    color: #d7d7d7;
+}
+.api-detailed .api-items .off-the-shelves-tip {
+   display: block;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: url('../images/user/off_shelves.png') no-repeat 0 0;
+   background-size: 100% 100%;
+}
+.api-detailed .api-words {
+    height: 80px;
+    /*box-sizing: border-box;*/
+}
+.api-detailed .api-words-left {
+    padding-left: 30px;
+}
+.api-detailed .api-words-right {
+    padding-right:43px;
+    padding-left: 18px;
+}
+/*.api-detailed .api-tr.api-words .api-words-left {
+    vertical-align: top;
+    padding-top: 23px;
+    padding-bottom: 37px;
+}*/
+/*api-detailed结束*/
